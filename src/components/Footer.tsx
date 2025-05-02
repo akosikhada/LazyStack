@@ -2,18 +2,25 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Github, Twitter, Linkedin, Mail, Heart, ChevronUp } from "lucide-react";
+import {
+  Github,
+  Twitter,
+  Linkedin,
+  Mail,
+  Heart,
+  ChevronUp,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [showButton, setShowButton] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       // Get the footer element
-      const footer = document.querySelector('footer');
-      
+      const footer = document.querySelector("footer");
+
       if (footer) {
         // Get the footer's position relative to the viewport
         const footerRect = footer.getBoundingClientRect();
@@ -25,17 +32,17 @@ export default function Footer() {
         }
       }
     };
-    
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
     // Make sure to check initial position
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -49,10 +56,12 @@ export default function Footer() {
       </div>
 
       {/* Back to top button */}
-      <button 
+      <button
         onClick={scrollToTop}
         className={`fixed bottom-8 right-8 w-12 h-12 rounded-full bg-purple-600 text-white flex items-center justify-center shadow-lg shadow-purple-900/30 hover:bg-purple-700 transition-all duration-300 z-50 ${
-          showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+          showButton
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10 pointer-events-none"
         }`}
         aria-label="Back to top"
       >
@@ -70,7 +79,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 mb-6 text-sm leading-relaxed max-w-xs">
-              The ultimate collection of developer tools to enhance your workflow and boost productivity in one place.
+              The ultimate collection of developer tools to enhance your
+              workflow and boost productivity in one place.
             </p>
             <div className="flex space-x-4">
               <Button
@@ -99,22 +109,33 @@ export default function Footer() {
 
           {/* Categories - better spacing */}
           <div className="lg:col-span-1 mt-2">
-            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Categories</h3>
+            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">
+              Categories
+            </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#ai-tools" className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200 flex items-center">
+                <Link
+                  href="#ai-tools"
+                  className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200 flex items-center"
+                >
                   <span className="w-1.5 h-1.5 rounded-full bg-purple-500/50 mr-2"></span>
                   AI Development Tools
                 </Link>
               </li>
               <li>
-                <Link href="#design-tools" className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200 flex items-center">
+                <Link
+                  href="#design-tools"
+                  className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200 flex items-center"
+                >
                   <span className="w-1.5 h-1.5 rounded-full bg-purple-500/50 mr-2"></span>
                   Design Tools
                 </Link>
               </li>
               <li>
-                <Link href="#dev-tools" className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200 flex items-center">
+                <Link
+                  href="#dev-tools"
+                  className="text-gray-400 hover:text-purple-400 text-sm transition-colors duration-200 flex items-center"
+                >
                   <span className="w-1.5 h-1.5 rounded-full bg-purple-500/50 mr-2"></span>
                   AI Development Tools
                 </Link>
@@ -124,18 +145,24 @@ export default function Footer() {
 
           {/* Contact - better spacing */}
           <div className="lg:col-span-1 mt-2">
-            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">Contact Us</h3>
+            <h3 className="text-white font-semibold mb-5 text-sm uppercase tracking-wider">
+              Contact Us
+            </h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <div className="w-8 h-8 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mr-3">
                   <Mail className="h-3.5 w-3.5 text-purple-400" />
                 </div>
-                <a href="mailto:hello@lazystack.dev" className="text-gray-300 hover:text-purple-400 text-sm transition-colors duration-200">
+                <a
+                  href="mailto:hello@lazystack.dev"
+                  className="text-gray-300 hover:text-purple-400 text-sm transition-colors duration-200"
+                >
                   hello@lazystack.dev
                 </a>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                We'd love to hear your feedback or answer any questions you may have about our tools.
+                We'd love to hear your feedback or answer any questions you may
+                have about our tools.
               </p>
             </div>
           </div>
@@ -150,21 +177,17 @@ export default function Footer() {
         {/* Bottom section with improved alignment and spacing */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-2">
           <p className="text-gray-500 text-sm mb-6 md:mb-0">
-            © {currentYear} <span className="text-gray-400 font-medium">LazyStack</span>. All rights reserved.
+            © {currentYear}{" "}
+            <span className="text-gray-400 font-medium">LazyStack</span>. All
+            rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-8 gap-y-3">
-            <Link href="#" className="text-gray-500 hover:text-gray-300 text-xs transition-colors duration-200">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-gray-300 text-xs transition-colors duration-200">
-              Terms of Service
-            </Link>
             <span className="text-gray-500 text-xs flex items-center">
-              Made with <Heart className="h-3 w-3 text-red-500 mx-1.5 hover:scale-110 transition-transform duration-300" /> by LazyStack
+              Developed by akosikhada & znarf-y
             </span>
           </div>
         </div>
       </div>
     </footer>
   );
-} 
+}
