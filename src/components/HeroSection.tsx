@@ -12,6 +12,7 @@ export default function HeroSection() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
   
   // References for GSAP animations
   const heroRef = useRef<HTMLElement>(null);
@@ -27,6 +28,9 @@ export default function HeroSection() {
   
   useEffect(() => {
     setIsMounted(true);
+    
+    // Check if the device is mobile or tablet
+    setIsMobileOrTablet(window.matchMedia('(max-width: 1024px)').matches);
     
     const handleMouseMove = (e: MouseEvent) => {
       setPrevMousePosition(mousePosition);
@@ -115,6 +119,9 @@ export default function HeroSection() {
 
   useEffect(() => {
     if (!isMounted) return;
+    
+    // Skip creating cursor trail on mobile or tablet devices
+    if (isMobileOrTablet) return;
     
     // Create cursor trail elements
     const trailContainer = document.createElement('div');
@@ -213,7 +220,7 @@ export default function HeroSection() {
         document.body.removeChild(trailContainer);
       }
     };
-  }, [isMounted]); // Only depend on isMounted, not mousePosition
+  }, [isMounted]);
 
   useEffect(() => {
     if (!isMounted) return;
@@ -275,6 +282,9 @@ export default function HeroSection() {
   // Effect for handling glow effect - lines removed to keep a clean background
   useEffect(() => {
     if (!isMounted || !heroRef.current) return;
+    
+    // Skip creating glow effect on mobile or tablet devices
+    if (isMobileOrTablet) return;
     
     // Create container for the effect
     const glowContainer = document.createElement('div');
@@ -373,7 +383,9 @@ export default function HeroSection() {
         className="absolute inset-0 opacity-30 z-0"
         style={{
           background: isMounted 
-            ? `radial-gradient(circle at ${50 + mousePosition.x / window.innerWidth * 20}% ${50 + mousePosition.y / window.innerHeight * 20}%, rgba(138, 63, 252, 0.15) 0%, rgba(13, 9, 31, 0) 70%)` 
+            ? (isMobileOrTablet
+              ? 'radial-gradient(circle at 50% 50%, rgba(138, 63, 252, 0.15) 0%, rgba(13, 9, 31, 0) 70%)'
+              : `radial-gradient(circle at ${50 + mousePosition.x / window.innerWidth * 20}% ${50 + mousePosition.y / window.innerHeight * 20}%, rgba(138, 63, 252, 0.15) 0%, rgba(13, 9, 31, 0) 70%)`)
             : 'radial-gradient(circle at 50% 50%, rgba(138, 63, 252, 0.15) 0%, rgba(13, 9, 31, 0) 70%)'
         }}
       />

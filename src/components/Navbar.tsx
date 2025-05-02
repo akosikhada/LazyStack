@@ -29,7 +29,7 @@ export default function Navbar() {
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'ai-tools', 'design-tools', 'dev-tools'];
+      const sections = ['hero', 'dev-tools', 'design-tools', 'ai-tools'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -74,9 +74,9 @@ export default function Navbar() {
             <div className="flex space-x-1">
               {/* Each navigation item with hover effect */}
               <button
-                onClick={() => scrollToSection('ai-tools')}
+                onClick={() => scrollToSection('dev-tools')}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center gap-1.5
-                  ${isActive('ai-tools') 
+                  ${isActive('dev-tools') 
                     ? 'text-white bg-purple-700/30 shadow-glow' 
                     : 'text-gray-300 hover:text-white hover:bg-purple-700/30 hover:shadow-glow'
                   }`}
@@ -96,9 +96,9 @@ export default function Navbar() {
                 Design
               </button>
               <button
-                onClick={() => scrollToSection('dev-tools')}
+                onClick={() => scrollToSection('ai-tools')}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center gap-1.5
-                  ${isActive('dev-tools') 
+                  ${isActive('ai-tools') 
                     ? 'text-white bg-purple-700/30 shadow-glow' 
                     : 'text-gray-300 hover:text-white hover:bg-purple-700/30 hover:shadow-glow'
                   }`}
@@ -114,7 +114,7 @@ export default function Navbar() {
                 variant="outline"
                 className="border-purple-500/30 bg-purple-500/10 text-white hover:bg-purple-500/30 hover:border-purple-400 hover:shadow-glow rounded-full flex items-center gap-2 text-sm transition-all duration-200"
                 size="sm"
-                onClick={() => window.open('https://github.com', '_blank')}
+                onClick={() => window.open('https://github.com/znarf-y/LazyStack')}
               >
                 <Github className="h-4 w-4" />
                 <span>Source Code</span>
@@ -160,9 +160,9 @@ export default function Navbar() {
         >
           <div className={`px-2 pt-2 pb-3 space-y-1 transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-4'}`}>
             <button
-              onClick={() => scrollToSection('ai-tools')}
+              onClick={() => scrollToSection('dev-tools')}
               className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-200 flex items-center gap-2
-                ${isActive('ai-tools') 
+                ${isActive('dev-tools') 
                   ? 'text-white bg-purple-700/30 shadow-glow' 
                   : 'text-white hover:bg-purple-700/30 hover:shadow-glow'
                 }`}
@@ -182,9 +182,9 @@ export default function Navbar() {
               Design
             </button>
             <button
-              onClick={() => scrollToSection('dev-tools')}
+              onClick={() => scrollToSection('ai-tools')}
               className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-200 flex items-center gap-2
-                ${isActive('dev-tools') 
+                ${isActive('ai-tools') 
                   ? 'text-white bg-purple-700/30 shadow-glow' 
                   : 'text-white hover:bg-purple-700/30 hover:shadow-glow'
                 }`}
@@ -197,7 +197,7 @@ export default function Navbar() {
                 variant="outline"
                 className="w-full border-purple-500/30 bg-purple-500/10 text-white hover:bg-purple-500/30 hover:border-purple-400 hover:shadow-glow rounded-md flex items-center justify-center gap-2 text-sm transition-all duration-200"
                 size="sm"
-                onClick={() => window.open('https://github.com', '_blank')}
+                onClick={() => window.open('https://github.com/znarf-y/LazyStack')}
               >
                 <Github className="h-4 w-4" />
                 <span>Source Code</span>

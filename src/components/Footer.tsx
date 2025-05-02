@@ -83,13 +83,15 @@ export default function Footer() {
               workflow and boost productivity in one place.
             </p>
             <div className="flex space-x-4">
-              <Button
-                variant="outline"
-                size="icon"
-                className="w-9 h-9 rounded-full border-purple-500/30 bg-purple-500/10 text-white hover:bg-purple-500/30 hover:border-purple-400 hover:shadow-glow transition-all duration-300"
-              >
-                <Github className="h-4 w-4" />
-              </Button>
+              <a href="https://github.com/znarf-y/LazyStack" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="w-9 h-9 rounded-full border-purple-500/30 bg-purple-500/10 text-white hover:bg-purple-500/30 hover:border-purple-400 hover:shadow-glow transition-all duration-300"
+                >
+                  <Github className="h-4 w-4" />
+                </Button>
+              </a>
               <Button
                 variant="outline"
                 size="icon"
@@ -154,10 +156,10 @@ export default function Footer() {
                   <Mail className="h-3.5 w-3.5 text-purple-400" />
                 </div>
                 <a
-                  href="mailto:hello@lazystack.dev"
+                  href="mailto:franzjeremysenora@gmail.com"
                   className="text-gray-300 hover:text-purple-400 text-sm transition-colors duration-200"
                 >
-                  hello@lazystack.dev
+                  franzjeremysenora@gmail.com
                 </a>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">

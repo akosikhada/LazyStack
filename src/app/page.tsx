@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 export default function Page() {
   // AI Development Tools
-  const aiTools = [
+  const devTools = [
     {
       title: "Cursor AI",
       description: "Cursor lets you write code using instructions. Update entire classes or functions with a simple prompt.",
@@ -119,35 +119,134 @@ export default function Page() {
       highlight: "AI Engineer",
       tryNowLink: "https://www.augmentcode.com/",
     },
+    {
+      title: "Copycoder AI",
+      description: "Built for the next generation of AI coders. Upload images of full applications, UI mockups, or custom designs and use our generated prompts to build your apps faster.",
+      imageIcon: "/assets/images/copycoder-icon.png",
+      category: "Development",
+      highlight: "Design System",
+      tryNowLink: "https://copycoder.ai/",
+    },
+    {
+      title: "MetaGPT",
+      description: "MetaGPT generates user stories, competitive analyses, requirements, data structures, APIs, documents, and more.",
+      imageIcon: "/assets/images/metagpt-icon.png",
+      category: "Development",
+      highlight: "Design System",
+      tryNowLink: "https://www.deepwisdom.ai/",
+    },
   ];
 
   // Design & UI Tools
   const designTools = [
     {
-      title: "Design System Kit",
-      description: "Complete design system management solution",
-      icon: LayoutGrid,
+      title: "Modulify AI",
+      description: "Modulify AI streamlines web design with AI-generated sitemaps, wireframes, and premium styles.",
+      imageIcon: "/assets/images/modulify-icon.png",
       category: "UI/UX",
-      highlight: "All-in-One",
+      highlight: "Design System",
+      tryNowLink: "https://modulify.ai/",
     },
     {
-      title: "Component Library",
-      description: "Extensive collection of reusable components",
-      icon: Palette,
-      category: "Development",
-      highlight: "Time-Saver",
+      title: "Motiff",
+      description: "Motiff is an AI-powered UI design tool.Speed up workflow. Design with elegance.",
+      imageIcon: "/assets/images/motiff-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://motiff.com/",
     },
     {
-      title: "Asset Manager",
-      description: "Organize and optimize design assets",
-      icon: LayoutGrid,
-      category: "Resources",
-      highlight: "Well Organized",
+      title: "Dora",
+      description: "Start with AI,  ship 3D animated sites with zero code.",
+      imageIcon: "/assets/images/dora-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://dora.run/",
+    },
+    {
+      title: "Phase",
+      description: "Phase is bringing easy and collaborative animation to product designers.",
+      imageIcon: "/assets/images/phase-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.phase.com/",
+    },
+    {
+      title: "Flutterflow",
+      description: "FlutterFlow helps you build high quality, customized apps quickly.",
+      imageIcon: "/assets/images/flutterflow-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.flutterflow.io/",
+    },
+    {
+      title: "Kittl",
+      description: "Create complex designs easily with powerful, drag-and-drop tools. Professional templates. Every design need, covered.",
+      imageIcon: "/assets/images/kittl-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.kittl.com/",
+    },
+    {
+      title: "Midjourney",
+      description: "Midjourney is an independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species.",
+      imageIcon: "/assets/images/midjourney-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.midjourney.com/",
+    },
+    {
+      title: "Recraft",
+      description: "AI   for pro designers. Premium image generation and editing tool.",
+      imageIcon: "/assets/images/recraft-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.recraft.ai/",
+    },
+    {
+      title: "Uizard",
+      description: "Turn product ideas into concepts instantly with GenAI. Visualize, communicate, and iterate on wireframes and prototypes in minutes.",
+      imageIcon: "/assets/images/uizard-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://uizard.io/",
+    },
+    {
+      title: "Framer",
+      description: "Just publish it with Framer.The website builder loved by designers.",
+      imageIcon: "/assets/images/framer-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.framer.com/",
+    },
+    {
+      title: "Leonardo.Ai",
+      description: "Leonardo is a Generative AI content production suite.",
+      imageIcon: "/assets/images/leonardo-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://leonardo.ai/",
+    },
+    {
+      title: "Relume",
+      description: "Use AI as your design ally, not as a replacement. Effortlessly generate sitemaps and wireframes for marketing websites in minutes with Relume's AI websites-in all minutes.",
+      imageIcon: "/assets/images/relume-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://relume.io/",
+    },
+    {
+      title: "Khroma",
+      description: "Khroma uses AI to learn which colors you like and creates limitless palettes for you to discover, search, and save.",
+      imageIcon: "/assets/images/khroma-icon.png",
+      category: "UI/UX",
+      highlight: "Design System",
+      tryNowLink: "https://www.khroma.co/",
     },
   ];
 
   // Programming & Development Tools
-  const devTools = [
+  const aiTools = [
     {
       title: "Code Repository",
       description: "Version control and collaboration platform",
@@ -169,6 +268,7 @@ export default function Page() {
       category: "Backend",
       highlight: "Enterprise Grade",
     },
+
   ];
 
   return (
@@ -177,11 +277,11 @@ export default function Page() {
       <div id="hero">
         <HeroSection />
       </div>
-      <div id="ai-tools">
+      <div id="dev-tools">
         <ToolCategorySection
           title="AI Development Tools"
           description="Cutting-edge AI tools to enhance your development workflow"
-          tools={aiTools}
+          tools={devTools}
           showViewMore={true}
           initialVisibleCount={6}
         />
@@ -192,13 +292,15 @@ export default function Page() {
           description="Professional design tools for creating stunning user interfaces"
           tools={designTools}
           bgColor="#0a0412"
+          showViewMore={true}
+          initialVisibleCount={6}
         />
       </div>
-      <div id="dev-tools">
+      <div id="ai-tools">
         <ToolCategorySection
-          title="Programming & Development"
+          title="AI Tools"
           description="Essential tools for efficient programming and development"
-          tools={devTools}
+          tools={aiTools}
         />
       </div>
       <Footer />
