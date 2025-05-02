@@ -42,12 +42,14 @@ LazyStack is a modern web platform showcasing curated developer tools, focusing 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/znarf-y/LazyStack.git
    cd LazyStack
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -55,6 +57,7 @@ LazyStack is a modern web platform showcasing curated developer tools, focusing 
    ```
 
 3. Run the development server:
+
    ```bash
    npm run dev
    # or
@@ -129,8 +132,21 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For questions or feedback, please open an issue or contact the maintainer.
 
----
+## 👥 Developer/s
 
-<div align="center">
-  <p>Made with ❤️ by znarf-y</p>
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <b>akosikhada</b>
+      <br />
+      Frontend Developer, UI/UX Designer
+    </td>
+    <td align="center">
+      <b>znarf-y</b>
+      <br />
+      Frontend Developer, UI/UX Designer
+    </td>
+  </tr>
+</table>
+
+---
