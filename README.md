@@ -1,8 +1,8 @@
 # LazyStack
 
 <div align="center">
-  <img src="./public/assets/images/logo.png" alt="LazyStack Logo" width="200"/>
-  <p><em>The Ultimate Developer Tools Collection</em></p>
+  <img src="./public/images/logo.png" alt="LazyStack Logo" width="200" />
+  <h3><i>"Developer's Treasure Trove"</i></h3>
   
   ![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=flat&logo=next.js)
   ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react)
@@ -13,31 +13,57 @@
 
 ## 🚀 Overview
 
-LazyStack is a modern web platform showcasing curated developer tools, focusing on AI-powered development solutions, design resources, and programming utilities. The site features a sleek, responsive interface with dynamic animations and comprehensive tool listings to help developers discover and access the best resources for their workflow.
+LazyStack is a modern web platform showcasing a curated collection of developer tools, with a focus on AI-powered development solutions, design resources, and infrastructure utilities. The site features a sleek, responsive interface with interactive animations, dynamic content loading, and comprehensive tool listings organized by categories. Each tool is presented with detailed descriptions, benefits, and direct links, helping developers discover and access resources that can enhance their productivity and workflow.
 
 ## ✨ Features
 
-- **AI Development Tools** - Discover cutting-edge AI-powered tools like Cursor AI, GitHub Copilot, and Devin AI
-- **Design & UI Resources** - Explore professional design tools for creating stunning user interfaces
-- **Programming & Development Utilities** - Access essential tools for efficient programming and development
-- **Modern UI/UX** - Enjoy a responsive design with smooth animations and intuitive navigation
-- **Dark Mode Support** - Switch between light and dark themes for comfortable viewing
+- **AI Development Tools Collection** - Discover and explore cutting-edge AI-powered development tools with detailed descriptions and benefits
+- **Design & UI Resources** - Curated collection of professional design tools for creating stunning user interfaces
+- **Infrastructure & Deployment Tools** - Access essential tools for modern development infrastructure and deployment
+- **Responsive Design** - Enjoy a mobile-friendly interface with smooth navigation and modern UI
+- **Tool Categorization & Filtering** - Easily browse tools organized by category with detailed information
+- **Modern UI with Animations** - Experience a sleek user interface with smooth transitions and visual effects
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Radix UI
-- **Animations**: GSAP
-- **State Management**: React Hooks
-- **Backend Integration**: Supabase
+<div align="center">
+  <table>
+    <tbody>
+      <tr>
+        <td align="center"><img src="./public/icons-for-readme/css.png" alt="CSS" title="CSS" width="50" height="50"><br>CSS</td>
+        <td align="center"><img src="./public/icons-for-readme/tailwind.png" alt="Tailwind CSS" title="Tailwind CSS" width="50" height="50"><br>Tailwind CSS</td>
+        <td align="center"><img src="./public/icons-for-readme/js.png" alt="JavaScript" title="JavaScript" width="50" height="50"><br>JavaScript</td>
+        <td align="center"><img src="./public/icons-for-readme/react.png" alt="React JS" title="React JS" width="50" height="50"><br>React</td>
+        <td align="center"><img src="./public/icons-for-readme/next.png" alt="Next JS" title="Next JS" width="50" height="50"><br>Next.js</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="./public/icons-for-readme/ts.png" alt="TypeScript" title="TypeScript" width="50" height="50"><br>TypeScript</td>
+        <td align="center"><img src="./public/icons-for-readme/shadcn.png" alt="Shadcn/ui" title="Shadcn/ui" width="50" height="50"><br>Shadcn/ui</td>
+        <td align="center"><img src="./public/icons-for-readme/radix.png" alt="Radix UI" title="Radix UI" width="50" height="50"><br>Radix UI</td>
+        <td align="center"><img src="./public/icons-for-readme/gsap.png" alt="GSAP" title="GSAP" width="50" height="50"><br>GSAP</td>
+        <td align="center"><img src="./public/icons-for-readme/supabase.png" alt="Supabase" title="supabase" width="50" height="50"><br>Supabase</td>
+      </tr>
+      <tr>
+        <td align="center"><img src="./public/icons-for-readme/git.png" alt="Git" title="Git" width="50" height="50"><br>Git</td>
+        <td align="center"><img src="./public/icons-for-readme/github.png" alt="Github" title="Github" width="50" height="50"><br>GitHub</td>
+        <td align="center"><img src="./public/icons-for-readme/npm.png" alt="NPM" title="NPM" width="50" height="50"><br>NPM</td>
+        <td align="center"><img src="./public/icons-for-readme/vscode.png" alt="VSCode" title="VSCode" width="50" height="50"><br>VSCode</td>
+        <td align="center"><img src="./public/icons-for-readme/vercel.png" alt="Vercel" title="Vercel" width="50" height="50"><br>Vercel</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## 🏃‍♂️ Getting Started
 
 ### Prerequisites
 
 - Node.js 18+ and npm/yarn
+- Git installed on your machine
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- Basic knowledge of React and JavaScript
+- (Optional) VS Code or another code editor with TypeScript support
+- (Optional) Yarn for faster dependency installation
 
 ### Installation
 
@@ -65,54 +91,6 @@ LazyStack is a modern web platform showcasing curated developer tools, focusing 
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 📂 Project Structure
-
-```
-lazystack/
-├── public/            # Static assets
-├── src/
-│   ├── app/           # Next.js app router
-│   ├── components/    # React components
-│   │   ├── ui/        # UI components
-│   │   └── ...        # Feature components
-│   └── lib/           # Utility functions and shared code
-├── .next/             # Next.js build output
-├── node_modules/      # Dependencies
-└── ...                # Config files
-```
-
-## 🧩 Key Components
-
-- **HeroSection** - Dynamic, animated hero section with cursor effects
-- **ToolCategorySection** - Showcases different categories of developer tools
-- **ToolCard** - Individual tool display with details and links
-- **Navbar** - Responsive navigation with theme switcher
-- **Footer** - Site information and additional links
-
-## 🎨 Customization
-
-### Adding New Tools
-
-To add new tools to the collection, edit the appropriate array in `src/app/page.tsx`:
-
-```typescript
-const newTool = {
-  title: "Tool Name",
-  description: "Tool description",
-  imageIcon: "/assets/images/tool-icon.png",
-  category: "Category",
-  highlight: "Highlight Feature",
-  tryNowLink: "https://tool-url.com/",
-};
-
-// Add to appropriate array
-aiTools.push(newTool);
-```
-
-### Styling
-
-The project uses Tailwind CSS for styling. Global styles are defined in `src/app/globals.css`.
 
 ## 📝 License
 
