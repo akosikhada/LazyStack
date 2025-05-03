@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { LoadingProvider } from "@/context/Loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +11,8 @@ export const metadata: Metadata = {
   title: "LazyStack - The Ultimate Developer Tools Collection",
   description: "A modern full-stack starter template powered by Next.js",
   icons: {
-    icon: '../src/app/favicon.ico',
-  }
+    icon: "../src/app/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -23,8 +24,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
       <body className={inter.className}>
-        {children}
-        <TempoInit />
+        <LoadingProvider>
+          {children}
+          <TempoInit />
+        </LoadingProvider>
       </body>
     </html>
   );
