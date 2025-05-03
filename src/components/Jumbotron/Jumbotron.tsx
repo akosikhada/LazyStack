@@ -74,7 +74,7 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl w-full px-4 sm:px-6 lg:px-8 mt-0 pt-0">
+      <div className="relative z-10 max-w-6xl w-full px-4 sm:px-6 lg:px-8 mt-0 pt-10 sm:pt-0">
         <div className="flex flex-col items-center justify-center">
           <div
             ref={badgeRef}
