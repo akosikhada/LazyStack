@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import { ToolCardProps } from "@/types/tools";
+import { useTheme } from "next-themes";
 
 export default function ToolCard({
   title,
@@ -17,6 +18,7 @@ export default function ToolCard({
   highlight = "Popular Choice",
   benefits = ["Fast", "Reliable", "Updated"],
 }: ToolCardProps) {
+  const { theme } = useTheme();
   const cardRef = useRef<HTMLDivElement>(null);
   const iconRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -92,7 +94,11 @@ export default function ToolCard({
   return (
     <div
       ref={cardRef}
-      className="group bg-[#13091f] rounded-lg overflow-hidden flex flex-col h-full border border-[#1a1a1f]"
+      className={`group rounded-lg overflow-hidden flex flex-col h-full transition-colors duration-300 ${
+        theme === "dark" 
+          ? "bg-[#13091f] border border-[#1a1a1f]" 
+          : "bg-white border border-gray-200 shadow-sm"
+      }`}
       style={{ minHeight: "400px" }} // Ensure consistent minimum height
     >
       {/* Card header with accent gradient */}
@@ -106,7 +112,11 @@ export default function ToolCard({
         <div className="flex justify-between items-start mb-6 h-12">
           <div
             ref={iconRef}
-            className="rounded-full bg-[#1a1a1f] text-[#8a3ffc] flex items-center justify-center w-12 h-12 overflow-hidden relative p-0"
+            className={`rounded-full flex items-center justify-center w-12 h-12 overflow-hidden relative p-0 ${
+              theme === "dark" 
+                ? "bg-[#1a1a1f] text-[#8a3ffc]" 
+                : "bg-purple-100 text-purple-600"
+            }`}
           >
             {imageIcon ? (
               <Image
@@ -126,20 +136,28 @@ export default function ToolCard({
               <Icon size={24} className="absolute inset-0 m-auto" />
             ) : null}
           </div>
-          <span className="text-xs px-3 py-1 rounded-full bg-[#1a1a1f] text-white">
+          <span className={`text-xs px-3 py-1 rounded-full ${
+            theme === "dark" 
+              ? "bg-[#1a1a1f] text-white" 
+              : "bg-gray-100 text-gray-700"
+          }`}>
             {category}
           </span>
         </div>
 
         <div ref={contentRef} className="flex flex-col flex-grow">
           {/* Title with fixed height */}
-          <h3 className="text-xl font-semibold text-white h-14 mb-2 group-hover:text-[#a56eff] transition-colors duration-300 flex items-start">
+          <h3 className={`text-xl font-semibold h-14 mb-2 group-hover:text-[#a56eff] transition-colors duration-300 flex items-start ${
+            theme === "dark" ? "text-white" : "text-gray-900"
+          }`}>
             {title}
           </h3>
 
           {/* Description with fixed height */}
           <div className="h-20 mb-4">
-            <p className="text-gray-400 line-clamp-3">{description}</p>
+            <p className={`line-clamp-3 ${
+              theme === "dark" ? "text-gray-400" : "text-gray-600"
+            }`}>{description}</p>
           </div>
 
           {/* Feature indicators */}
@@ -147,11 +165,15 @@ export default function ToolCard({
             {benefits.map((benefit, i) => (
               <div
                 key={i}
-                className="flex items-center space-x-1 px-3 py-1 rounded-md bg-[#0a0412] text-purple-300 border-b border-purple-500/50 transition-all duration-300 group hover:text-purple-200 hover:border-purple-400"
+                className={`flex items-center space-x-1 px-3 py-1 rounded-md transition-all duration-300 group hover:text-purple-600 text-xs font-medium ${
+                  theme === "dark"
+                    ? "bg-[#0a0412] text-purple-300 border-b border-purple-500/50 hover:border-purple-400"
+                    : "bg-purple-50 text-purple-700 border-b border-purple-300/50 hover:border-purple-500"
+                }`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-3 h-3 text-purple-400 group-hover:text-purple-300"
+                  className="w-3 h-3 text-purple-400 group-hover:text-purple-500"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -161,7 +183,7 @@ export default function ToolCard({
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-xs font-medium">{benefit}</span>
+                <span>{benefit}</span>
               </div>
             ))}
           </div>
@@ -169,12 +191,20 @@ export default function ToolCard({
           {/* Fixed position for bottom content */}
           <div className="mt-auto flex items-center justify-between">
             <div className="flex items-center">
-              <span className="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-md text-xs font-medium border-l-2 border-purple-500">
+              <span className={`px-3 py-1 rounded-md text-xs font-medium border-l-2 border-purple-500 ${
+                theme === "dark"
+                  ? "bg-purple-900/30 text-purple-300"
+                  : "bg-purple-100 text-purple-700"
+              }`}>
                 {highlight}
               </span>
             </div>
             <Button
-              className="text-white bg-[#1a1a1f] hover:bg-[#8a3ffc] px-4 py-2 h-auto rounded-md text-sm transition-colors duration-300"
+              className={`h-auto rounded-md text-sm transition-colors duration-300 ${
+                theme === "dark"
+                  ? "text-white bg-[#1a1a1f] hover:bg-[#8a3ffc]"
+                  : "text-white bg-purple-600 hover:bg-purple-700"
+              }`}
               onClick={() => window.open(tryNowLink, "_blank")}
             >
               Try Now

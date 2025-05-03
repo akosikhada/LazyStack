@@ -7,8 +7,11 @@ import Footer from "@/components/Footer/Footer";
 import { Database, Github } from "lucide-react";
 import { developmentTools, designTools, aiTools } from "@/constants/data";
 import { Tool, ToolData } from "@/types/tools";
+import { useTheme } from "next-themes";
 
 export default function Page() {
+  const { theme } = useTheme();
+
   // Map data to match the Tool interface by converting icon strings to imageIcon
   // This preserves the original order from data.ts
   const mappedDevTools: Tool[] = developmentTools.map((tool: ToolData) => ({
@@ -33,26 +36,23 @@ export default function Page() {
 
   // Map aiTools which might have Lucide icons instead of string paths
   const mappedAiTools: Tool[] = aiTools.map((tool: ToolData) => {
-    // Determine which icon to use based on the tool's icon value
-    let iconComponent;
-    if (tool.icon === "Github") {
-      iconComponent = Github;
-    } else if (tool.icon === "Database") {
-      iconComponent = Database;
-    }
-
     return {
       title: tool.title,
       description: tool.description,
-      icon: iconComponent, // Use the matched Lucide icon component
+      imageIcon: typeof tool.icon === "string" ? tool.icon : undefined,
       category: tool.category,
       benefits: tool.benefits,
       highlight: tool.highlight,
+      tryNowLink: tool.link,
     };
   });
 
+  // Determine section background colors based on theme
+  const designBgColor = theme === "dark" ? "#0c0914" : "#f0f0f7";
+  const aiBgColor = theme === "dark" ? "#080810" : "#e8e8f0";
+
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
       <Navbar />
       <div id="hero">
         <HeroSection />
@@ -75,7 +75,7 @@ export default function Page() {
           title="Design & UI Tools"
           description="Explore innovative design tools that streamline creative workflows and empower designers with AI assistance."
           tools={mappedDesignTools}
-          bgColor="#0c0914"
+          bgColor={designBgColor}
           showViewMore={true}
           initialVisibleCount={6}
         />
@@ -84,11 +84,12 @@ export default function Page() {
       {/* Infrastructure Tools Section */}
       <div id="ai-tools">
         <ToolCategorySection
-          title="Infrastructure & Deployment"
-          description="Essential tools for modern development infrastructure, deployment, and operations."
+          title="AI Tools"
+          description="Cutting-edge AI tools that revolutionize development workflows, enhance operational efficiency, and power next-generation applications."
           tools={mappedAiTools}
-          bgColor="#080810"
-          showViewMore={false}
+          bgColor={aiBgColor}
+          showViewMore={true}
+          initialVisibleCount={6}
         />
       </div>
 

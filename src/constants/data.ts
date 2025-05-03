@@ -1,3 +1,5 @@
+import { Kiwi_Maru } from "next/font/google";
+
 export const developmentTools = [
   {
     title: "Bolt",
@@ -257,30 +259,103 @@ export const designTools = [
 
 export const aiTools = [
   {
-    title: "Code Repository",
+    title: "ChatGPT",
     description:
-      "Modern version control platforms with advanced collaboration features, enabling teams to manage code changes, track issues, and coordinate development efforts with automated workflows, code reviews, and continuous integration capabilities.",
-    icon: "Github",
-    category: "Development",
-    benefits: ["Synchronized", "Transparent", "Integrated"],
-    highlight: "Collaborative Workflow",
-  },
-  {
-    title: "Container Platform",
-    description:
-      "Sophisticated orchestration systems for deploying, scaling, and managing containerized applications, providing infrastructure abstraction, automated scaling, service discovery, and declarative configuration for complex microservice architectures.",
-    icon: "Database",
-    category: "DevOps",
+      "OpenAI’s mission is to ensure that artificial general intelligence benefits all of humanity.",
+    icon: "/assets/ai/chatgpt-icon.png",
+    category: "AI",
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
+    link: "https://chatgpt.com/",
   },
   {
-    title: "Backend Framework",
+    title: "DeepSeek",
     description:
-      "Enterprise-grade server-side development frameworks that provide standardized patterns for building secure, scalable, and maintainable APIs and services, with built-in support for authentication, database access, caching, and message processing.",
-    icon: "Database",
-    category: "Backend",
-    benefits: ["Systematic", "Resilient", "Fortified"],
-    highlight: "Robust Architecture",
+      "Unravel the mystery of AGI with curiosity. Answer the essential question with long-termism.",
+    icon: "/assets/ai/deepseek-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://deepseek.com/",
+  },
+  {
+    title: "Gemini",
+    description:
+      "We're the Gemini app team, your inside source for product news, tips & tricks, and unfiltered enthusiasm.  ",
+    icon: "/assets/ai/meta-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://gemini.google.com/",
+  },
+  {
+    title: "Claude",
+    description:
+      "Claude is a powerful AI-powered chatbot that can help you with a wide range of tasks, from answering questions to generating content.",
+    icon: "/assets/ai/anthropic-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://claude.ai/",
+  },
+  {
+    title: "v0",
+    description:
+      "v0 converts natural language descriptions into code and UI. Build landing pages, full-stack apps, and more.",
+    icon: "/assets/ai/v0-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://v0.dev/",
+  },
+  {
+    title: "Copilot",
+    description:
+      "Microsoft Copilot is your companion to inform, entertain, and inspire. Get advice, feedback, and straightforward answers.",
+    icon: "/assets/ai/copilot-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://copilot.microsoft.com/",
+  },
+  {
+    title: "Grok",
+    description:
+      "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more.",
+    icon: "/assets/ai/grok-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://grok.com/",
+  },
+  {
+    title: "Tabnine",
+    description:
+      "Tabnine is the world’s most contextually aware AI software development platform, helping mature engineering teams speed up and simplify their entire development process.",
+    icon: "/assets/ai/tabnine-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://tabnine.com/",
+  },
+  {
+    title: "Github Copilot",
+    description:
+      "GitHub Copilot is an AI coding assistant that helps you write code faster and with less effort, allowing you to focus more energy on problem solving and collaboration.",
+    icon: "/assets/ai/github-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://github.com/features/copilot",
+  },
+  {
+    title: "Kimi.ai",
+    description:
+      "Built by Moonshot AI to empower everyone to be superhuman.",
+    icon: "/assets/ai/kimi-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://kimi.ai/",
   },
 ];
