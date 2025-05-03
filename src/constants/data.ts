@@ -1,0 +1,286 @@
+export const developmentTools = [
+  {
+    title: "Bolt",
+    description:
+      "Bolt.new employs generative AI to democratize web application development through a declarative approach. Developers describe desired functionality in natural language, and Bolt translates these descriptions into fully-functional, production-ready applications with clean architecture and maintainable code.",
+    icon: "/assets/development/bolt-icon.png",
+    category: "Development",
+    benefits: ["Intuitive", "Comprehensive", "Swift"],
+    highlight: "Natural Language Dev",
+    link: "https://bolt.new/",
+  },
+  {
+    title: "Devin AI",
+    description:
+      "Devin represents a breakthrough in autonomous software engineering, combining planning, execution, and debugging capabilities within a single AI system. It demonstrates remarkable agency by breaking down complex development tasks into logical sequences, writing code, diagnosing failures, and iterating toward solutions with minimal human guidance.",
+    icon: "/assets/development/cognition-icon.png",
+    category: "Development",
+    benefits: ["Independent", "Methodical", "Adaptive"],
+    highlight: "Autonomous Engineering",
+    link: "https://devin.ai/",
+  },
+  {
+    title: "CopyCoder",
+    description:
+      "CopyCoder AI specializes in translating visual designs into functional code through advanced computer vision and code generation techniques. It can analyze UI mockups, design system specifications, or even screenshots of existing applications to generate accurate, production-ready implementations that faithfully preserve visual fidelity and interaction patterns.",
+    icon: "/assets/development/copycoder-icon.png",
+    category: "Development",
+    benefits: ["Perceptive", "Authentic", "Expedient"],
+    highlight: "Design-to-Code",
+    link: "https://copycoder.ai/",
+  },
+  {
+    title: "Cursor",
+    description:
+      "Cursor integrates cutting-edge AI into a polished IDE, empowering developers to write, refine, and transform code through natural language instructions. Its context-aware assistance understands your entire codebase to deliver precise completion suggestions and enable complex code operations with simple prompts.",
+    icon: "/assets/development/cursor-icon.png",
+    category: "Development",
+    benefits: ["Intuitive", "Precise", "Efficient"],
+    highlight: "Intelligent Coding",
+    link: "https://www.cursor.com/",
+  },
+  {
+    title: "Firebase Studio",
+    description:
+      "Firebase Studio redefines full-stack development by integrating specialized AI agents throughout the development lifecycle. Each agent possesses deep expertise in a specific domain—from database architecture to front-end implementation—and they coordinate seamlessly to build cohesive applications with Firebase as the scalable backend foundation.",
+    icon: "/assets/development/firebasestudio-icon.png",
+    category: "Development",
+    benefits: ["Cohesive", "Scalable", "Comprehensive"],
+    highlight: "Full-Stack Automation",
+    link: "https://firebase.studio/",
+  },
+  {
+    title: "MetaGPT",
+    description:
+      "MetaGPT elevates requirements engineering and software architecture by applying structured reasoning to transform vague product concepts into comprehensive development artifacts. It generates meticulous user stories, data models, API specifications, and component diagrams that provide development teams with a robust foundation for implementation.",
+    icon: "/assets/development/metagpt-icon.png",
+    category: "Development",
+    benefits: ["Methodical", "Comprehensive", "Foundational"],
+    highlight: "Comprehensive Planning",
+    link: "https://www.deepwisdom.ai/",
+  },
+  {
+    title: "Replit Agent",
+    description:
+      "Replit Agent transforms development velocity with conversational AI that can scaffold entire applications from high-level specifications. It abstracts the complexity of environment setup, dependency management, and boilerplate generation, allowing developers to focus solely on unique business logic and application design.",
+    icon: "/assets/development/replit-icon.png",
+    category: "Development",
+    benefits: ["Accelerated", "Streamlined", "Accessible"],
+    highlight: "Rapid Deployment",
+    link: "https://replit.com/",
+  },
+  {
+    title: "Tempolab",
+    description:
+      "Tempo bridges the gap between design and development with a visual React editor that combines the intuitive UX of design tools with the power of professional IDEs. Optimized for modern stacks like Vite and Tailwind, it enables real-time collaboration between designers, developers, and product managers on actual production code rather than design mockups.",
+    icon: "/assets/development/tempolab-icon.png",
+    category: "Development",
+    benefits: ["Integrated", "Visual", "Cohesive"],
+    highlight: "Design-Dev Synergy",
+    link: "https://www.tempo.new/",
+  },
+  {
+    title: "Trae",
+    description:
+      "Trae creates a symbiotic development environment where AI and human capabilities are optimally balanced. Its intelligent task orchestration analyzes each operation to determine whether human creativity or AI efficiency would yield superior results, then routes work accordingly for maximum productivity and quality.",
+    icon: "/assets/development/trae-icon.png",
+    category: "Development",
+    benefits: ["Harmonious", "Optimized", "Strategic"],
+    highlight: "Symbiotic Development",
+    link: "https://trae.ai/",
+  },
+  {
+    title: "Warp",
+    description:
+      "Warp is a modern, feature-rich IDE that combines the best of traditional IDEs with the flexibility of a terminal. It offers a seamless transition between code editing and terminal operations, allowing developers to write, test, and debug code directly from the same interface.",
+    icon: "/assets/development/warp-icon.png",
+    category: "Development",
+    benefits: ["Seamless", "Intuitive", "Powerful"],
+    highlight: "Terminal-Based IDE",
+    link: "https://www.warp.dev/",
+  },
+  {
+    title: "Windsurf",
+    description:
+      "Windsurf by Codeium revolutionizes the IDE experience with sophisticated AI that understands code at both semantic and structural levels. It leverages a proprietary Context Engine for multi-file awareness, enabling developers to execute complex refactoring operations across entire codebases with natural language directives.",
+    icon: "/assets/development/windsurf-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://codeium.com/",
+  },
+];
+
+export const designTools = [
+  {
+    title: "Dora",
+    description:
+      "Dora revolutionizes 3D web experiences by eliminating the traditional barriers of expertise in WebGL, Three.js, and animation programming. Its AI interprets natural language descriptions to generate sophisticated 3D scenes, interactive elements, and animation sequences that render efficiently across devices without requiring manual optimization.",
+    icon: "/assets/design/dora-icon.png",
+    category: "UI/UX",
+    benefits: ["Dimensional", "Accessible", "Universal"],
+    highlight: "Immersive Experiences",
+    link: "https://dora.run/",
+  },
+  {
+    title: "Figma",
+    description:
+      "Figma is a powerful design tool that allows designers to create, collaborate, and iterate on their designs. It offers a range of features for creating and editing designs, including a range of tools for creating and editing designs, as well as a range of features for collaborating on designs.",
+    icon: "/assets/design/figma-icon.png",
+    category: "UI/UX",
+    benefits: ["Collaborative", "Intuitive", "Powerful"],
+    highlight: "Collaborative Design",
+    link: "https://www.figma.com/",
+  },
+  {
+    title: "Flutterflow",
+    description:
+      "FlutterFlow accelerates cross-platform app development by combining a visual builder with the performance benefits of Flutter's native compilation. It enables teams to rapidly prototype and build production-ready applications with complex state management, API integrations, and authentication flows without sacrificing the performance advantages of compiled code.",
+    icon: "/assets/design/flutterflow-icon.png",
+    category: "UI/UX",
+    benefits: ["Universal", "Intuitive", "Performant"],
+    highlight: "Native Performance",
+    link: "https://www.flutterflow.io/",
+  },
+  {
+    title: "Framer",
+    description:
+      "Framer elevates website creation by combining the flexibility of a design tool with the functionality of a development platform. Its component-based approach allows designers to work visually while generating production-quality code, bridging the traditional gap between design fidelity and implementation reality.",
+    icon: "/assets/design/framer-icon.png",
+    category: "UI/UX",
+    benefits: ["Intuitive", "Modular", "Functional"],
+    highlight: "Visual Development",
+    link: "https://www.framer.com/",
+  },
+  {
+    title: "Khroma",
+    description:
+      "Khroma employs machine learning to analyze color preferences and generate personalized color palettes with mathematical precision. By understanding a designer's aesthetic sensibility through initial calibration, it delivers color combinations that maintain harmony and accessibility while reflecting individual creative preferences.",
+    icon: "/assets/design/khroma-icon.png",
+    category: "UI/UX",
+    benefits: ["Tailored", "Balanced", "Inclusive"],
+    highlight: "Color Intelligence",
+    link: "https://www.khroma.co/",
+  },
+  {
+    title: "Kittl",
+    description:
+      "Kittl empowers designers with sophisticated vector editing capabilities that are accessible through an intuitive drag-and-drop interface. It excels at typography-centric design, offering advanced effects, distressing, and transformation tools that would typically require complex manipulation in traditional design software.",
+    icon: "/assets/design/kittl-icon.png",
+    category: "UI/UX",
+    benefits: ["Precise", "Expressive", "Streamlined"],
+    highlight: "Typography Mastery",
+    link: "https://www.kittl.com/",
+  },
+  {
+    title: "Leonardo AI",
+    description:
+      "Leonardo AI provides a comprehensive ecosystem for generative content production, specializing in maintaining stylistic coherence across multiple assets. Its advanced model training capabilities allow design teams to create custom generators that reflect specific brand aesthetics or visual languages for consistent content creation at scale.",
+    icon: "/assets/design/leonardo-icon.png",
+    category: "UI/UX",
+    benefits: ["Adaptable", "Expansive", "Consistent"],
+    highlight: "Brand Consistency",
+    link: "https://leonardo.ai/",
+  },
+  {
+    title: "Midjourney",
+    description:
+      "Midjourney stands at the forefront of AI image generation with its distinctive aesthetic sensibility and remarkable composition capabilities. It excels at creating visually striking imagery with artistic coherence, allowing designers to rapidly visualize concepts that would otherwise require extensive photographic resources or illustration skills.",
+    icon: "/assets/design/midjourney-icon.png",
+    category: "UI/UX",
+    benefits: ["Creative", "Distinctive", "Immediate"],
+    highlight: "Visual Imagination",
+    link: "https://www.midjourney.com/",
+  },
+  {
+    title: "Modulify AI",
+    description:
+      "Modulify AI transforms web design workflows by applying generative AI to information architecture and visual design simultaneously. It generates comprehensive sitemaps based on business requirements, creates wireframes for each identified page, and applies cohesive visual styles that maintain brand consistency across complex sites.",
+    icon: "/assets/design/modulify-icon.png",
+    category: "UI/UX",
+    benefits: ["Systematic", "Thorough", "Harmonious"],
+    highlight: "Holistic Architecture",
+    link: "https://modulify.ai/",
+  },
+
+  {
+    title: "Motiff",
+    description:
+      "Motiff provides designers with an AI-augmented creative environment that balances creative control with computational efficiency. Its intelligent design engine understands visual hierarchy, composition principles, and accessibility requirements, offering suggestions that elevate design quality while preserving the designer's creative vision.",
+    icon: "/assets/design/motiff-icon.png",
+    category: "UI/UX",
+    benefits: ["Refined", "Empowering", "Intuitive"],
+    highlight: "Augmented Creativity",
+    link: "https://motiff.com/",
+  },
+  {
+    title: "Phase",
+    description:
+      "Phase reimagines animation workflows for product designers by introducing an intuitive system that bridges the gap between static designs and dynamic interactions. Its timeline-based approach allows designers to create sophisticated motion design without programming, while maintaining precision control over timing, easing, and interaction triggers.",
+    icon: "/assets/design/phase-icon.png",
+    category: "UI/UX",
+    benefits: ["Dynamic", "Intuitive", "Precise"],
+    highlight: "Fluid Animations",
+    link: "https://www.phase.com/",
+  },
+  {
+    title: "Recraft",
+    description:
+      "Recraft offers professional designers precise control over AI-generated imagery with an emphasis on production quality and design system integration. Unlike general-purpose image generators, it provides fine-grained control over visual elements and can maintain stylistic consistency across multiple generations, making it suitable for commercial design workflows.",
+    icon: "/assets/design/recraft-icon.png",
+    category: "UI/UX",
+    benefits: ["Refined", "Meticulous", "Consistent"],
+    highlight: "Precision Imagery",
+    link: "https://www.recraft.ai/",
+  },
+  {
+    title: "Relume",
+    description:
+      "Relume approaches AI design assistance as a collaborative tool rather than a replacement for human creativity. It specializes in information architecture and layout generation for marketing websites, creating logically structured sitemaps and wireframes that follow established UX patterns while allowing designers to maintain creative direction.",
+    icon: "/assets/design/relume-icon.png",
+    category: "UI/UX",
+    benefits: ["Supportive", "Strategic", "Structured"],
+    highlight: "Strategic Layouts",
+    link: "https://relume.io/",
+  },
+  {
+    title: "Uizard",
+    description:
+      "Uizard accelerates the early phases of product design by transforming conceptual inputs into interactive prototypes through generative AI. It can process everything from rough sketches to written requirements, creating wireframes and functional prototypes that serve as a concrete foundation for stakeholder feedback and iterative refinement.",
+    icon: "/assets/design/uizard-icon.png",
+    category: "UI/UX",
+    benefits: ["Conceptual", "Interactive", "Evolutionary"],
+    highlight: "Rapid Prototyping",
+    link: "https://uizard.io/",
+  },
+];
+
+export const aiTools = [
+  {
+    title: "Code Repository",
+    description:
+      "Modern version control platforms with advanced collaboration features, enabling teams to manage code changes, track issues, and coordinate development efforts with automated workflows, code reviews, and continuous integration capabilities.",
+    icon: "Github",
+    category: "Development",
+    benefits: ["Synchronized", "Transparent", "Integrated"],
+    highlight: "Collaborative Workflow",
+  },
+  {
+    title: "Container Platform",
+    description:
+      "Sophisticated orchestration systems for deploying, scaling, and managing containerized applications, providing infrastructure abstraction, automated scaling, service discovery, and declarative configuration for complex microservice architectures.",
+    icon: "Database",
+    category: "DevOps",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+  },
+  {
+    title: "Backend Framework",
+    description:
+      "Enterprise-grade server-side development frameworks that provide standardized patterns for building secure, scalable, and maintainable APIs and services, with built-in support for authentication, database access, caching, and message processing.",
+    icon: "Database",
+    category: "Backend",
+    benefits: ["Systematic", "Resilient", "Fortified"],
+    highlight: "Robust Architecture",
+  },
+];
