@@ -12,16 +12,16 @@ const designToolCount = designTools.length;
 const developmentToolCount = developmentTools.length;
 
 export const terminalContent = [
-  "Welcome to LazyStack - Your Ultimate Developer Toolkit Guide!",
-  ">> Connecting to LazyStack platform...",
-  ">> Successfully connected!",
-  ">> Loading available tool categories:",
-  `   • AI Tools: ${aiToolCount} tools available`,
-  `   • Design Tools: ${designToolCount} tools available`,
-  `   • Development Tools: ${developmentToolCount} tools available`,
-  ">> Lazy theme enabled",
-  ">> Purple accent color applied",
-  "LazyStack is ready to enhance your workflow.",
+  "Welcome to LazyStack",
+  ">> Initializing LazyStack...",
+  ">> Ready to supercharge your workflow!",
+  ">> Loading tools:",
+  `   • AI: ${aiToolCount} available`,
+  `   • Design: ${designToolCount} available`,
+  `   • Development: ${developmentToolCount} available`,
+  ">> Dark theme activated for optimal focus",
+  ">> Signature purple accent applied for visual impact",
+  ">> Ready. Let's build something amazing.",
 ];
 
 export const animationSettings = {
