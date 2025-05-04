@@ -111,6 +111,26 @@ export const developmentTools = [
     highlight: "Advanced Refactoring",
     link: "https://codeium.com/",
   },
+  {
+    title: "Yourware",
+    description:
+      "Vibe Coder's Instagram Don't Keep Your Code to Yourself - Share It With the World.",
+    icon: "/assets/development/yourware-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://yourware.so/",
+  },
+  {
+    title: "n8n",
+    description:
+      "n8n is a beast for automation. self-hosting and low-code make it a dev's dream. if you're not automating yet, you're working too hard.",
+    icon: "/assets/development/n8n-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://n8n.io/",
+  },
 ];
 
 export const designTools = [
@@ -255,6 +275,36 @@ export const designTools = [
     highlight: "Rapid Prototyping",
     link: "https://uizard.io/",
   },
+  {
+    title: "Ideogram",
+    description:
+      "Generate stunning images, explore creative ideas, and turn inspiration into reality with Ideogram.",
+    icon: "/assets/design/ideogram-icon.png",
+    category: "UI/UX",
+    benefits: ["Beautiful", "Responsive", "AI-Powered"],
+    highlight: "Beautiful, Responsive Websites",
+    link: "https://ideogram.ai/",
+  },
+  {
+    title: "Photogenius",
+    description:
+      "AI-Powered Art In One Click. Type anything. Get stunning visuals instantly. Perfect for brands, social media, and creative projects.",
+    icon: "/assets/design/photogenius-icon.png",
+    category: "UI/UX",
+    benefits: ["Beautiful", "Responsive", "AI-Powered"],
+    highlight: "Beautiful, Responsive Websites",
+    link: "https://www.photogenius.ai/",
+  },
+  {
+    title: "Nero",
+    description:
+      "Try now Photo Restoration You can use our AI to fix scratches, add colors, and enhance faces on your old photos in minutes.",
+    icon: "/assets/design/nero-icon.png",
+    category: "UI/UX",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://ai.nero.com/",
+  },
 ];
 
 export const aiTools = [
@@ -357,5 +407,75 @@ export const aiTools = [
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
     link: "https://kimi.ai/",
+  },
+  {
+    title: "Scout",
+    description:
+      "Scout is an AI agent with its own virtual computer. It takes you from 0 to 1 on deep research, coding, data analysis, and more. Start with a prompt and any files. Scout browses the web, runs terminal commands, edits code, and creates files on its virtual computer. Set it running on tasks that take minutes or hours, then come back later while Scout keeps going.",
+    icon: "/assets/ai/scout-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://scout.new/",
+  },
+  {
+    title: "Qodo",
+    description:
+      "Qodo (formerly Codium) is an agentic code integrity platform for reviewing, testing, and writing code, integrating AI across development workflows to strengthen code quality at every stage. Our agents are powered by a core platform that provides deep context awareness, enabling AI to understand the specific best practices of a codebase—and solve complex coding challenges more effectively.",
+    icon: "/assets/ai/qodo-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.qodo.ai/",
+  },
+  {
+    title: "Cline",
+    description:
+      "Cline has completely transformed the way I work as a developer. It's like having a highly skilled coding assistant available 24/7 right within my IDE.",
+    icon: "/assets/ai/cline-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://cline.bot/",
+  },
+  {
+    title: "Qwen",
+    description:
+      "ai chat — The free generative AI work assistant from Alibaba Qwen. Image and video understanding. Try Qwen Chat today! Free AI Chatbot with Qwen. Opensource free chatgpt. Your Free AI assistant. Brands: Qwen, Qwen2.5-Max, QwQ-32B.",
+    icon: "/assets/ai/qwen-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://chat.qwen.ai/",
+  },
+  {
+    title: "Manus",
+    description:
+      "Manus is a general AI agent that bridges minds and actions: it doesn't just think, it delivers results. Manus excels at various tasks in work and life, getting everything done while you rest.",
+    icon: "/assets/ai/manus-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://manus.im/",
+  },
+  {
+    title: "Augmented",
+    description:
+      "The Developer AI that deeply understands your codebase and how your team builds software. Augment puts your team’s collective knowledge at your fingertips.",
+    icon: "/assets/ai/augmented-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.augmentcode.com/",
+  },
+  {
+    title: "GlobatGPT",
+    description:
+      "All-in-One AI platform 💬 ChatGPT, DeepSeek, Claude, Gemini, Llama, Grok, Perplexity 🎨 Midjourney, Flux, Ideogram, DALL·E, Sora, GPT4o-image 🎬 Luma, Runway",
+    icon: "/assets/ai/globalgpt-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.glbgpt.com/",
   },
 ];
