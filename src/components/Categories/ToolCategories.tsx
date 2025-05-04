@@ -4,6 +4,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import ToolCard from "../Cards/ToolCard";
 import { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { Tool, ToolCategoriesProps } from "@/types/tools";
+import { useTheme } from "next-themes";
 
 export default function ToolCategories({
   title,
@@ -13,6 +14,7 @@ export default function ToolCategories({
   showViewMore = false,
   initialVisibleCount = 7,
 }: ToolCategoriesProps) {
+  const { theme } = useTheme();
   const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
   const loadMoreCount = 6; // Show 6 more items with each click
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -74,19 +76,27 @@ export default function ToolCategories({
   const visibleTools = tools.slice(0, visibleCount);
   const hasMoreTools = visibleCount < tools.length;
 
+  // Determine background color based on theme
+  const sectionBgColor = theme === "light" ? "#f7f7fa" : bgColor;
+
+  // Determine gradient color
+  const gradientFromColor = theme === "light" ? "#f7f7fa" : "#050508";
+
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-4 md:px-8 lg:px-16 relative"
-      style={{ backgroundColor: bgColor }}
+      className="py-16 px-4 md:px-8 lg:px-16 relative transition-colors duration-300"
+      style={{ backgroundColor: sectionBgColor }}
     >
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#050508] to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-background to-transparent"></div>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {title}
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">{description}</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            {description}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
