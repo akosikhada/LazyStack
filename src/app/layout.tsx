@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "LazyStack - The Ultimate Developer Tools Collection",
-  description: "A modern full-stack starter template powered by Next.js",
+  description:
+    "LazyStack - The Ultimate Developer Tools Collection. A curated suite of powerful development tools, design resources, and AI utilities to supercharge your workflow. Built with Next.js, Tailwind CSS, and TypeScript to help developers build beautiful, responsive applications with minimal effort. Designed to eliminate boilerplate code and streamline your development process.",
   icons: {
     icon: "../src/app/favicon.ico",
   },
