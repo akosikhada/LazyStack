@@ -39,11 +39,13 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
       } py-8 sm:py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16 flex flex-col items-center justify-center text-center min-h-[100vh]`}
     >
       {/* Enhanced background with gradient and animated elements */}
-      <div className={`absolute inset-0 ${
-        isDark 
-          ? "bg-gradient-to-br from-[#050210] via-[#0a0418] to-[#020205]" 
-          : "bg-gradient-to-br from-white via-[#f7f7fa] to-[#f0f0f7]"
-      } z-0`} />
+      <div
+        className={`absolute inset-0 ${
+          isDark
+            ? "bg-gradient-to-br from-[#050210] via-[#0a0418] to-[#020205]"
+            : "bg-gradient-to-br from-white via-[#f7f7fa] to-[#f0f0f7]"
+        } z-0`}
+      />
 
       {/* Polka dot pattern */}
       <div
@@ -103,8 +105,8 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
           <div
             ref={badgeRef}
             className={`${
-              isDark 
-                ? "bg-gradient-to-r from-[#3d1a7a] to-[#5b26c5] text-white shadow-purple-900/30" 
+              isDark
+                ? "bg-gradient-to-r from-[#3d1a7a] to-[#5b26c5] text-white shadow-purple-900/30"
                 : "bg-gradient-to-r from-[#8a3ffc] to-[#6023c0] text-white shadow-purple-400/20"
             } text-xs sm:text-sm font-medium tracking-wide rounded-full px-5 py-2 mb-6 sm:mb-8 shadow-lg`}
           >
@@ -122,11 +124,16 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
           ref={titleRef}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-center px-2 sm:px-4 mx-auto tracking-tight leading-none"
         >
-          <span className={isDark ? "text-purple-400" : "text-purple-600"}>Lazy</span>
-          <span className={isDark 
-            ? "bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-[#e0d6ff]"
-            : "bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black"
-          }>
+          <span className={isDark ? "text-purple-400" : "text-purple-600"}>
+            Lazy
+          </span>
+          <span
+            className={
+              isDark
+                ? "bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-[#e0d6ff]"
+                : "bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black"
+            }
+          >
             Stack
           </span>
         </h1>
@@ -146,18 +153,21 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
           {[
             {
               title: "Developer's Edge",
-              description: "Boost your productivity with competitive tools & workflows",
+              description:
+                "Boost your productivity with competitive tools & workflows",
             },
             {
               title: "Quality Companion",
-              description: "Reliable solutions for maintaining code quality & standards",
+              description:
+                "Reliable solutions for maintaining code quality & standards",
             },
             {
               title: "Multilingual Savior",
-              description: "Support for multiple programming languages & frameworks",
+              description:
+                "Support for multiple programming languages & frameworks",
             },
           ].map((feature, index) => (
-            <div 
+            <div
               key={index}
               className={`group ${
                 isDark
@@ -167,16 +177,26 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
             >
               <div className="p-5 sm:p-6 flex flex-col h-full min-h-[120px]">
                 <div className="flex items-center mb-4">
-                  <div className={`w-9 h-9 flex items-center justify-center ${
-                    isDark ? "bg-purple-500/30" : "bg-purple-100"
-                  } rounded-lg mr-3`}>
-                    <span className={isDark ? "text-purple-300" : "text-purple-600" }>◆</span>
+                  <div
+                    className={`w-9 h-9 flex items-center justify-center ${
+                      isDark ? "bg-purple-500/30" : "bg-purple-100"
+                    } rounded-lg mr-3`}
+                  >
+                    <span
+                      className={isDark ? "text-purple-300" : "text-purple-600"}
+                    >
+                      ◆
+                    </span>
                   </div>
-                  <h3 className={`${isDark ? "text-white" : "text-gray-800"} font-semibold text-base sm:text-lg tracking-tight`}>
+                  <h3
+                    className={`${isDark ? "text-white" : "text-gray-800"} font-semibold text-base sm:text-lg tracking-tight`}
+                  >
                     {feature.title}
                   </h3>
                 </div>
-                <p className={`${isDark ? "text-white/90" : "text-gray-700"} text-sm sm:text-base leading-relaxed`}>
+                <p
+                  className={`${isDark ? "text-white/90" : "text-gray-700"} text-sm sm:text-base leading-relaxed`}
+                >
                   {feature.description}
                 </p>
               </div>
@@ -191,14 +211,18 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
             style={{ maxWidth: "98%" }}
           >
             {/* Enhanced Glow Effect */}
-            <div className={`absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 rounded-lg blur ${
-              isDark ? "opacity-40" : "opacity-20"
-            }`}></div>
+            <div
+              className={`absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 rounded-lg blur ${
+                isDark ? "opacity-40" : "opacity-20"
+              }`}
+            ></div>
 
             {/* Terminal Window */}
             <div
               className={`relative ${
-                isDark ? "bg-[#050210] border-purple-500/30" : "bg-gray-900 border-purple-300/40"
+                isDark
+                  ? "bg-[#050210] border-purple-500/30"
+                  : "bg-gray-900 border-purple-300/40"
               } border rounded-lg shadow-2xl`}
               style={{
                 width: "100%",
@@ -257,12 +281,16 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
             </div>
 
             {/* Enhanced floating elements */}
-            <div className={`absolute -top-6 sm:-top-8 md:-top-10 -right-6 sm:-right-8 md:-right-10 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 blur-md ${
-              isDark ? "bg-purple-500/25" : "bg-purple-400/20"
-            } rounded-full animate-pulse-slow`}></div>
-            <div className={`absolute -bottom-8 sm:-bottom-10 md:-bottom-12 -left-8 sm:-left-10 md:-left-12 w-20 sm:w-24 md:w-28 h-20 sm:h-24 md:h-28 blur-md ${
-              isDark ? "bg-blue-500/25" : "bg-blue-400/20"
-            } rounded-full animate-pulse-slow`}></div>
+            <div
+              className={`absolute -top-6 sm:-top-8 md:-top-10 -right-6 sm:-right-8 md:-right-10 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 blur-md ${
+                isDark ? "bg-purple-500/25" : "bg-purple-400/20"
+              } rounded-full animate-pulse-slow`}
+            ></div>
+            <div
+              className={`absolute -bottom-8 sm:-bottom-10 md:-bottom-12 -left-8 sm:-left-10 md:-left-12 w-20 sm:w-24 md:w-28 h-20 sm:h-24 md:h-28 blur-md ${
+                isDark ? "bg-blue-500/25" : "bg-blue-400/20"
+              } rounded-full animate-pulse-slow`}
+            ></div>
           </div>
         </div>
       </div>
@@ -272,18 +300,26 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
         ref={decorationsRef}
         className="absolute inset-0 pointer-events-none z-[1]"
       >
-        <div className={`absolute top-1/4 left-[5%] w-1 h-20 bg-gradient-to-b ${
-          isDark ? "from-purple-500/40" : "from-purple-400/30"
-        } to-transparent rounded-full blur-sm`}></div>
-        <div className={`absolute top-1/3 right-[8%] w-1 h-32 bg-gradient-to-b ${
-          isDark ? "from-blue-500/40" : "from-blue-400/30"
-        } to-transparent rounded-full blur-sm`}></div>
-        <div className={`absolute bottom-1/4 left-[12%] w-1 h-24 bg-gradient-to-t ${
-          isDark ? "from-purple-500/40" : "from-purple-400/30"
-        } to-transparent rounded-full blur-sm`}></div>
-        <div className={`absolute bottom-1/3 right-[15%] w-1 h-16 bg-gradient-to-t ${
-          isDark ? "from-blue-500/40" : "from-blue-400/30"
-        } to-transparent rounded-full blur-sm`}></div>
+        <div
+          className={`absolute top-1/4 left-[5%] w-1 h-20 bg-gradient-to-b ${
+            isDark ? "from-purple-500/40" : "from-purple-400/30"
+          } to-transparent rounded-full blur-sm`}
+        ></div>
+        <div
+          className={`absolute top-1/3 right-[8%] w-1 h-32 bg-gradient-to-b ${
+            isDark ? "from-blue-500/40" : "from-blue-400/30"
+          } to-transparent rounded-full blur-sm`}
+        ></div>
+        <div
+          className={`absolute bottom-1/4 left-[12%] w-1 h-24 bg-gradient-to-t ${
+            isDark ? "from-purple-500/40" : "from-purple-400/30"
+          } to-transparent rounded-full blur-sm`}
+        ></div>
+        <div
+          className={`absolute bottom-1/3 right-[15%] w-1 h-16 bg-gradient-to-t ${
+            isDark ? "from-blue-500/40" : "from-blue-400/30"
+          } to-transparent rounded-full blur-sm`}
+        ></div>
       </div>
     </section>
   );

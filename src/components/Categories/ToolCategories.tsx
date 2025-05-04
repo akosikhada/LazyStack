@@ -77,12 +77,10 @@ export default function ToolCategories({
   const hasMoreTools = visibleCount < tools.length;
 
   // Determine background color based on theme
-  const sectionBgColor = theme === "light" ? 
-    "#f7f7fa" : bgColor;
+  const sectionBgColor = theme === "light" ? "#f7f7fa" : bgColor;
 
   // Determine gradient color
-  const gradientFromColor = theme === "light" ? 
-    "#f7f7fa" : "#050508";
+  const gradientFromColor = theme === "light" ? "#f7f7fa" : "#050508";
 
   return (
     <section
@@ -96,7 +94,9 @@ export default function ToolCategories({
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {title}
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">{description}</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            {description}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

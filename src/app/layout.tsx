@@ -5,6 +5,7 @@ import Script from "next/script";
 import "./globals.css";
 import { LoadingProvider } from "@/context/Loading";
 import { ThemeProvider } from "@/components/Theme-Provider/theme-provider";
+import { SmoothScrollProvider } from "@/components/Smooth-Scroll/SmoothScrollProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <LoadingProvider>
+            <SmoothScrollProvider />
             {children}
             <TempoInit />
           </LoadingProvider>

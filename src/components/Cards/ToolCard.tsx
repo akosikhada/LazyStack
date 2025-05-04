@@ -95,8 +95,8 @@ export default function ToolCard({
     <div
       ref={cardRef}
       className={`group rounded-lg overflow-hidden flex flex-col h-full transition-colors duration-300 ${
-        theme === "dark" 
-          ? "bg-[#13091f] border border-[#1a1a1f]" 
+        theme === "dark"
+          ? "bg-[#13091f] border border-[#1a1a1f]"
           : "bg-white border border-gray-200 shadow-sm"
       }`}
       style={{ minHeight: "400px" }} // Ensure consistent minimum height
@@ -113,8 +113,8 @@ export default function ToolCard({
           <div
             ref={iconRef}
             className={`rounded-full flex items-center justify-center w-12 h-12 overflow-hidden relative p-0 ${
-              theme === "dark" 
-                ? "bg-[#1a1a1f] text-[#8a3ffc]" 
+              theme === "dark"
+                ? "bg-[#1a1a1f] text-[#8a3ffc]"
                 : "bg-purple-100 text-purple-600"
             }`}
           >
@@ -136,28 +136,36 @@ export default function ToolCard({
               <Icon size={24} className="absolute inset-0 m-auto" />
             ) : null}
           </div>
-          <span className={`text-xs px-3 py-1 rounded-full ${
-            theme === "dark" 
-              ? "bg-[#1a1a1f] text-white" 
-              : "bg-gray-100 text-gray-700"
-          }`}>
+          <span
+            className={`text-xs px-3 py-1 rounded-full ${
+              theme === "dark"
+                ? "bg-[#1a1a1f] text-white"
+                : "bg-gray-100 text-gray-700"
+            }`}
+          >
             {category}
           </span>
         </div>
 
         <div ref={contentRef} className="flex flex-col flex-grow">
           {/* Title with fixed height */}
-          <h3 className={`text-xl font-semibold h-14 mb-2 group-hover:text-[#a56eff] transition-colors duration-300 flex items-start ${
-            theme === "dark" ? "text-white" : "text-gray-900"
-          }`}>
+          <h3
+            className={`text-xl font-semibold h-14 mb-2 group-hover:text-[#a56eff] transition-colors duration-300 flex items-start ${
+              theme === "dark" ? "text-white" : "text-gray-900"
+            }`}
+          >
             {title}
           </h3>
 
           {/* Description with fixed height */}
           <div className="h-20 mb-4">
-            <p className={`line-clamp-3 ${
-              theme === "dark" ? "text-gray-400" : "text-gray-600"
-            }`}>{description}</p>
+            <p
+              className={`line-clamp-3 ${
+                theme === "dark" ? "text-gray-400" : "text-gray-600"
+              }`}
+            >
+              {description}
+            </p>
           </div>
 
           {/* Feature indicators */}
@@ -191,11 +199,13 @@ export default function ToolCard({
           {/* Fixed position for bottom content */}
           <div className="mt-auto flex items-center justify-between">
             <div className="flex items-center">
-              <span className={`px-3 py-1 rounded-md text-xs font-medium border-l-2 border-purple-500 ${
-                theme === "dark"
-                  ? "bg-purple-900/30 text-purple-300"
-                  : "bg-purple-100 text-purple-700"
-              }`}>
+              <span
+                className={`px-3 py-1 rounded-md text-xs font-medium border-l-2 border-purple-500 ${
+                  theme === "dark"
+                    ? "bg-purple-900/30 text-purple-300"
+                    : "bg-purple-100 text-purple-700"
+                }`}
+              >
                 {highlight}
               </span>
             </div>

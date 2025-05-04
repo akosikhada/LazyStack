@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  scroll-behavior: smooth;
-} */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 @layer base {
   :root {
@@ -113,19 +117,19 @@
     animation: fadeInUp 1s ease-out forwards;
     opacity: 0;
   }
-  
+
   .animate-float-slow {
     animation: float 8s ease-in-out infinite;
   }
-  
+
   .animate-float-medium {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-float-fast {
     animation: float 4s ease-in-out infinite;
   }
-  
+
   .animation-delay-2000 {
     animation-delay: 2s;
   }
@@ -135,7 +139,8 @@
 }
 
 @keyframes pulse-slow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.4;
     transform: scale(1);
   }
@@ -150,7 +155,8 @@
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -176,10 +182,17 @@
 html {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  scroll-behavior: smooth !important;
+}
+
+/* Disable smooth scrolling for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-

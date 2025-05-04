@@ -3,7 +3,7 @@
 import { Button } from "./ui/button";
 import { Github, Code, Paintbrush, Cpu, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "./Theme-Provider/theme-toggle";
 import { useTheme } from "next-themes";
 
 export default function Navbar() {
@@ -62,49 +62,100 @@ export default function Navbar() {
 
   // Helper function to determine if section is active
   const isActive = (sectionId: string) => activeSection === sectionId;
-  
+
   // Determine navbar background based on theme and scroll position
   const navbarBg = scrolled
     ? theme === "dark"
       ? "bg-[#050508]/95 backdrop-blur-md shadow-lg"
       : "bg-white/95 backdrop-blur-md shadow-lg"
     : "bg-transparent";
-    
+
   // Determine navbar border based on theme and scroll position
   const navbarBorder = scrolled
     ? theme === "dark"
       ? "border-purple-900/20"
       : "border-gray-200"
     : "border-transparent";
-    
-  const isLightMode = theme === 'light';
-  
+
+  const isLightMode = theme === "light";
+
   // Always use black text in light mode, regardless of scroll position
-  const blackText = isLightMode ? { color: 'black' } : {};
-  
+  const blackText = isLightMode ? { color: "black" } : {};
+
   // Only for elements that need to be white when transparent background in light mode
-  const textColorClass = (isLightMode && !scrolled) 
-    ? "text-black" 
-    : theme === "dark" 
-      ? "text-white" 
-      : "text-black";
-      
+  const textColorClass =
+    isLightMode && !scrolled
+      ? "text-black"
+      : theme === "dark"
+        ? "text-white"
+        : "text-black";
+
   // For items that should be in muted color when not active
-  const mutedTextColorClass = (isLightMode && !scrolled) 
-    ? "text-black/70" 
-    : theme === "dark" 
-      ? "text-gray-300" 
-      : "text-black";
+  const mutedTextColorClass =
+    isLightMode && !scrolled
+      ? "text-black/70"
+      : theme === "dark"
+        ? "text-gray-300"
+        : "text-black";
 
   // Determine active background color
-  const activeBgClass = theme === "dark"
-    ? "bg-purple-700/30 shadow-[0_0_15px_rgba(168,85,247,0.15)]"
-    : "bg-purple-100 shadow-[0_0_10px_rgba(168,85,247,0.1)]";
-    
+  const activeBgClass =
+    theme === "dark"
+      ? "bg-purple-700/30 shadow-[0_0_15px_rgba(168,85,247,0.15)]"
+      : "bg-purple-100 shadow-[0_0_10px_rgba(168,85,247,0.1)]";
+
   // Determine hover background color
-  const hoverBgClass = theme === "dark"
-    ? "hover:bg-purple-700/20 hover:shadow-[0_0_10px_rgba(168,85,247,0.1)]"
-    : "hover:bg-purple-100 hover:text-purple-600 hover:shadow-[0_0_10px_rgba(168,85,247,0.05)]";
+  const hoverBgClass =
+    theme === "dark"
+      ? "hover:bg-purple-700/20 hover:shadow-[0_0_10px_rgba(168,85,247,0.1)]"
+      : "hover:bg-purple-100 hover:text-purple-600 hover:shadow-[0_0_10px_rgba(168,85,247,0.05)]";
+
+  // Determine navbar background based on theme and scroll position
+  const navbarBg = scrolled
+    ? theme === "dark"
+      ? "bg-[#050508]/95 backdrop-blur-md shadow-lg"
+      : "bg-white/95 backdrop-blur-md shadow-lg"
+    : "bg-transparent";
+
+  // Determine navbar border based on theme and scroll position
+  const navbarBorder = scrolled
+    ? theme === "dark"
+      ? "border-purple-900/20"
+      : "border-gray-200"
+    : "border-transparent";
+
+  const isLightMode = theme === "light";
+
+  // Always use black text in light mode, regardless of scroll position
+  const blackText = isLightMode ? { color: "black" } : {};
+
+  // Only for elements that need to be white when transparent background in light mode
+  const textColorClass =
+    isLightMode && !scrolled
+      ? "text-black"
+      : theme === "dark"
+        ? "text-white"
+        : "text-black";
+
+  // For items that should be in muted color when not active
+  const mutedTextColorClass =
+    isLightMode && !scrolled
+      ? "text-black/70"
+      : theme === "dark"
+        ? "text-gray-300"
+        : "text-black";
+
+  // Determine active background color
+  const activeBgClass =
+    theme === "dark"
+      ? "bg-purple-700/30 shadow-[0_0_15px_rgba(168,85,247,0.15)]"
+      : "bg-purple-100 shadow-[0_0_10px_rgba(168,85,247,0.1)]";
+
+  // Determine hover background color
+  const hoverBgClass =
+    theme === "dark"
+      ? "hover:bg-purple-700/20 hover:shadow-[0_0_10px_rgba(168,85,247,0.1)]"
+      : "hover:bg-purple-100 hover:text-purple-600 hover:shadow-[0_0_10px_rgba(168,85,247,0.05)]";
 
   return (
     <nav
@@ -121,19 +172,16 @@ export default function Navbar() {
               className="flex items-center hover:opacity-90 transition-all duration-200 cursor-pointer group"
             >
               <span className="text-lg sm:text-xl font-bold tracking-tight">
-                <span 
+                <span
                   className={`${
                     theme === "dark"
                       ? "text-purple-400 group-hover:text-purple-300"
                       : "text-purple-700 group-hover:text-purple-600"
-                    } transition-colors duration-200`}
+                  } transition-colors duration-200`}
                 >
                   Lazy
                 </span>
-                <span 
-                  style={blackText}
-                  className={textColorClass}
-                >
+                <span style={blackText} className={textColorClass}>
                   Stack
                 </span>
               </span>
@@ -199,7 +247,7 @@ export default function Navbar() {
                   theme === "dark"
                     ? "border-purple-500/40 bg-purple-500/10 text-white hover:bg-purple-500/20"
                     : "border-purple-300 bg-purple-50/80 text-black hover:bg-purple-100"
-                  } hover:border-purple-400/70 hover:shadow-[0_0_15px_rgba(168,85,247,0.2)] rounded-full flex items-center gap-2 text-sm transition-all duration-200 px-5 py-2 font-medium`}
+                } hover:border-purple-400/70 hover:shadow-[0_0_15px_rgba(168,85,247,0.2)] rounded-full flex items-center gap-2 text-sm transition-all duration-200 px-5 py-2 font-medium`}
                 size="sm"
                 onClick={() =>
                   window.open("https://github.com/znarf-y/LazyStack")
