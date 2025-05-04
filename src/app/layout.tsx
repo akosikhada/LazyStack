@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { LoadingProvider } from "@/context/Loading";
+import { ThemeProvider } from "@/components/Theme-Provider/theme-provider";
+import { SmoothScrollProvider } from "@/components/Smooth-Scroll/SmoothScrollProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +26,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
       <body className={inter.className}>
-        <LoadingProvider>
-          {children}
-          <TempoInit />
-        </LoadingProvider>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <LoadingProvider>
+            <SmoothScrollProvider />
+            {children}
+            <TempoInit />
+          </LoadingProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
