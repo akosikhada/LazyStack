@@ -1,3 +1,5 @@
+import { Kiwi_Maru } from "next/font/google";
+
 export const developmentTools = [
   {
     title: "Bolt",

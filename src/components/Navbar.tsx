@@ -110,6 +110,53 @@ export default function Navbar() {
       ? "hover:bg-purple-700/20 hover:shadow-[0_0_10px_rgba(168,85,247,0.1)]"
       : "hover:bg-purple-100 hover:text-purple-600 hover:shadow-[0_0_10px_rgba(168,85,247,0.05)]";
 
+  // Determine navbar background based on theme and scroll position
+  const navbarBg = scrolled
+    ? theme === "dark"
+      ? "bg-[#050508]/95 backdrop-blur-md shadow-lg"
+      : "bg-white/95 backdrop-blur-md shadow-lg"
+    : "bg-transparent";
+
+  // Determine navbar border based on theme and scroll position
+  const navbarBorder = scrolled
+    ? theme === "dark"
+      ? "border-purple-900/20"
+      : "border-gray-200"
+    : "border-transparent";
+
+  const isLightMode = theme === "light";
+
+  // Always use black text in light mode, regardless of scroll position
+  const blackText = isLightMode ? { color: "black" } : {};
+
+  // Only for elements that need to be white when transparent background in light mode
+  const textColorClass =
+    isLightMode && !scrolled
+      ? "text-black"
+      : theme === "dark"
+        ? "text-white"
+        : "text-black";
+
+  // For items that should be in muted color when not active
+  const mutedTextColorClass =
+    isLightMode && !scrolled
+      ? "text-black/70"
+      : theme === "dark"
+        ? "text-gray-300"
+        : "text-black";
+
+  // Determine active background color
+  const activeBgClass =
+    theme === "dark"
+      ? "bg-purple-700/30 shadow-[0_0_15px_rgba(168,85,247,0.15)]"
+      : "bg-purple-100 shadow-[0_0_10px_rgba(168,85,247,0.1)]";
+
+  // Determine hover background color
+  const hoverBgClass =
+    theme === "dark"
+      ? "hover:bg-purple-700/20 hover:shadow-[0_0_10px_rgba(168,85,247,0.1)]"
+      : "hover:bg-purple-100 hover:text-purple-600 hover:shadow-[0_0_10px_rgba(168,85,247,0.05)]";
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${navbarBg} ${
