@@ -29,7 +29,7 @@ const LoadingScreen = () => {
       if (currentIndex < terminalContent[currentLine].length) {
         const timeout = setTimeout(() => {
           setLineText(
-            (prev) => prev + terminalContent[currentLine][currentIndex]
+            (prev) => prev + terminalContent[currentLine][currentIndex],
           );
           setCurrentIndex((prev) => prev + 1);
         }, terminalSettings.typingSpeed);
@@ -64,11 +64,11 @@ const LoadingScreen = () => {
 
   return (
     <div
-      className="flex items-center justify-center min-h-screen"
+      className="flex min-h-screen items-center justify-center"
       style={{ backgroundColor: terminalStyle.background }}
     >
       <div
-        className="w-full max-w-2xl p-4 md:p-5 rounded-md shadow-lg mx-3 md:mx-auto border font-mono"
+        className="mx-3 w-full max-w-2xl rounded-md border p-4 font-mono shadow-lg md:mx-auto md:p-5"
         style={{
           backgroundColor: terminalStyle.terminalBackground,
           color: terminalStyle.textColor,
@@ -76,18 +76,18 @@ const LoadingScreen = () => {
         }}
       >
         <div
-          className="flex items-center mb-2 md:mb-3 pb-2 border-b"
+          className="mb-2 flex items-center border-b pb-2 md:mb-3"
           style={{ borderColor: terminalStyle.accentColor }}
         >
-          <div className="flex space-x-1 mr-2">
+          <div className="mr-2 flex space-x-1">
             <div
-              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${terminalStyle.buttonColors.red}`}
+              className={`h-2.5 w-2.5 rounded-full md:h-3 md:w-3 ${terminalStyle.buttonColors.red}`}
             ></div>
             <div
-              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${terminalStyle.buttonColors.yellow}`}
+              className={`h-2.5 w-2.5 rounded-full md:h-3 md:w-3 ${terminalStyle.buttonColors.yellow}`}
             ></div>
             <div
-              className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${terminalStyle.buttonColors.green}`}
+              className={`h-2.5 w-2.5 rounded-full md:h-3 md:w-3 ${terminalStyle.buttonColors.green}`}
             ></div>
           </div>
           <div
@@ -98,7 +98,7 @@ const LoadingScreen = () => {
           </div>
         </div>
         <div
-          className="whitespace-pre-wrap overflow-auto p-2 md:p-3 leading-6 md:leading-relaxed tracking-wide text-sm sm:text-base md:text-lg lg:text-xl"
+          className="overflow-auto whitespace-pre-wrap p-2 text-sm leading-6 tracking-wide sm:text-base md:p-3 md:text-lg md:leading-relaxed lg:text-xl"
           style={{
             height: terminalStyle.height.md,
             color: terminalStyle.textColor,
