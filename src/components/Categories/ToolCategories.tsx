@@ -42,7 +42,7 @@ export default function ToolCategories({
 
     // Increase the visible count incrementally
     setVisibleCount((prevCount) =>
-      Math.min(prevCount + loadMoreCount, tools.length)
+      Math.min(prevCount + loadMoreCount, tools.length),
     );
   };
 
@@ -85,21 +85,21 @@ export default function ToolCategories({
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-4 md:px-8 lg:px-16 relative transition-colors duration-300"
+      className="relative px-4 py-16 transition-colors duration-300 md:px-8 lg:px-16"
       style={{ backgroundColor: sectionBgColor }}
     >
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-background to-transparent"></div>
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+      <div className="absolute bottom-0 left-0 h-16 w-full bg-gradient-to-t from-background to-transparent"></div>
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
             {title}
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-muted-foreground">
             {description}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {initialToolsLoaded &&
             visibleTools.map((tool, index) => (
               <div key={`${tool.title}-${index}`} className="lazy-load-wrapper">
@@ -119,11 +119,11 @@ export default function ToolCategories({
         </div>
 
         {showViewMore && tools.length > initialVisibleCount && (
-          <div className="flex justify-start mt-10">
+          <div className="mt-10 flex justify-start">
             {visibleCount > initialVisibleCount && !hasMoreTools ? (
               <button
                 onClick={handleShowLess}
-                className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-2 px-6 rounded-full font-medium hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
+                className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl"
                 disabled={isLoading}
               >
                 Show Less <ChevronUp size={16} />
@@ -131,13 +131,13 @@ export default function ToolCategories({
             ) : hasMoreTools ? (
               <button
                 onClick={handleLoadMore}
-                className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-2 px-6 rounded-full font-medium hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
+                className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl"
                 disabled={isLoading}
               >
                 {isLoading ? (
                   <span className="flex items-center">
                     <svg
-                      className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                      className="-ml-1 mr-2 h-4 w-4 animate-spin text-white"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -170,7 +170,7 @@ export default function ToolCategories({
             ) : (
               <button
                 onClick={handleShowLess}
-                className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-2 px-6 rounded-full font-medium hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
+                className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl"
                 disabled={isLoading}
               >
                 Show Less <ChevronUp size={16} />
