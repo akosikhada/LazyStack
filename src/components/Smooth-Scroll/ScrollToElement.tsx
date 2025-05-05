@@ -27,7 +27,7 @@ export function ScrollToElement({
 
       // Check if user prefers reduced motion
       const prefersReducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
+        "(prefers-reduced-motion: reduce)",
       ).matches;
 
       // Get the element's position and apply offset
