@@ -6,7 +6,7 @@ export function SmoothScrollProvider() {
   useEffect(() => {
     // Check if the user prefers reduced motion
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     // Only apply polyfill if smooth scrolling should be enabled
