@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Tool } from "@/types/tools";
 import { useTheme } from "next-themes";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface ToolDetailsProps {
   isOpen: boolean;
