@@ -131,6 +131,36 @@ export const developmentTools = [
     highlight: "Advanced Refactoring",
     link: "https://n8n.io/",
   },
+  {
+    title: "Zed",
+    description:
+      "Zed is a next-generation code editor designed for high-performance collaboration with humans and AI.",
+    icon: "/assets/development/zed-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://zed.dev/",
+  },
+  {
+    title: "ROSEBUD AI",
+    description:
+      "Build and instantly deploy games and creative apps without coding. Rosebud AI allows you to build everything you need in a few prompts.",
+    icon: "/assets/development/rosebud-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://www.rosebud.ai/",
+  },
+  {
+    title: "Meshy AI",
+    description:
+      "Meshy Text to 3D helps you conceptualize, iterate, and experiment with text prompts to create 3D models in seconds.Convert your photos or concept art images into 3D models with stunning details in just a matter of seconds.Generate stunning textures for existing 3D models using text prompts in less than a minute.A one-stop solution for creating animated characters, designed for artists and developers in game, film, XR, and beyond.",
+    icon: "/assets/development/meshy-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://www.meshy.ai/",
+  },
 ];
 
 export const designTools = [
@@ -305,6 +335,16 @@ export const designTools = [
     highlight: "Infrastructure Agility",
     link: "https://ai.nero.com/",
   },
+  {
+    title: "Banani",
+    description:
+      "Banani is an AI tool for quick and easy UI design generation. We want to make it easy for everyone to create beautiful user interfaces.",
+    icon: "/assets/design/banani-icon.png",
+    category: "UI/UX",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://banani.co/",
+  },
 ];
 
 export const aiTools = [
@@ -477,5 +517,55 @@ export const aiTools = [
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
     link: "https://www.glbgpt.com/",
+  },
+  {
+    title: "Easy-Peasy.AI",
+    description:
+      "Easy-Peasy.AI is an AI Content tool that can help you with a variety of writing tasks, from writing blog post, creating better resumes and job descriptions to composing emails and social media content, and many more.",
+    icon: "/assets/ai/easy-peasy-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://easy-peasy.ai/",
+  },
+  {
+    title: "OpenRouter",
+    description:
+      "OpenRouter provides a unified API that gives you access to hundreds of AI models through a single endpoint, while automatically handling fallbacks and selecting the most cost-effective options. Get started with just a few lines of code using your preferred SDK or framework.",
+    icon: "/assets/ai/openrouter-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://openrouter.ai/",
+  },
+  {
+    title: "Langbase",
+    description:
+      "Langbase is built for developers, not just AI/ML experts. Your current R&D team can do it. 10x innovation time-to-market.",
+    icon: "/assets/ai/langbase-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://langbase.com/",
+  },
+  {
+    title: "aiToggler",
+    description:
+      "aiToggler is a tool that allows you to toggle between different AI models and start engaging with your customers 24/7.",
+    icon: "/assets/ai/aitoggler-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://app.aitoggler.com/",
+  },
+  {
+    title: "Mistral AI",
+    description:
+      "Your multilingual, multimodal AI assistant that can help with anything. Search, create, code, learn, automate and collaborate with a unified and secure experience.",
+    icon: "/assets/ai/mistral-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://mistral.ai/",
   },
 ];

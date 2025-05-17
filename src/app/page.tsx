@@ -61,7 +61,7 @@ export default function Page() {
       {/* Development Tools Section */}
       <div id="dev-tools">
         <ToolCategorySection
-          title="AI Development Tools"
+          title="Development Tools"
           description="Discover cutting-edge AI-powered development tools that enhance coding productivity and enable new capabilities."
           tools={mappedDevTools}
           showViewMore={true}
