@@ -161,6 +161,46 @@ export const developmentTools = [
     highlight: "Advanced Refactoring",
     link: "https://www.meshy.ai/",
   },
+  {
+    title: "Void",
+    description:
+      "Void is an open source Cursor alternative. Write code with the best AI tools, use any model, and retain full control over your data.",
+    icon: "/assets/development/void-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://voideditor.com/",
+  },
+  {
+    title: "Flux",
+    description:
+      "An AI-powered eCAD platform featuring Flux Copilot—an AI teammate that reviews schematics, reads datasheets, and can even route your board.",
+    icon: "/assets/development/flux-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://www.flux.ai/p/",
+  },
+  {
+    title: "Bind AI",
+    description:
+      "Bind AI is an advanced copilot and AI Assistant for code generation, web search, writing technical content and much more.",
+    icon: "/assets/development/bind-icon.png",
+    category: "Development",
+    benefits: ["Innovative", "Intelligent", "Seamless"],
+    highlight: "Advanced Refactoring",
+    link: "https://www.getbind.co/",
+  },
+  {
+    title: "Readdy",
+    description:
+      "Build your dream websites by talking with AI - no drag-and-drop needed. When you're happy, publish instantly, or export as clean code or Figma files.",
+    icon: "/assets/development/readdy-icon.png",
+    category: "Development",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.readdy.ai/",
+  },
 ];
 
 export const designTools = [
@@ -344,6 +384,26 @@ export const designTools = [
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
     link: "https://banani.co/",
+  },
+  {
+    title: "Creatie",
+    description:
+      "Creatie brings the power of AI to UI/UX design. Creatie is a small team led by designers, building innovation for designers.",
+    icon: "/assets/design/creatie-icon.png",
+    category: "UI/UX",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://creatie.ai/",
+  },
+  {
+    title: "Visily",
+    description:
+      "Visily is the UI design software anyone can use. With Visily, you can create hi-fidelity wireframes and prototypes in minutes, all with no learning curve.",
+    icon: "/assets/design/visily-icon.png",
+    category: "UI/UX",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.visily.ai/",
   },
 ];
 
@@ -567,5 +627,25 @@ export const aiTools = [
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
     link: "https://mistral.ai/",
+  },
+  {
+    title: "Dify AI",
+    description:
+      "Dify offers everything you need — agentic workflows, RAG pipelines, integrations, and observability — all in one place, putting AI power into your hands.",
+    icon: "/assets/ai/dify-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://dify.ai/",
+  },
+  {
+    title: "ROOCODE",
+    description:
+      "Roo Code (formerly Roo Cline) is an AI-powered autonomous coding agent that lives in your editor. It helps you code faster and smarter, whether you're starting a new project, maintaining existing code, or learning new technologies.",
+    icon: "/assets/ai/roocode-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://roocode.com/",
   },
 ];
