@@ -201,6 +201,36 @@ export const developmentTools = [
     highlight: "Infrastructure Agility",
     link: "https://www.readdy.ai/",
   },
+  {
+    title: "Chat2DB",
+    description:
+      "Chat2DB uses AI SQL to automate query generation, which improves the speed and accuracy of data retrieval.",
+    icon: "/assets/development/chat2db-icon.png",
+    category: "Development",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://chat2db.ai/",
+  },
+  {
+    title: "Databutton",
+    description:
+      "Databutton is a tool that allows you to create and share AI-powered buttons that can be used to access data from a database.",
+    icon: "/assets/development/databutton-icon.png",
+    category: "Development",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://databutton.com/",
+  },
+  {
+    title: "Hostinger Horizons",
+    description:
+      "Hostinger Horizons is a no-code web app builder that makes effortless web app creation accessible to all. You no longer need a big team or a massive budget to go live – all it takes is an idea.",
+    icon: "/assets/development/hostinger-icon.png",
+    category: "Development",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.hostinger.com/horizons",
+  },
 ];
 
 export const designTools = [
@@ -404,6 +434,16 @@ export const designTools = [
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
     link: "https://www.visily.ai/",
+  },
+  {
+    title: "Wix",
+    description:
+      "Create, manage and grow your business online with Wix. It’s more than just a website builder, it’s how your vision comes to life.",
+    icon: "/assets/design/wix-icon.png",
+    category: "UI/UX",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.wix.com/",
   },
 ];
 
@@ -647,5 +687,15 @@ export const aiTools = [
     benefits: ["Dynamic", "Modular", "Automated"],
     highlight: "Infrastructure Agility",
     link: "https://roocode.com/",
+  },
+  {
+    title: "NinjaChat",
+    description:
+      "Your All-in-One AI Assistant. Write, create, and chat with the world's best AI tools — all in one place.",
+    icon: "/assets/ai/ninjachat-icon.png",
+    category: "AI",
+    benefits: ["Dynamic", "Modular", "Automated"],
+    highlight: "Infrastructure Agility",
+    link: "https://www.ninjachat.ai/",
   },
 ];
