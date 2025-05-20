@@ -5,6 +5,7 @@ import { Github, Code, Paintbrush, Cpu, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./Theme-Provider/theme-toggle";
 import { useTheme } from "next-themes";
+import SearchDialog from "./Search-Dialog/SearchDialog";
 
 export default function Navbar() {
   const { theme } = useTheme();
@@ -139,11 +140,9 @@ export default function Navbar() {
                 </span>
               </span>
             </button>
-          </div>
-
-          {/* Main navigation - visible only on lg screens */}
-          <div className="hidden items-center space-x-2 lg:flex">
-            <div className="flex space-x-1.5">
+            
+            {/* Navigation items moved next to LazyStack logo */}
+            <div className="hidden ml-6 items-center space-x-1.5 lg:flex">
               {/* Navigation items with improved hover effect */}
               <button
                 onClick={() => scrollToSection("dev-tools")}
@@ -179,8 +178,16 @@ export default function Navbar() {
                 }`}
               >
                 <Cpu style={blackText} className="h-4 w-4" />
-                AI Tools
+                AI
               </button>
+            </div>
+          </div>
+
+          {/* Main navigation - visible only on lg screens - now just contains search/theme/github buttons */}
+          <div className="hidden items-center space-x-2 lg:flex">
+            {/* Search Dialog */}
+            <div>
+              <SearchDialog />
             </div>
 
             {/* Theme toggle */}
@@ -279,24 +286,32 @@ export default function Navbar() {
               }`}
             >
               <Cpu style={blackText} className="h-4 w-4" />
-              AI Tools
+              AI
             </button>
-            <div className="mt-3 border-t border-purple-900/30 px-2 py-2">
-              <Button
-                variant="outline"
-                style={blackText}
-                className={`w-full ${
-                  theme === "dark"
-                    ? "border-purple-500/40 bg-purple-500/10 text-white hover:bg-purple-500/20"
-                    : "border-purple-300 bg-purple-50 text-black hover:bg-purple-100"
-                } flex items-center justify-center gap-2 rounded-lg py-2 text-xs font-medium transition-all duration-200 hover:border-purple-400/70 hover:shadow-[0_0_15px_rgba(168,85,247,0.2)]`}
-                onClick={() =>
-                  window.open("https://github.com/znarf-y/LazyStack")
-                }
-              >
-                <Github style={blackText} className="h-3.5 w-3.5" />
-                <span style={blackText}>Source Code</span>
-              </Button>
+
+            {/* Search Dialog above Source Code with cleaner styling */}
+            <div className="mt-3 border-t border-purple-900/30 pt-3">
+              <div className="px-2">
+                <SearchDialog />
+              </div>
+              
+              <div className="mt-3 px-2 py-2">
+                <Button
+                  variant="outline"
+                  style={blackText}
+                  className={`w-full ${
+                    theme === "dark"
+                      ? "border-purple-500/40 bg-purple-500/10 text-white hover:bg-purple-500/20"
+                      : "border-purple-300 bg-purple-50 text-black hover:bg-purple-100"
+                  } flex items-center justify-center gap-2 rounded-lg py-2 text-xs font-medium transition-all duration-200 hover:border-purple-400/70 hover:shadow-[0_0_15px_rgba(168,85,247,0.2)]`}
+                  onClick={() =>
+                    window.open("https://github.com/znarf-y/LazyStack")
+                  }
+                >
+                  <Github style={blackText} className="h-3.5 w-3.5" />
+                  <span style={blackText}>Source Code</span>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
