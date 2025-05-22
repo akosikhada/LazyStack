@@ -64,7 +64,10 @@ export function useJumbotronEffects({
     setIsMobileOrTablet(window.matchMedia("(max-width: 1024px)").matches);
 
     const handleMouseMove = (e: MouseEvent) => {
+      // First save the current position as the previous one
       setPrevMousePosition(mousePosition);
+      
+      // Then update to the new position
       setMousePosition({
         x: e.clientX,
         y: e.clientY,
@@ -73,7 +76,7 @@ export function useJumbotronEffects({
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [mousePosition]);
+  }, []); // Remove mousePosition from dependency array
 
   // Main animation effects
   useEffect(() => {
@@ -153,11 +156,15 @@ export function useJumbotronEffects({
         const xPos = e.clientX / window.innerWidth - 0.5;
         const yPos = e.clientY / window.innerHeight - 0.5;
 
-        gsap.to(".parallax-element", {
-          x: xPos * animationSettings.parallax.intensity,
-          duration: 1,
-          ease: "power2.out",
-        });
+        // Check if parallax elements exist before animating them
+        const parallaxElements = document.querySelectorAll('.parallax-element');
+        if (parallaxElements.length > 0) {
+          gsap.to(".parallax-element", {
+            x: xPos * animationSettings.parallax.intensity,
+            duration: 1,
+            ease: "power2.out",
+          });
+        }
       };
 
       window.addEventListener("mousemove", handleMouseMove);
