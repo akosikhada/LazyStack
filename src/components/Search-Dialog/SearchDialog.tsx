@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogTrigger,
+  DialogTitle,
+  DialogDescription,
 } from "../ui/dialog";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
@@ -120,6 +122,8 @@ export function SearchDialog() {
       </DialogTrigger>
       
       <CustomDialogContent className="sm:max-w-[700px] bg-card rounded-lg border-none">
+        <DialogTitle className="sr-only">Search Tools</DialogTitle>
+        <DialogDescription className="sr-only">Search and browse available tools and applications</DialogDescription>
         <div className="px-4 pt-4 pb-2">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
