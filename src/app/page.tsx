@@ -59,7 +59,7 @@ export default function Page() {
       </div>
 
       {/* Development Tools Section */}
-      <div id="dev-tools">
+      <div id="development-tools">
         <ToolCategorySection
           title="AI Development Tools"
           description="Discover cutting-edge AI-powered development tools that enhance coding productivity and enable new capabilities."
