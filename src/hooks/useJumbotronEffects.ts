@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, RefObject } from "react";
 import gsap from "gsap";
-import { MousePosition } from "@/types/jumbotron";
+import { MousePosition } from "@/types/jumbotron-types";
 import {
   terminalContent,
   terminalSettings,
@@ -49,7 +49,7 @@ export function useJumbotronEffects({
     y: 0,
   });
   const [terminalContentState, setTerminalContentState] = useState<string[]>(
-    []
+    [],
   );
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
@@ -66,7 +66,7 @@ export function useJumbotronEffects({
     const handleMouseMove = (e: MouseEvent) => {
       // First save the current position as the previous one
       setPrevMousePosition(mousePosition);
-      
+
       // Then update to the new position
       setMousePosition({
         x: e.clientX,
@@ -109,7 +109,7 @@ export function useJumbotronEffects({
           autoAlpha: 0,
           duration: 0.8,
         },
-        "-=0.5"
+        "-=0.5",
       )
       .from(
         descriptionRef.current,
@@ -117,7 +117,7 @@ export function useJumbotronEffects({
           autoAlpha: 0,
           duration: 0.8,
         },
-        "-=0.5"
+        "-=0.5",
       )
       .from(
         featuresRef.current,
@@ -126,7 +126,7 @@ export function useJumbotronEffects({
           stagger: 0.1,
           duration: 0.6,
         },
-        "-=0.5"
+        "-=0.5",
       )
       .from(
         dashboardCodeRef.current,
@@ -134,7 +134,7 @@ export function useJumbotronEffects({
           autoAlpha: 0,
           duration: 0.8,
         },
-        "-=0.3"
+        "-=0.3",
       );
 
     // Replace floating with subtle pulsing
@@ -157,7 +157,7 @@ export function useJumbotronEffects({
         const yPos = e.clientY / window.innerHeight - 0.5;
 
         // Check if parallax elements exist before animating them
-        const parallaxElements = document.querySelectorAll('.parallax-element');
+        const parallaxElements = document.querySelectorAll(".parallax-element");
         if (parallaxElements.length > 0) {
           gsap.to(".parallax-element", {
             x: xPos * animationSettings.parallax.intensity,
