@@ -18,6 +18,7 @@ export interface ToolCardProps {
   icon?: LucideIcon;
   imageIcon?: string;
   category?: string;
+  link?: string;
   tryNowLink?: string;
   index?: number;
   highlight?: string;
@@ -31,10 +32,10 @@ export interface Tool {
   icon?: LucideIcon;
   imageIcon?: string;
   category?: string;
-  highlight?: string;
-  tryNowLink?: string;
-  benefits?: string[];
   link?: string;
+  tryNowLink?: string;
+  highlight?: string;
+  benefits?: string[];
 }
 
 // Props for ToolCategories component
