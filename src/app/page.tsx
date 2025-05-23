@@ -4,9 +4,8 @@ import HeroSection from "@/components/Jumbotron/Jumbotron";
 import ToolCategorySection from "@/components/Categories/ToolCategories";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer/Footer";
-import { Database, Github } from "lucide-react";
 import { developmentTools, designTools, aiTools } from "@/constants/data";
-import { Tool, ToolData } from "@/types/tools";
+import { Tool, ToolData } from "@/types/tool-types";
 import { useTheme } from "next-themes";
 
 export default function Page() {
