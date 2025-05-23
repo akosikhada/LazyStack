@@ -209,4 +209,14 @@ export const designTools = [
     highlight: "Beautiful, Responsive Websites",
     link: "https://ideogram.ai/",
   },
+  {
+    title: "UXPILOT",
+    description:
+      "UX Pilot brings the power of artificial intelligence to your design workflow, helping you create better user experiences in less time.",
+    icon: "/assets/design/uxpilot-icon.png",
+    category: "UI/UX",
+    benefits: ["AI-powered", "User-friendly", "Efficient"],
+    highlight: "AI-powered Design",
+    link: "https://www.uxpilot.ai/",
+  },
 ];
