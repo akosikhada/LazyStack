@@ -229,4 +229,14 @@ export const developmentTools = [
     highlight: "No-Code Platform",
     link: "https://www.hostinger.com/horizons",
   },
+  {
+    title: "Jules",
+    description:
+      "Jules is an experimental coding agent that helps you fix bugs, add documentation, and build new features. It integrates with GitHub, understands your codebase, and works asynchronously — so you can move on while it handles the task.",
+    icon: "/assets/development/jules-icon.png",
+    category: "Development",
+    benefits: ["Bug-fixing", "Documentation", "Feature-building"],
+    highlight: "Coding Assistant",
+    link: "https://jules.google/",
+  },
 ];
