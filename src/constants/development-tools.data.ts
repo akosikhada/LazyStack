@@ -249,4 +249,14 @@ export const developmentTools = [
     highlight: "AI Code Editor",
     link: "https://trypear.ai/",
   },
+  {
+    title: "Odapt AI",
+    description:
+      "Your AI agent, now with a full-fledged UI · View all your app & internal data from one place.",
+    icon: "/assets/development/odapt-icon.png",
+    category: "Development",
+    benefits: ["Interactive", "Embeddable", "Data-driven"],
+    highlight: "AI Agent",
+    link: "https://odapt.ai/",
+  },
 ];
