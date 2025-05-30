@@ -239,4 +239,14 @@ export const developmentTools = [
     highlight: "Coding Assistant",
     link: "https://jules.google/",
   },
+  {
+    title: "Pearl AI",
+    description:
+      "PearAI is an open source AI code editor with powerful features like AI chat, PearAI Creator, and AI debugging to help you make what excites.",
+    icon: "/assets/development/pearl-icon.png",
+    category: "Development",
+    benefits: ["Open-source", "AI-powered", "Debugging"],
+    highlight: "AI Code Editor",
+    link: "https://trypear.ai/",
+  },
 ];
