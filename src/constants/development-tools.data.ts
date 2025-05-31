@@ -259,4 +259,14 @@ export const developmentTools = [
     highlight: "AI Agent",
     link: "https://odapt.ai/",
   },
+  {
+    title: "Same",
+    description:
+      "See it, ship it. Build beautiful fullstack apps on autopilot. Same is a collaborative coding platform that allows you to build fullstack applications with real-time collaboration features, making it easy to work with teams and share code.",
+    icon: "/assets/development/same-new-icon.png",
+    category: "Development",
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://same.new/",
+  },
 ];
