@@ -219,4 +219,14 @@ export const designTools = [
     highlight: "AI-powered Design",
     link: "https://www.uxpilot.ai/",
   },
+  {
+    title: "Dreamina",
+    description:
+      "Create stunning art, images and more with prompts. Turn your images into captivating animations. Dreamina is an AI platform designed to simplify your creation.",
+    icon: "/assets/design/dreamina-icon.png",
+    category: "UI/UX",
+    benefits: ["AI-powered", "User-friendly", "Efficient"],
+    highlight: "AI-powered Design",
+    link: "https://dreamina.capcut.com/",
+  }
 ];
