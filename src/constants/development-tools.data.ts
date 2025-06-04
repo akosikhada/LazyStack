@@ -269,4 +269,14 @@ export const developmentTools = [
     highlight: "Autopilot Coding",
     link: "https://same.new/",
   },
+  {
+    title: "Chef",
+    description:
+      "One-click Deploy and Live Previews. Chef instantly hosts and deploys your app with a convex.app link, so real users can start using it in seconds.",
+    icon: "/assets/development/chef-icon.png",
+    category: "Development",
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://chef.convex.dev/",
+  },
 ];
