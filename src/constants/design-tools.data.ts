@@ -233,9 +233,9 @@ export const designTools = [
     title: "Sora",
     description:
     "Sora is OpenAI's video generation model, designed to take text, image, and video inputs and generate a new video as an output.",
-    icon: "/assets/ai/chatgpt-icon.png",
+    icon: "/assets/design/chatgpt-icon.png",
     category: "UI/UX",
-    benefit:  ["AI-powered", "User-friendly", "Efficient"],
+    benefits:  ["AI-powered", "User-friendly", "Efficient"],
     highlight: "AI-powered Design",
     link: "https://sora.chatgpt.com/",
   }
