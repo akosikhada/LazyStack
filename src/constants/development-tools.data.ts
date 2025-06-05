@@ -160,7 +160,7 @@ export const developmentTools = [
     link: "https://zed.dev/",
   },
   {
-    title: "ROSEBUD AI",
+    title: "Rosebud AI",
     description:
       "Build and instantly deploy games and creative apps without coding. Rosebud AI allows you to build everything you need in a few prompts.",
     icon: "/assets/development/rosebud-icon.png",
