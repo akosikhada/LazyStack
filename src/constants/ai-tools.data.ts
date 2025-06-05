@@ -248,4 +248,14 @@ export const aiTools = [
     highlight: "AI Consolidation",
     link: "https://www.ninjachat.ai/",
   },
+  {
+    title: "CosmicUp AI",
+    description:
+      "Get access to the most advanced AI models such as ChatGPT, Claude, Gemini, Meta LLama many others with a single subscription on CosmicUp.me.",
+    icon: "/assets/ai/cosmicup-icon.png",
+    category: "AI",
+    benefits: ["Hub", "Centralized", "Multiple-models"],
+    highlight: "AI Consolidation",
+    link: "https://cosmicup.me/",
+  },
 ];
