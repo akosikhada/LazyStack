@@ -279,4 +279,14 @@ export const developmentTools = [
     highlight: "Autopilot Coding",
     link: "https://chef.convex.dev/",
   },
+  {
+    title: "CodeRabbit",
+    description:
+      "CodeRabbit was easy to setup, and instantly gives every pull request an AI summary of changes and line by line code review.",
+    icon: "/assets/development/coderabbit-icon.png",
+    category: "Development",
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://www.coderabbit.ai/",
+  },
 ];
