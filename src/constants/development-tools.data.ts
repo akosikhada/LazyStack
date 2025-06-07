@@ -289,4 +289,14 @@ export const developmentTools = [
     highlight: "Autopilot Coding",
     link: "https://www.coderabbit.ai/",
   },
+  {
+    title: "HeroUi",
+    description:
+      "Build stunning UIs just by describing what you want. HeroUI Chat turns your prompts or screenshots into production-ready React code, using our open-source component library (23k+ Github stars) Design and code, together in one place",
+    icon: "/assets/development/heroui-icon.png",
+    category: "Development",
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://heroui.chat/",
+  },
 ];
