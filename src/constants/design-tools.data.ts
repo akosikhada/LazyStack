@@ -239,4 +239,14 @@ export const designTools = [
     highlight: "AI-powered Design",
     link: "https://sora.chatgpt.com/",
   }
+  {
+    title: "Onlook",
+    description:
+    "The power of Cursor for your own website. Onlook lets you edit your React website and write your changes back to code in real-time.",
+    icon: "/assets/design/onlook-icon.png",
+    category: "UI/UX",
+    benefits:  ["AI-powered", "User-friendly", "Efficient"],
+    highlight: "AI-powered Design",
+    link: "https://onlook.com/",
+  }
 ];
