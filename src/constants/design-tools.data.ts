@@ -238,7 +238,7 @@ export const designTools = [
     benefits:  ["AI-powered", "User-friendly", "Efficient"],
     highlight: "AI-powered Design",
     link: "https://sora.chatgpt.com/",
-  }
+  },
   {
     title: "Onlook",
     description:
