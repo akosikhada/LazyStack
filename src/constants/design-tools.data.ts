@@ -248,5 +248,15 @@ export const designTools = [
     benefits:  ["AI-powered", "User-friendly", "Efficient"],
     highlight: "AI-powered Design",
     link: "https://onlook.com/",
+  },
+  {
+    title: "Stitch",
+    description:
+    "Turn ideas into beautiful interface design with some of the latest Gemini models. Try free of charge & build with us.",
+    icon: "/assets/design/stitch-icon.png",
+    category: "UI/UX",
+    benefits:  ["AI-powered", "User-friendly", "Efficient"],
+    highlight: "AI-powered Design",
+    link: "https://stitch.withgoogle.com/",
   }
 ];
