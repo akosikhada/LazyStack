@@ -299,4 +299,14 @@ export const developmentTools = [
     highlight: "Autopilot Coding",
     link: "https://heroui.chat/",
   },
+  {
+    title: "Aura",
+    description:
+      "Generate beautiful designs in seconds and export to HTML or Figma. Powerful prompt builder with hundreds of templates for responsive web design.",
+    icon: "/assets/development/aurachat-icon.png",
+    category: "Development",
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://aurachat.io/",
+  },
 ];
