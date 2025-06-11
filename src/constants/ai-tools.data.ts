@@ -258,4 +258,14 @@ export const aiTools = [
     highlight: "AI Consolidation",
     link: "https://cosmicup.me/",
   },
+  {
+    title: "Lutra",
+    description:
+      "Lutra integrates with Outlook, Gmail, Spreadsheets, and docs, enabling you to parse, extract, and automate repetitive work processes.",
+    icon: "/assets/ai/lutra-icon.png",
+    category: "AI",
+    benefits: ["Hub", "Centralized", "Multiple-models"],
+    highlight: "AI Consolidation",
+    link: "https://lutra.ai/",
+  }
 ];
