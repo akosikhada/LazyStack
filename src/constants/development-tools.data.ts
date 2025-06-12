@@ -309,4 +309,24 @@ export const developmentTools = [
     highlight: "Autopilot Coding",
     link: "https://aurachat.io/",
   },
+  {
+    title: "Aura",
+    description:
+      "Generate beautiful designs in seconds and export to HTML or Figma. Powerful prompt builder with hundreds of templates for responsive web design.",
+    icon: "/assets/development/aurachat-icon.png",
+    category: "Development",  
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://aurachat.io/",
+  },
+  {
+    title: "Make",
+    description:
+      "Make is the leading integration and automation development platform which empowers businesses across all verticals to visualize systems, streamline processes and put AI to work - and ultimately realize their full potential.",
+    icon: "/assets/development/make-icon.png",
+    category: "Development",  
+    benefits: ["Real-time", "Collaborative", "Efficient"],
+    highlight: "Autopilot Coding",
+    link: "https://www.make.com/en",
+  }
 ];
