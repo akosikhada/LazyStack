@@ -8,7 +8,7 @@ import {
 import { Search } from "lucide-react";
 import React from "react";
 import { useTheme } from "next-themes";
-import { CustomDialogContent } from "../ui/custom-dialog";
+import { DialogContentWithoutCloseButton } from "../ui/custom-dialog";
 import { ToolItem } from "./ToolItem";
 import { FilterDropdown } from "./FilterDropdown";
 import { CategoryButtons } from "./CategoryButtons";
@@ -63,7 +63,7 @@ export function SearchDialog() {
         </button>
       </DialogTrigger>
 
-      <CustomDialogContent className="rounded-lg border-none bg-card sm:max-w-[700px]">
+      <DialogContentWithoutCloseButton className="rounded-lg border-none bg-card sm:max-w-[700px]">
         <DialogTitle className="sr-only">Search Tools</DialogTitle>
         <DialogDescription className="sr-only">
           Search and browse available tools and applications
@@ -162,7 +162,7 @@ export function SearchDialog() {
             </div>
           )}
         </div>
-      </CustomDialogContent>
+      </DialogContentWithoutCloseButton>
     </Dialog>
   );
 }
