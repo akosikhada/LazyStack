@@ -20,30 +20,29 @@ export function CardFooter({
     <div className="mt-auto flex items-center justify-between">
       <div className="flex items-center">
         <span
-          className={`rounded-md border-l-2 border-purple-500 px-2.5 py-1 text-xs font-medium ${
+          className={`flex items-center rounded-full border-l-2 border-purple-500 px-3 py-1 text-xs font-medium ${
             theme === "dark"
               ? "bg-purple-900/20 text-purple-300"
               : "bg-purple-50 text-purple-700"
           }`}
         >
+          <span className="mr-1.5 text-xs">✦</span>
           {highlight}
         </span>
       </div>
       <Button
-        className={`group h-8 rounded-md px-3 text-xs font-medium transition-all duration-300 ${
+        className={`group flex h-9 items-center gap-1 rounded-full px-4 text-xs font-medium transition-all duration-300 ${
           theme === "dark"
-            ? "bg-[#1a1a1f] text-white hover:bg-[#2a2a35]"
-            : "bg-purple-600 text-white hover:bg-purple-700"
+            ? "bg-purple-900/30 text-white hover:bg-purple-800/40"
+            : "bg-purple-100 text-purple-800 hover:bg-purple-200"
         }`}
         onClick={onViewDetails}
       >
-        <span className="flex items-center gap-1.5">
-          View Details
-          <ArrowRight
-            size={14}
-            className="transform transition-transform duration-300 group-hover:translate-x-0.5"
-          />
-        </span>
+        <span>View Details</span>
+        <ArrowRight
+          size={14}
+          className="transform transition-transform duration-300 group-hover:translate-x-0.5"
+        />
       </Button>
     </div>
   );
