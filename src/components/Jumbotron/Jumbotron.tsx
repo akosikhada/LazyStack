@@ -26,6 +26,7 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
   const featuresRef = useRef<HTMLDivElement>(null);
   const decorationsRef = useRef<HTMLDivElement>(null);
   const dashboardCodeRef = useRef<HTMLDivElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
 
   const { mousePosition, isMounted, typedText, isTyping, isMobileOrTablet } =
     useJumbotronEffects({
@@ -43,15 +44,18 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
     {
       title: "Developer's Edge",
       description: "Boost your productivity with competitive tools & workflows",
+      icon: "🚀",
     },
     {
       title: "Quality Companion",
       description:
         "Reliable solutions for maintaining code quality & standards",
+      icon: "✨",
     },
     {
       title: "Multilingual Savior",
       description: "Support for multiple programming languages & frameworks",
+      icon: "🌐",
     },
   ];
 
@@ -60,7 +64,7 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
       ref={heroRef}
       className={`relative overflow-hidden ${
         isDark ? "text-white" : "text-gray-900"
-      } flex min-h-[100vh] flex-col items-center justify-center px-4 py-8 text-center sm:py-16 md:px-8 md:py-20 lg:px-16 lg:py-24`}
+      } flex min-h-[100vh] w-full flex-col items-center justify-center px-4 py-8 text-center sm:py-16 md:px-8 md:py-20 lg:px-16 lg:py-24`}
     >
       {/* Background elements */}
       <JumbotronBackground
@@ -79,21 +83,23 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
               isDark
                 ? "bg-gradient-to-r from-[#3d1a7a] to-[#5b26c5] text-white shadow-purple-900/30"
                 : "bg-gradient-to-r from-[#8a3ffc] to-[#6023c0] text-white shadow-purple-400/20"
-            } mb-6 rounded-full px-5 py-2 text-xs font-medium tracking-wide shadow-lg sm:mb-8 sm:text-sm`}
+            } scale-in-animation mb-6 flex items-center rounded-full px-5 py-2.5 text-xs font-medium tracking-wide shadow-lg sm:mb-8 sm:text-sm`}
           >
-            <span className="flex items-center justify-center">
-              <span className="mr-2 text-yellow-200">✦</span>
-              <span className="font-semibold text-white">
-                Developer's Treasure Trove
-              </span>
-              <span className="ml-2 text-yellow-200">✦</span>
+            <span className="mr-2 flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-yellow-200">
+              ✦
+            </span>
+            <span className="font-semibold text-white">
+              Developer's Treasure Trove
+            </span>
+            <span className="ml-2 flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-yellow-200">
+              ✦
             </span>
           </div>
         </div>
 
         <h1
           ref={titleRef}
-          className="mx-auto mb-4 px-2 text-center text-4xl font-bold leading-none tracking-tight sm:mb-6 sm:px-4 sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mx-auto mb-4 px-2 text-center text-5xl font-extrabold leading-none tracking-tight sm:mb-6 sm:px-4 sm:text-6xl md:text-7xl lg:text-8xl"
         >
           <span className={isDark ? "text-purple-400" : "text-purple-600"}>
             Lazy
@@ -110,7 +116,7 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
         </h1>
         <p
           ref={descriptionRef}
-          className={`mx-auto mb-8 max-w-3xl text-lg sm:mb-10 sm:text-xl md:text-2xl ${
+          className={`mx-auto mb-10 max-w-3xl text-lg sm:mb-12 sm:text-xl md:text-2xl ${
             isDark ? "text-[#e0d6ff]/90" : "text-gray-700"
           } px-2 text-center font-light leading-relaxed`}
         >
@@ -119,7 +125,7 @@ export const Jumbotron: React.FC<JumbotronProps> = ({
 
         {/* Feature cards */}
         <div
-          className="mx-auto mb-10 grid max-w-5xl grid-cols-1 gap-5 px-3 sm:mb-12 sm:gap-6 sm:px-0 md:mb-14 md:gap-7 lg:grid-cols-3"
+          className="md:mb-18 mx-auto mb-14 grid max-w-5xl grid-cols-1 gap-6 px-3 sm:mb-16 sm:gap-8 sm:px-0 lg:grid-cols-3"
           ref={featuresRef}
         >
           {features.map((feature, index) => (

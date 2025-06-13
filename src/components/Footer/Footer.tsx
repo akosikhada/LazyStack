@@ -46,9 +46,9 @@ export default function Footer() {
     <footer
       className={`${
         isDark
-          ? "border-purple-900/10 bg-gradient-to-b from-[#0a0412] to-[#050208]"
-          : "border-purple-200/30 bg-gradient-to-b from-[#f0f0f7] to-[#fafafa]"
-      } relative border-t pb-8 pt-16`}
+          ? "border-purple-900/20 bg-gradient-to-b from-[#0a0412] via-[#080310] to-[#050208]"
+          : "border-purple-200/40 bg-gradient-to-b from-[#f5f5fa] via-[#f8f8fc] to-[#fafafa]"
+      } relative border-t pb-10 pt-20`}
     >
       {/* Background effects */}
       <FooterBackground isDark={isDark} />
@@ -60,8 +60,8 @@ export default function Footer() {
         onClick={scrollToTop}
       />
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6">
-        <div className="mb-14 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mb-16 grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-12 md:gap-y-16">
           {/* Brand section */}
           <FooterBrand isDark={isDark} />
 

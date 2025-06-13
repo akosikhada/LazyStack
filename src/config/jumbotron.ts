@@ -14,13 +14,13 @@ const developmentToolCount = developmentTools.length;
 export const terminalContent = [
   "Welcome to LazyStack",
   ">> Initializing LazyStack...",
-  ">> Ready to supercharge your workflow!",
-  ">> Loading tools:",
-  `   • AI: ${aiToolCount} available`,
-  `   • Design: ${designToolCount} available`,
-  `   • Development: ${developmentToolCount} available`,
-  ">> Dark theme activated for optimal focus",
-  ">> Signature purple accent applied for visual impact",
+  ">> Ready to supercharge your workflow...",
+  ">> Loading tools...",
+  `   • Development: ${developmentToolCount} available.`,
+  `   • Design: ${designToolCount} available.`,
+  `   • AI: ${aiToolCount} available.`,
+  ">> Dark theme activated for optimal focus.",
+  ">> Signature purple accent applied for visual impact.",
   ">> Ready. Let's build something amazing.",
 ];
 

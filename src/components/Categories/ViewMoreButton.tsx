@@ -29,14 +29,23 @@ export function ViewMoreButton({
   // 1. There are more tools to show
   const showLoadMoreButton = hasMoreTools;
 
+  // Shared button classes
+  const baseButtonClasses =
+    "group relative flex items-center gap-3 rounded-full px-8 py-3 font-medium text-white shadow-lg transition-all duration-300 overflow-hidden";
+  const primaryButtonClasses = `${baseButtonClasses} bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-xl`;
+  const outlineButtonClasses = `${baseButtonClasses} bg-transparent border-2 border-purple-500/20 text-purple-600 dark:text-purple-300 hover:border-purple-500/40`;
+
   if (showLessButton) {
     return (
       <button
         onClick={onShowLess}
-        className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl"
+        className={outlineButtonClasses}
         disabled={isLoading}
       >
-        Show Less <ChevronUp size={16} />
+        <span className="relative z-10">Show Less</span>
+        <ChevronUp size={18} className="relative z-10" />
+        {/* Background glow effect */}
+        <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 to-indigo-500/10 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
       </button>
     );
   }
@@ -45,13 +54,13 @@ export function ViewMoreButton({
     return (
       <button
         onClick={onLoadMore}
-        className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl"
+        className={primaryButtonClasses}
         disabled={isLoading}
       >
         {isLoading ? (
-          <span className="flex items-center">
+          <span className="relative z-10 flex items-center gap-2">
             <svg
-              className="-ml-1 mr-2 h-4 w-4 animate-spin text-white"
+              className="h-5 w-5 animate-spin text-white"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -74,8 +83,17 @@ export function ViewMoreButton({
           </span>
         ) : (
           <>
-            {visibleCount > initialVisibleCount ? "Load More" : "View More"}{" "}
-            <ChevronDown size={16} />
+            <span className="relative z-10">
+              {visibleCount > initialVisibleCount ? "Load More" : "View More"}
+            </span>
+            <ChevronDown
+              size={18}
+              className="relative z-10 transform transition-transform duration-300 group-hover:translate-y-1"
+            />
+
+            {/* Background shine effect */}
+            <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-30"></span>
+            <span className="group-hover:animate-shine absolute left-0 top-0 -z-10 h-full w-[200%] translate-x-[-100%] bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
           </>
         )}
       </button>
@@ -86,10 +104,13 @@ export function ViewMoreButton({
   return (
     <button
       onClick={onShowLess}
-      className="flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-600 hover:to-indigo-700 hover:shadow-xl"
+      className={outlineButtonClasses}
       disabled={isLoading}
     >
-      Show Less <ChevronUp size={16} />
+      <span className="relative z-10">Show Less</span>
+      <ChevronUp size={18} className="relative z-10" />
+      {/* Background glow effect */}
+      <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 to-indigo-500/10 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
     </button>
   );
 }

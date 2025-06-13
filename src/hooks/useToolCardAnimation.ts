@@ -43,7 +43,6 @@ export function useToolCardAnimation(index: number = 0) {
         .to(
           iconRef.current,
           {
-            scale: 1.05, // More subtle scale
             boxShadow: "0 4px 12px rgba(138, 63, 252, 0.15)",
             duration: 0.3,
             ease: "back.out(1.5)",
@@ -53,7 +52,6 @@ export function useToolCardAnimation(index: number = 0) {
         .to(
           contentRef.current,
           {
-            x: 1, // More subtle movement
             duration: 0.3,
             ease: "power2.out",
           },
