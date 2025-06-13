@@ -51,7 +51,7 @@ export default function Page() {
   const aiBgColor = theme === "dark" ? "#080810" : "#e8e8f0";
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen w-full overflow-x-hidden bg-background">
       <Navbar />
       <div id="hero">
         <HeroSection />
