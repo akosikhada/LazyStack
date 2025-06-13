@@ -10,26 +10,28 @@ interface BenefitsListProps {
  */
 export function BenefitsList({ benefits, theme }: BenefitsListProps) {
   return (
-    <div className="mb-6 flex flex-wrap gap-2">
+    <div className="mb-4">
       {benefits.map((benefit, i) => (
         <div
           key={i}
-          className={`flex items-center space-x-1 rounded-md px-2 py-0.5 text-xs font-medium transition-all duration-300 ${
-            theme === "dark"
-              ? "bg-[#0a0412]/70 text-purple-300"
-              : "bg-purple-50/80 text-purple-700"
+          className={`mb-2 flex items-center space-x-2 rounded-full px-3 py-1 text-xs font-medium ${
+            theme === "dark" ? "text-purple-300" : "text-purple-700"
           }`}
         >
           <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-3 w-3 text-purple-400"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+            className={`flex-shrink-0 ${theme === "dark" ? "text-purple-400" : "text-purple-500"}`}
           >
             <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-              clipRule="evenodd"
+              d="M20 6L9 17L4 12"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <span>{benefit}</span>
