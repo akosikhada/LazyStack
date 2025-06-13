@@ -11,12 +11,33 @@ interface ToolDescriptionProps {
  */
 export function ToolDescription({ description, theme }: ToolDescriptionProps) {
   return (
-    <DialogDescription
-      className={`mb-4 text-justify text-sm leading-relaxed sm:mb-6 sm:text-base ${
-        theme === "dark" ? "text-gray-300" : "text-gray-600"
-      } `}
-    >
-      {description}
-    </DialogDescription>
+    <div className="relative mb-8">
+      {/* Decorative elements */}
+      <div className="absolute -left-3 top-0 h-full w-1">
+        <div
+          className={`h-full w-0.5 rounded-full ${
+            theme === "dark"
+              ? "bg-gradient-to-b from-purple-800/50 to-transparent"
+              : "bg-gradient-to-b from-purple-300/50 to-transparent"
+          }`}
+        ></div>
+      </div>
+
+      <h3
+        className={`mb-3 text-sm font-medium ${
+          theme === "dark" ? "text-purple-300" : "text-purple-700"
+        }`}
+      >
+        About This Tool
+      </h3>
+
+      <DialogDescription
+        className={`text-base leading-relaxed first-letter:text-lg first-letter:font-medium ${
+          theme === "dark" ? "text-gray-300/90" : "text-gray-700"
+        }`}
+      >
+        {description}
+      </DialogDescription>
+    </div>
   );
 }
