@@ -23,10 +23,10 @@ export function ToolIcon({
   return (
     <div
       ref={iconRef}
-      className={`relative flex h-[50px] w-[50px] items-center justify-center overflow-hidden rounded-full transition-all duration-300 ${
+      className={`relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full transition-all duration-300 ${
         theme === "dark"
-          ? "bg-[#1a1a1f]/70 text-[#8a3ffc]"
-          : "bg-purple-50 text-purple-600"
+          ? "bg-gradient-to-br from-[#2a1a40] to-[#150a29] text-purple-400 shadow-lg shadow-purple-950/20 ring-1 ring-purple-900/30"
+          : "bg-gradient-to-br from-purple-50 to-white text-purple-600 shadow-md shadow-purple-100/30 ring-1 ring-purple-100"
       }`}
     >
       {imageIcon ? (
@@ -36,7 +36,7 @@ export function ToolIcon({
           width={150}
           height={150}
           loading="lazy"
-          className="absolute inset-0 m-auto object-cover"
+          className="h-full w-full object-cover"
           onError={(e) => {
             // Fallback for image loading errors
             const target = e.target as HTMLImageElement;
@@ -44,8 +44,17 @@ export function ToolIcon({
           }}
         />
       ) : Icon ? (
-        <Icon size={22} className="absolute inset-0 m-auto" />
+        <Icon size={30} className="absolute inset-0 m-auto" />
       ) : null}
+
+      {/* Add subtle glow effect */}
+      <div
+        className={`absolute inset-0 rounded-full ${
+          theme === "dark"
+            ? "bg-gradient-to-tr from-purple-800/5 via-transparent to-transparent opacity-0 group-hover:opacity-100"
+            : "bg-gradient-to-tr from-purple-200/20 via-transparent to-transparent opacity-0 group-hover:opacity-100"
+        } transition-opacity duration-300`}
+      ></div>
     </div>
   );
 }
