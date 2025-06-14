@@ -447,4 +447,18 @@ export const developmentTools = [
     highlight: "Innovative",
     link: "https://www.make.com/en",
   },
+  {
+    title: "TabbyML",
+    description:
+      "Tabby is an open-source AI coding assistant, designed to bring the power of AI to your development workflow while keeping you in control.",
+    icon: "/assets/development/tabby-icon.png",
+    category: "Development",
+    benefits: [
+      "AI-powered design generation for rapid prototyping",
+      "Intuitive drag-and-drop interface for seamless editing",
+      "Collaborative design environment for seamless teamwork",
+    ],
+    highlight: "Creative",
+    link: "https://www.tabbyml.com/",
+  },
 ];
