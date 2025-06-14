@@ -37,7 +37,7 @@ export default function ToolCategories({
     isLoading,
     initialToolsLoaded,
     handleLoadMore,
-    handleShowLess,
+    handleResetView,
     sectionRef,
   } = useCategoryTools({
     tools: sortedTools,
@@ -175,15 +175,27 @@ export default function ToolCategories({
 
         {/* View more/less button */}
         {showViewMore && tools.length > initialVisibleCount && (
-          <div className="mt-16 flex justify-center">
-            <ViewMoreButton
-              hasMoreTools={hasMoreTools}
-              isLoading={isLoading}
-              initialVisibleCount={initialVisibleCount}
-              visibleCount={visibleCount}
-              onLoadMore={handleLoadMore}
-              onShowLess={handleShowLess}
-            />
+          <div className="mt-16 flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
+            {visibleCount > initialVisibleCount && (
+              <ViewMoreButton
+                hasMoreTools={false}
+                isLoading={isLoading}
+                initialVisibleCount={initialVisibleCount}
+                visibleCount={visibleCount}
+                onLoadMore={handleLoadMore}
+                onResetView={handleResetView}
+              />
+            )}
+            {hasMoreTools && (
+              <ViewMoreButton
+                hasMoreTools={true}
+                isLoading={isLoading}
+                initialVisibleCount={initialVisibleCount}
+                visibleCount={visibleCount}
+                onLoadMore={handleLoadMore}
+                onResetView={handleResetView}
+              />
+            )}
           </div>
         )}
       </div>
