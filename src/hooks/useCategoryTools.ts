@@ -14,7 +14,7 @@ interface UseCategoryToolsReturn {
   isLoading: boolean;
   initialToolsLoaded: boolean;
   handleLoadMore: () => void;
-  handleShowLess: () => void;
+  handleResetView: () => void;
   sectionRef: React.RefObject<HTMLDivElement>;
 }
 
@@ -73,9 +73,14 @@ export function useCategoryTools({
     }
   }, [visibleCount, isLoading]);
 
-  const handleShowLess = () => {
-    // Reset to initial visible count
-    setVisibleCount(initialVisibleCount);
+  const handleResetView = () => {
+    // If current visible count is greater than 6, set to 6
+    // Otherwise, reset to initialVisibleCount (this preserves initial behavior if there are fewer than 6 items)
+    if (visibleCount > 6) {
+      setVisibleCount(6);
+    } else {
+      setVisibleCount(initialVisibleCount);
+    }
 
     // After state update, scroll to the top of the section
     if (sectionRef.current) {
@@ -93,7 +98,7 @@ export function useCategoryTools({
     isLoading,
     initialToolsLoaded,
     handleLoadMore,
-    handleShowLess,
+    handleResetView,
     sectionRef,
   };
 }
