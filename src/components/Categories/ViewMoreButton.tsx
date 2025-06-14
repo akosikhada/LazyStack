@@ -7,7 +7,7 @@ interface ViewMoreButtonProps {
   initialVisibleCount: number;
   visibleCount: number;
   onLoadMore: () => void;
-  onShowLess: () => void;
+  onResetView: () => void;
 }
 
 /**
@@ -19,38 +19,33 @@ export function ViewMoreButton({
   initialVisibleCount,
   visibleCount,
   onLoadMore,
-  onShowLess,
+  onResetView,
 }: ViewMoreButtonProps) {
-  // Show the "Show Less" button when:
-  // 1. There are no more tools to show AND the visible count is greater than initial
-  const showLessButton = visibleCount > initialVisibleCount && !hasMoreTools;
-
-  // Show the "Load More" button when:
-  // 1. There are more tools to show
-  const showLoadMoreButton = hasMoreTools;
-
   // Shared button classes
   const baseButtonClasses =
-    "group relative flex items-center gap-3 rounded-full px-8 py-3 font-medium text-white shadow-lg transition-all duration-300 overflow-hidden";
+    "group relative flex w-full sm:w-auto items-center justify-center gap-3 rounded-full px-6 sm:px-8 py-2.5 sm:py-3 font-medium text-white shadow-lg transition-all duration-300 overflow-hidden";
   const primaryButtonClasses = `${baseButtonClasses} bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-xl`;
   const outlineButtonClasses = `${baseButtonClasses} bg-transparent border-2 border-purple-500/20 text-purple-600 dark:text-purple-300 hover:border-purple-500/40`;
 
-  if (showLessButton) {
+  if (!hasMoreTools) {
+    // This is the "Show Default" button instance
     return (
       <button
-        onClick={onShowLess}
+        onClick={onResetView}
         className={outlineButtonClasses}
         disabled={isLoading}
       >
-        <span className="relative z-10">Show Less</span>
-        <ChevronUp size={18} className="relative z-10" />
+        <span className="relative z-10">Reset View</span>
+        <ChevronUp
+          size={18}
+          className="relative z-10 transform transition-transform duration-300 group-hover:-translate-y-1"
+        />
         {/* Background glow effect */}
         <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 to-indigo-500/10 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
       </button>
     );
-  }
-
-  if (showLoadMoreButton) {
+  } else {
+    // This is the "Load More" button instance
     return (
       <button
         onClick={onLoadMore}
@@ -99,18 +94,4 @@ export function ViewMoreButton({
       </button>
     );
   }
-
-  // Default fallback
-  return (
-    <button
-      onClick={onShowLess}
-      className={outlineButtonClasses}
-      disabled={isLoading}
-    >
-      <span className="relative z-10">Show Less</span>
-      <ChevronUp size={18} className="relative z-10" />
-      {/* Background glow effect */}
-      <span className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 to-indigo-500/10 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
-    </button>
-  );
 }
