@@ -450,15 +450,15 @@ export const developmentTools = [
   {
     title: "TabbyML",
     description:
-      "Tabby is an open-source AI coding assistant, designed to bring the power of AI to your development workflow while keeping you in control.",
+      "TabbyML is an open-source, self-hosted AI coding assistant designed to enhance code completion, debugging, and collaboration. It enables teams to set up their own LLM-powered code completion server, ensuring secure, flexible, and transparent AI-assisted development.",
     icon: "/assets/development/tabby-icon.png",
     category: "Development",
     benefits: [
-      "AI-powered design generation for rapid prototyping",
-      "Intuitive drag-and-drop interface for seamless editing",
-      "Collaborative design environment for seamless teamwork",
+      "Self-hosted AI coding assistant for full control over data and security",
+      "Optimized IDE extensions for rapid and accurate code completion",
+      "Compatibility with major coding LLMs like CodeLlama, StarCoder, and CodeGen",
     ],
-    highlight: "Creative",
+    highlight: "Flexible",
     link: "https://www.tabbyml.com/",
   },
 ];
