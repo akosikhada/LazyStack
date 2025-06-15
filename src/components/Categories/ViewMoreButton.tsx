@@ -23,8 +23,8 @@ export function ViewMoreButton({
 }: ViewMoreButtonProps) {
   // Shared button classes
   const baseButtonClasses =
-    "group relative flex w-full sm:w-auto items-center justify-center gap-3 rounded-full px-6 sm:px-8 py-2.5 sm:py-3 font-medium text-white shadow-lg transition-all duration-300 overflow-hidden";
-  const primaryButtonClasses = `${baseButtonClasses} bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-xl`;
+    "group relative flex w-full sm:w-auto items-center justify-center gap-3 rounded-full px-6 sm:px-8 py-2.5 sm:py-3 font-medium shadow-lg transition-all duration-300 overflow-hidden";
+  const primaryButtonClasses = `${baseButtonClasses} bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:shadow-xl`;
   const outlineButtonClasses = `${baseButtonClasses} bg-transparent border-2 border-purple-500/20 text-purple-600 dark:text-purple-300 hover:border-purple-500/40`;
 
   if (!hasMoreTools) {
