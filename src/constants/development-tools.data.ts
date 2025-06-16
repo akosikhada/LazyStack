@@ -461,4 +461,18 @@ export const developmentTools = [
     highlight: "Flexible",
     link: "https://www.tabbyml.com/",
   },
+  {
+    title: "Kilo",
+    description:
+      "Kilo Code is an all-in-one, open source tool built on a solid foundation. And also actively contributes to all its up-stream packages.",
+    icon: "/assets/development/kilo-icon.png",
+    category: "Development",
+    benefits: [
+      "AI-driven code completion and suggestions",
+      "Real-time collaboration for seamless teamwork",
+      "Optimized navigation for efficient coding tasks",
+    ],
+    highlight: "Intelligent",
+    link: "https://kilocode.ai/",
+  },
 ];
