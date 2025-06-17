@@ -475,4 +475,18 @@ export const developmentTools = [
     highlight: "Intelligent",
     link: "https://kilocode.ai/",
   },
+  {
+    title: "Continue",
+    description:
+      "Amplified developers, AI-native development. Create, share, and use custom AI code assistants with our open-source IDE extensions and hub of rules, tools and models.",
+    icon: "/assets/development/continue-icon.png",
+    category: "Development",
+    benefits: [
+      "AI-driven code completion and suggestions",
+      "Real-time collaboration for seamless teamwork",
+      "Optimized navigation for efficient coding tasks",
+    ],
+    highlight: "Intelligent",
+    link: "https://www.continue.dev/",
+  },
 ];
