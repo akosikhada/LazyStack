@@ -377,4 +377,18 @@ export const aiTools = [
     highlight: "Efficient",
     link: "https://lutra.ai/",
   },
+  {
+    title: "Anara",
+    description:
+      "Anara is AI for researchers. Quickly understand papers, books, and audio, organize findings, and write well-cited documents.Understand any PDF, image, audio recording or video with our AI assistant. Ask questions to quickly find the information you need.",
+    icon: "/assets/ai/anara-icon.png",
+    category: "AI",
+    benefits: [
+      "Natural language automation for effortless workflow creation",
+      "AI-driven data extraction from emails, PDFs, and websites",
+      "Seamless integration with tools like Google Workspace, Outlook, and HubSpot",
+    ],
+    highlight: "Efficient",
+    link: "https://anara.com/",
+  }
 ];
