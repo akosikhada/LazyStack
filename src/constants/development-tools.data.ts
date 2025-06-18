@@ -464,29 +464,29 @@ export const developmentTools = [
   {
     title: "Kilo",
     description:
-      "Kilo Code is an all-in-one, open source tool built on a solid foundation. And also actively contributes to all its up-stream packages.",
+      "Kilo Code is an open-source AI coding assistant designed to enhance development workflows within Visual Studio Code. It integrates AI-powered code generation, task automation, and intelligent suggestions, making it a powerful tool for developers.",
     icon: "/assets/development/kilo-icon.png",
     category: "Development",
     benefits: [
-      "AI-driven code completion and suggestions",
-      "Real-time collaboration for seamless teamwork",
-      "Optimized navigation for efficient coding tasks",
+      "AI-driven code generation for rapid development",
+      "Automated task execution to streamline repetitive coding processes",
+      "Seamless VS Code integration for an optimized developer experience",
     ],
-    highlight: "Intelligent",
+    highlight: "Efficient",
     link: "https://kilocode.ai/",
   },
   {
-    title: "Continue",
+    title: "Continue.dev",
     description:
-      "Amplified developers, AI-native development. Create, share, and use custom AI code assistants with our open-source IDE extensions and hub of rules, tools and models.",
+      "Continue.dev is an open-source AI code assistant designed to enhance development workflows within Visual Studio Code and JetBrains. It integrates AI-powered autocomplete, chat-based coding assistance, and intelligent code editing, making it a powerful tool for developers.",
     icon: "/assets/development/continue-icon.png",
     category: "Development",
     benefits: [
-      "AI-driven code completion and suggestions",
-      "Real-time collaboration for seamless teamwork",
-      "Optimized navigation for efficient coding tasks",
+      "Customizable AI code assistants tailored to specific development environments",
+      "Seamless integration with multiple AI models for enhanced flexibility",
+      "Context-aware coding assistance for improved efficiency and accuracy",
     ],
-    highlight: "Intelligent",
+    highlight: "Adaptive",
     link: "https://www.continue.dev/",
   },
 ];
