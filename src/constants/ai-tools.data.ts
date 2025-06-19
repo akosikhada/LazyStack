@@ -389,5 +389,5 @@ export const aiTools = [
     ],
     highlight: "Insightful",
     link: "https://anara.com/",
-  },
+  }
 ];
