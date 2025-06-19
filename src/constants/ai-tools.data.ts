@@ -380,15 +380,14 @@ export const aiTools = [
   {
     title: "Anara",
     description:
-      "Anara is AI for researchers. Quickly understand papers, books, and audio, organize findings, and write well-cited documents.Understand any PDF, image, audio recording or video with our AI assistant. Ask questions to quickly find the information you need.",
-    icon: "/assets/ai/anara-icon.png",
+      "Anara is an AI-powered research assistant designed to interpret, summarize, and organize complex documents efficiently. It specializes in academic research, paraphrasing, and AI-assisted writing, making it a valuable tool for students, professionals, and researchers.",
     category: "AI",
     benefits: [
-      "Natural language automation for effortless workflow creation",
-      "AI-driven data extraction from emails, PDFs, and websites",
-      "Seamless integration with tools like Google Workspace, Outlook, and HubSpot",
+      "Advanced document understanding for PDFs, images, and audio files",
+      "AI-driven summarization and paraphrasing to streamline research",
+      "Collaborative editing and multilingual support for global accessibility",
     ],
-    highlight: "Efficient",
+    highlight: "Insightful",
     link: "https://anara.com/",
-  }
+  },
 ];
