@@ -366,15 +366,15 @@ export const designTools = [
   {
     title: "Webfluin",
     description:
-      "Get website designs created by experienced Framer designers who understand conversion. 72-Hour Delivery.Your Hero with AI See your hero section come to life in real-time as you make your selections. Unlock Complete Site Love your hero section? Unlock a complete website that perfectly matches its style. Launch Today 100% editable in Framer. Change anything, connect your domain, and launch. No Designer’s Block Never stare at a blank page again. No Agency Prices Agency-quality website without the agency timeline or price. Own Your Website Make instant updates yourself—no code or developers required.",
+      "Webfluin is an AI-powered website builder that helps users design high-converting websites using real-time previews and expert-crafted templates. It focuses on conversion-optimized design, offering a seamless experience for building professional sites with minimal effort.",
     icon: "/assets/design/webfluin-icon.png",
     category: "UI/UX",
     benefits: [
-      "AI-driven UI generation for rapid design ideation",
-      "Seamless export to Figma for further refinement",
-      "Instant frontend code generation for streamlined development",
+      "Instant visual feedback with real-time hero section previews",
+      "Conversion-focused templates crafted by experienced Framer designers",
+      "Dedicated design support for personalized guidance and refinement",
     ],
-    highlight: "Effortless",
+    highlight: "Conversion",
     link: "https://webfluin.com/",
-  }
+  },
 ];
