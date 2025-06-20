@@ -391,4 +391,18 @@ export const aiTools = [
     highlight: "Insightful",
     link: "https://anara.com/",
   },
+  {
+    title: "Flowith",
+    description:
+      "Where Ideas Flow:Interact with the world's most powerful AI in a way from the future flowith is your AI Creation Workspace that transforms knowledge.",
+    icon: "assets/ai/flowith-icon.png",
+    category: "AI",
+    benefits: [
+      "Advanced document understanding for PDFs, images, and audio files",
+      "AI-driven summarization and paraphrasing to streamline research",
+      "Collaborative editing and multilingual support for global accessibility",
+    ],
+    highlight: "Insightful",
+    link: "https://flowith.io/",
+  }
 ];
