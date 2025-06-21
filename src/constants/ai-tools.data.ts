@@ -394,15 +394,15 @@ export const aiTools = [
   {
     title: "Flowith",
     description:
-      "Where Ideas Flow:Interact with the world's most powerful AI in a way from the future flowith is your AI Creation Workspace that transforms knowledge.",
+      "Flowith is a next-generation AI productivity platform that empowers users to build, manage, and collaborate with autonomous AI agents on a dynamic canvas. It combines multi-model orchestration, real-time collaboration, and knowledge-based task execution, making it ideal for complex workflows and creative projects.",
     icon: "assets/ai/flowith-icon.png",
     category: "AI",
     benefits: [
-      "Advanced document understanding for PDFs, images, and audio files",
-      "AI-driven summarization and paraphrasing to streamline research",
-      "Collaborative editing and multilingual support for global accessibility",
+      "Canvas-based interaction for multithreaded, non-linear AI conversations",
+      "Oracle Mode for autonomous task planning, tool invocation, and execution",
+      "Knowledge Garden that organizes your data into AI-usable “Seeds” for contextual responses",
     ],
-    highlight: "Insightful",
+    highlight: "Autonomous",
     link: "https://flowith.io/",
-  }
+  },
 ];
