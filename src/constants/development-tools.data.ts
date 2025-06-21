@@ -489,4 +489,18 @@ export const developmentTools = [
     highlight: "Adaptive",
     link: "https://www.continue.dev/",
   },
+  {
+    title: "OpenCode",
+    description:
+      "A powerful terminal-based AI assistant for developers, providing intelligent coding assistance directly in your terminal.",
+    icon: "/assets/development/opencode-icon.png",
+    category: "Development",
+    benefits: [
+      "Customizable AI code assistants tailored to specific development environments",
+      "Seamless integration with multiple AI models for enhanced flexibility",
+      "Context-aware coding assistance for improved efficiency and accuracy",
+    ],
+    highlight: "Adaptive",
+    link: "https://opencode.ai/",
+  }
 ];
