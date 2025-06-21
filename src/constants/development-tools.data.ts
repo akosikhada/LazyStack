@@ -502,5 +502,19 @@ export const developmentTools = [
     ],
     highlight: "Adaptive",
     link: "https://opencode.ai/",
+  },
+  {
+    title: "SourceGraph",
+    description:
+      "Designed to simplify and accelerate developer workflows, Cody uses a combination of search, AI chat, and prompts in a single interface to streamline how you how you explore, understand, and generate code.",
+    icon: "/assets/development/sourcegraph-icon.png",
+    category: "Development",
+    benefits: [
+      "Customizable AI code assistants tailored to specific development environments",
+      "Seamless integration with multiple AI models for enhanced flexibility",
+      "Context-aware coding assistance for improved efficiency and accuracy",
+    ],
+    highlight: "Adaptive",
+    link: "https://sourcegraph.com/",
   }
 ];
