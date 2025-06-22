@@ -492,29 +492,29 @@ export const developmentTools = [
   {
     title: "OpenCode",
     description:
-      "A powerful terminal-based AI assistant for developers, providing intelligent coding assistance directly in your terminal.",
+      "OpenCode is an AI-powered terminal-based coding assistant designed to bring intelligent code generation, debugging, and automation directly into your command line. Built with a native TUI (Terminal User Interface), it supports 75+ LLM providers and integrates seamlessly with tools like Vim, LSPs, and external editors.",
     icon: "/assets/development/opencode-icon.png",
     category: "Development",
     benefits: [
-      "Customizable AI code assistants tailored to specific development environments",
-      "Seamless integration with multiple AI models for enhanced flexibility",
-      "Context-aware coding assistance for improved efficiency and accuracy",
+      "Multi-model support including OpenAI, Claude, Gemini, and local models",
+      "Interactive terminal UI with session management, file tracking, and code editing",
+      "Autonomous coding agents that can execute commands, modify files, and manage conversations",
     ],
-    highlight: "Adaptive",
+    highlight: "Terminal-native",
     link: "https://opencode.ai/",
   },
   {
     title: "SourceGraph",
     description:
-      "Designed to simplify and accelerate developer workflows, Cody uses a combination of search, AI chat, and prompts in a single interface to streamline how you how you explore, understand, and generate code.",
+      "Sourcegraph is an AI-powered code intelligence platform designed to help developers search, understand, and automate changes across large codebases. It offers tools like universal code search, AI coding assistant Cody, and batch changes, making it ideal for scaling software development in complex environments.",
     icon: "/assets/development/sourcegraph-icon.png",
     category: "Development",
     benefits: [
-      "Customizable AI code assistants tailored to specific development environments",
-      "Seamless integration with multiple AI models for enhanced flexibility",
-      "Context-aware coding assistance for improved efficiency and accuracy",
+      "Universal code search across all repositories, branches, and code hosts",
+      "AI-assisted development with Cody for writing, debugging, and maintaining code",
+      "Automated large-scale changes with insights and refactoring tools",
     ],
-    highlight: "Adaptive",
+    highlight: "Intelligent",
     link: "https://sourcegraph.com/",
-  }
+  },
 ];
