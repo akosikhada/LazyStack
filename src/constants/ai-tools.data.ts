@@ -405,4 +405,18 @@ export const aiTools = [
     highlight: "Autonomous",
     link: "https://flowith.io/",
   },
+  {
+    title: "Director AI",
+    description:
+      "Director - Automate anything online. ... Director logo. Mobile coming soon! For now, give us a try on desktop. Follow us on X! Feedback Sign in. Sign up. Tasks",
+    icon: "assets/ai/icon.png",
+    category: "AI",
+    benefits: [
+      "Canvas-based interaction for multithreaded, non-linear AI conversations",
+      "Oracle Mode for autonomous task planning, tool invocation, and execution",
+      "Knowledge Garden that organizes your data into AI-usable “Seeds” for contextual responses",
+    ],
+    highlight: "Autonomous",
+    link: "https://www.director.ai/",
+  }
 ];
