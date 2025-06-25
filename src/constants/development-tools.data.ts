@@ -517,4 +517,18 @@ export const developmentTools = [
     highlight: "Intelligent",
     link: "https://sourcegraph.com/",
   },
+  {
+    title: "New Website",
+    description:
+      "Launch a Website in Minutes. Chat with AI to build a website. Seamlessly add forms, content and media.",
+    icon: "assets/development/new-website.icon.png",
+    category: "AI",
+    benefits: [
+      "Canvas-based interaction for multithreaded, non-linear AI conversations",
+      "Oracle Mode for autonomous task planning, tool invocation, and execution",
+      "Knowledge Garden that organizes your data into AI-usable “Seeds” for contextual responses",
+    ],
+    highlight: "Autonomous",
+    link: "https://new.website/",
+  }
 ];
