@@ -521,7 +521,7 @@ export const developmentTools = [
     title: "New Website",
     description:
       "Launch a Website in Minutes. Chat with AI to build a website. Seamlessly add forms, content and media.",
-    icon: "assets/development/new-website.icon.png",
+    icon: "assets/development/new-website-icon.png",
     category: "AI",
     benefits: [
       "Canvas-based interaction for multithreaded, non-linear AI conversations",
