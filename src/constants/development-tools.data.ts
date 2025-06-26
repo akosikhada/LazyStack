@@ -530,5 +530,19 @@ export const developmentTools = [
     ],
     highlight: "Autonomous",
     link: "https://new.website/",
-  }
+  },
+  {
+    title: "Emergent",
+    description:
+      "Build real products with Emergent's vibe-coding platform. Emergent AI creates production-ready applications from natural language—no developers required.",
+    icon: "assets/development/emergent-icon.png",
+    category: "AI",
+    benefits: [
+      "Canvas-based interaction for multithreaded, non-linear AI conversations",
+      "Oracle Mode for autonomous task planning, tool invocation, and execution",
+      "Knowledge Garden that organizes your data into AI-usable “Seeds” for contextual responses",
+    ],
+    highlight: "Autonomous",
+    link: "https://app.emergent.sh/",
+  },
 ];
