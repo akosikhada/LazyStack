@@ -408,15 +408,15 @@ export const aiTools = [
   {
     title: "Director AI",
     description:
-      "Director - Automate anything online. ... Director logo. Mobile coming soon! For now, give us a try on desktop. Follow us on X! Feedback Sign in. Sign up. Tasks",
+      "Director is an AI-powered video agent framework designed to help users search, edit, and generate video content with ease. Built on VideoDB’s infrastructure, it supports modular video agents, GenAI integrations, and a chat-based interface for intuitive interaction.",
     icon: "assets/ai/icon.png",
     category: "AI",
     benefits: [
-      "Canvas-based interaction for multithreaded, non-linear AI conversations",
-      "Oracle Mode for autonomous task planning, tool invocation, and execution",
-      "Knowledge Garden that organizes your data into AI-usable “Seeds” for contextual responses",
+      "AI-driven video summarization and generation from scripts with voiceovers",
+      "Multilingual support for dubbing, translation, and subtitle automation",
+      "Customizable video agents for tasks like clip creation, overlaying, and media indexing",
     ],
-    highlight: "Autonomous",
+    highlight: "Creative",
     link: "https://www.director.ai/",
-  }
+  },
 ];
