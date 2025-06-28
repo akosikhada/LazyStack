@@ -419,4 +419,18 @@ export const aiTools = [
     highlight: "Creative",
     link: "https://www.director.ai/",
   },
+  {
+    title: "Double",
+    description:
+      "Double is an AI coding assistant engineered for performance. It’s designed with great craftsmanship by people who care a lot about getting the small details right, try it in VS Code for free. We are backed by Y Combinator.",
+    icon: "assets/ai/double-bot-icon.png",
+    category: "AI",
+    benefits: [
+      "AI-driven video summarization and generation from scripts with voiceovers",
+      "Multilingual support for dubbing, translation, and subtitle automation",
+      "Customizable video agents for tasks like clip creation, overlaying, and media indexing",
+    ],
+    highlight: "Creative",
+    link: "https://docs.double.bot/introduction",
+  },
 ];
