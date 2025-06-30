@@ -426,9 +426,9 @@ export const aiTools = [
     icon: "assets/ai/double-bot-icon.png",
     category: "AI",
     benefits: [
-      "AI-driven video summarization and generation from scripts with voiceovers",
-      "Multilingual support for dubbing, translation, and subtitle automation",
-      "Customizable video agents for tasks like clip creation, overlaying, and media indexing",
+      "Automated video summarization and generation using AI from scripts enhanced with voiceover integration",
+      "Multilingual capabilities for dubbing, translation, and automated subtitle generation across global audiences",
+      "Configurable AI video agents for intelligent media tasks including clip creation, visual overlays, and content indexing",
     ],
     highlight: "Creative",
     link: "https://docs.double.bot/introduction",
