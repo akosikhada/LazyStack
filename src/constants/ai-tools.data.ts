@@ -433,4 +433,18 @@ export const aiTools = [
     highlight: "Creative",
     link: "https://docs.double.bot/introduction",
   },
+  {
+    title: "RunnerH",
+    description:
+      "Forging Superintelligence. Putting AI to work for you, with #RunnerH sparking the agentic AI revolution.",
+    icon: "assets/ai/runnerh-icon.png",
+    category: "AI",
+    benefits: [
+      "AI-powered coding assistant designed for performance and craftsmanship",
+      "VS Code integration for seamless coding assistance and debugging",
+      "Y Combinator-backed development team focused on small details for optimal user experience",
+    ],
+    highlight: "Creative",
+    link: "https://www.hcompany.ai/",
+  },
 ];
