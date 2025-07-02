@@ -422,29 +422,29 @@ export const aiTools = [
   {
     title: "Double",
     description:
-      "Double is an AI coding assistant engineered for performance. It’s designed with great craftsmanship by people who care a lot about getting the small details right, try it in VS Code for free. We are backed by Y Combinator.",
+      "Double is an AI-powered coding assistant built as a Visual Studio Code extension that helps developers write, edit, and review code more efficiently. It supports real-time autocomplete, inline code edits, and chat-based assistance using top-tier models like GPT-4o, Claude 3.7, and DeepSeek R1.",
     icon: "assets/ai/double-bot-icon.png",
     category: "AI",
     benefits: [
-      "Automated video summarization and generation using AI from scripts enhanced with voiceover integration",
-      "Multilingual capabilities for dubbing, translation, and automated subtitle generation across global audiences",
-      "Configurable AI video agents for intelligent media tasks including clip creation, visual overlays, and content indexing",
+      "Smart autocomplete with context-aware suggestions and automatic imports",
+      "Inline edit previews for reviewing AI-generated changes before applying",
+      "Multi-model support with customizable keybindings and chat-based coding help",
     ],
-    highlight: "Creative",
+    highlight: "Productive",
     link: "https://docs.double.bot/introduction",
   },
   {
     title: "RunnerH",
     description:
-      "Forging Superintelligence. Putting AI to work for you, with #RunnerH sparking the agentic AI revolution.",
+      "H Company is a Paris-based AI research and product company focused on building autonomous, agentic AI systems that go beyond traditional chatbots. Their platform introduces execution intelligence, enabling AI agents to complete complex digital workflows across web, mobile, and enterprise environments.",
     icon: "assets/ai/runnerh-icon.png",
     category: "AI",
     benefits: [
-      "AI-powered coding assistant designed for performance and craftsmanship",
-      "VS Code integration for seamless coding assistance and debugging",
-      "Y Combinator-backed development team focused on small details for optimal user experience",
+      "Autonomous task execution with agents like Runner H, Surfer H, and Tester H",
+      "Multimodal intelligence combining vision, language, and planning capabilities",
+      "Open-source innovation with Holo-1 and the WebClick dataset for visual UI automation",
     ],
-    highlight: "Creative",
+    highlight: "Agentic",
     link: "https://www.hcompany.ai/",
   },
 ];
