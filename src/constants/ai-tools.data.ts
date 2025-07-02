@@ -447,4 +447,18 @@ export const aiTools = [
     highlight: "Agentic",
     link: "https://www.hcompany.ai/",
   },
+  {
+    title: "Genspark AI",
+    description:
+      "AI Slides, AI Sheets, AI Chat, AI Image and Video Generation, AI Download For Me, AI Call For Me, AI Drive, and more.",
+    icon: "assets/ai/genspark-icon.png",
+    category: "AI",
+    benefits: [
+      "AI-driven task automation for faster productivity",
+      "Data analysis and workflow optimization for improved efficiency",
+      "Seamless integration with various tools and platforms",
+    ],
+    highlight: "Adaptive",
+    link: "https://agentic.ai/",
+  },
 ];
