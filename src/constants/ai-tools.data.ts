@@ -450,15 +450,15 @@ export const aiTools = [
   {
     title: "Genspark AI",
     description:
-      "AI Slides, AI Sheets, AI Chat, AI Image and Video Generation, AI Download For Me, AI Call For Me, AI Drive, and more.",
+      "Agentic.ai is an AI agent orchestration platform designed to help developers build, deploy, and manage autonomous AI agents with advanced reasoning capabilities. It supports multi-agent collaboration, tool integration, and goal-driven workflows, making it ideal for complex automation tasks across industries.",
     icon: "assets/ai/genspark-icon.png",
     category: "AI",
     benefits: [
-      "AI-driven task automation for faster productivity",
-      "Data analysis and workflow optimization for improved efficiency",
-      "Seamless integration with various tools and platforms",
+      "Modular agent architecture for scalable and customizable workflows",
+      "Autonomous decision-making with real-time data and feedback loops",
+      "Seamless integration with APIs, databases, and external tools",
     ],
-    highlight: "Adaptive",
+    highlight: "Autonomous",
     link: "https://agentic.ai/",
   },
 ];
