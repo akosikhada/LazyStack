@@ -545,4 +545,18 @@ export const developmentTools = [
     highlight: "Agentic",
     link: "https://app.emergent.sh/",
   },
+  {
+    title: "Rovo Dev",
+    description:
+      "Rovo Dev is an AI agent built by Atlassian for software developers, and is now available for use directly in your terminal via the Command Line Interface (CLI). This integration brings the power of Rovo Dev’s natural language capabilities into one of the most familiar environments for developers enabling faster, smarter coding without leaving the command line.",
+    icon: "assets/development/rovodev-icon.png",
+    category: "Development",
+    benefits: [
+      "Autonomous task execution: Breaks down goals into subtasks and completes them end-to-end",
+      "Multimodal capabilities: Understands and generates text, images, audio, and video",
+      "Integrated productivity tools: Supports GitHub, Figma, Slack, and more for seamless workflows",
+    ],
+    highlight: "Agentic",
+    link: "https://rovodev.atlassian.com/",
+  },
 ];
