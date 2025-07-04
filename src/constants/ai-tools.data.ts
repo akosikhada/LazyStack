@@ -462,17 +462,17 @@ export const aiTools = [
     link: "https://agentic.ai/",
   },
   {
-    title: "Minimax",
+    title: "MiniMax",
     description:
-      "Minimax is an AI agent orchestration platform designed to help developers build, deploy, and manage autonomous AI agents with advanced reasoning capabilities. Our mission is to build a world where intelligence thrives with everyone.",
+      "MiniMax Agent is a general-purpose AI assistant platform designed to execute complex, multi-step tasks using a team of collaborative AI agents. It supports code generation, document analysis, creative writing, research, and multimedia generation, all orchestrated through a multi-agent collaboration protocol (MCP).",
     icon: "assets/ai/minimax-icon.png",
     category: "AI",
     benefits: [
-      "Modular agent architecture for scalable and customizable workflows",
-      "Autonomous decision-making with real-time data and feedback loops",
-      "Seamless integration with APIs, databases, and external tools",
+      "Autonomous task execution: Breaks down goals into subtasks and completes them end-to-end",
+      "Multimodal capabilities: Understands and generates text, images, audio, and video",
+      "Integrated productivity tools: Supports GitHub, Figma, Slack, and more for seamless workflows",
     ],
-    highlight: "Autonomous",
+    highlight: "Agentic",
     link: "https://agent.minimax.io/",
   },
 ];
