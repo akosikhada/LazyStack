@@ -559,4 +559,18 @@ export const developmentTools = [
     highlight: "Agentic",
     link: "https://rovodev.atlassian.com/",
   },
+  {
+    title: "Refact",
+    description:
+      "Refact.ai codes like you, thinks like you, and adapts to your workflow instantly. Integrate it with your tools, fine-tune it to your codebase, and choose the best LLMs for your tasks. Deploy on-premise and stay in full control of your data.",
+    icon: "assets/development/refacts-icon.png",
+    category: "Development",
+    benefits: [
+      "Terminal-native productivity with a CLI that supports natural language prompts, file operations, and shell commands",
+      "AI-powered code reasoning for analyzing codebases, generating implementation plans, and debugging issues",
+      "Integrated task and session management with memory support, reusable prompts, and permission-controlled tool usage",
+    ],
+    highlight: "Agentic",
+    link: "https://refact.ai/",
+  },
 ];
