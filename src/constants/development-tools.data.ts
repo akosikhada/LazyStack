@@ -548,13 +548,13 @@ export const developmentTools = [
   {
     title: "Rovo Dev",
     description:
-      "Rovo Dev is an AI agent built by Atlassian for software developers, and is now available for use directly in your terminal via the Command Line Interface (CLI). This integration brings the power of Rovo Dev’s natural language capabilities into one of the most familiar environments for developers enabling faster, smarter coding without leaving the command line.",
+      "Rovo Dev is an AI-powered coding agent by Atlassian, designed to help developers write, debug, and manage code directly from the command line. It’s part of the broader Rovo platform, which integrates AI across Atlassian tools like Jira and Confluence to streamline development workflows.",
     icon: "assets/development/atlassian-icon.png",
     category: "Development",
     benefits: [
-      "Autonomous task execution: Breaks down goals into subtasks and completes them end-to-end",
-      "Multimodal capabilities: Understands and generates text, images, audio, and video",
-      "Integrated productivity tools: Supports GitHub, Figma, Slack, and more for seamless workflows",
+      "Terminal-native productivity with a CLI that supports natural language prompts, file operations, and shell commands",
+      "AI-powered code reasoning for analyzing codebases, generating implementation plans, and debugging issues",
+      "Integrated task and session management with memory support, reusable prompts, and permission-controlled tool usage",
     ],
     highlight: "Agentic",
     link: "https://rovodev.atlassian.com/",
