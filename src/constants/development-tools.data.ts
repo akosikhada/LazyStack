@@ -560,17 +560,17 @@ export const developmentTools = [
     link: "https://rovodev.atlassian.com/",
   },
   {
-    title: "Refact",
+    title: "Refact.ai",
     description:
-      "Refact.ai codes like you, thinks like you, and adapts to your workflow instantly. Integrate it with your tools, fine-tune it to your codebase, and choose the best LLMs for your tasks. Deploy on-premise and stay in full control of your data.",
+      "Refact.ai is an open-source, autonomous AI coding assistant designed to automate software development tasks with deep integration into your tools and workflows. It acts like a developer in your IDE—planning, executing, and iterating on tasks using natural language prompts and full codebase awareness.",
     icon: "assets/development/refact-icon.png",
     category: "Development",
     benefits: [
-      "Terminal-native productivity with a CLI that supports natural language prompts, file operations, and shell commands",
-      "AI-powered code reasoning for analyzing codebases, generating implementation plans, and debugging issues",
-      "Integrated task and session management with memory support, reusable prompts, and permission-controlled tool usage",
+      "End-to-end task automation: From code generation to debugging and deployment",
+      "Context-aware development: Understands your codebase, tools, and architecture",
+      "On-premise deployment: Ensures full control and privacy over your data",
     ],
-    highlight: "Agentic",
+    highlight: "Autonomous",
     link: "https://refact.ai/",
   },
 ];
