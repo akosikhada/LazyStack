@@ -573,4 +573,18 @@ export const developmentTools = [
     highlight: "Autonomous",
     link: "https://refact.ai/",
   },
+  {
+    title: "Wegic",
+    description:
+      "Wegic is your AI website team—your AI designer, developer, and manager. Just chat, and Wegic will help you create custom websites in seconds, publish with one click, and manage updates automatically—no coding required.",
+    icon: "assets/development/wegic-icon.png",
+    category: "Development",
+    benefits: [
+      "Terminal-native productivity with a CLI that supports natural language prompts, file operations, and shell commands",
+      "AI-powered code reasoning for analyzing codebases, generating implementation plans, and debugging issues",
+      "Integrated task and session management with memory support, reusable prompts, and permission-controlled tool usage",
+    ],
+    highlight: "Agentic",
+    link: "https://wegic.com/",
+  },
 ];
