@@ -521,7 +521,7 @@ export const developmentTools = [
     title: "New.website",
     description:
       "New.website appears to be a placeholder or default browser page, likely associated with a new tab or homepage setup in Microsoft Edge. It doesn’t currently represent a standalone product or service with a defined description, features, or branding.",
-    icon: "assets/development/new-website-icon.png",
+    icon: "/assets/development/new-website-icon.png",
     category: "Development",
     benefits: [
       "Default new tab experience in Microsoft Edge",
@@ -535,7 +535,7 @@ export const developmentTools = [
     title: "Emergent",
     description:
       "Emergent is an AI-powered agentic development platform that enables users to build, test, and deploy production-ready applications using natural language prompts. It combines autonomous coding agents, code migration tools, and no-code interfaces to streamline software creation—from landing pages to AI apps and digital assistants.",
-    icon: "assets/development/emergent-icon.png",
+    icon: "/assets/development/emergent-icon.png",
     category: "Development",
     benefits: [
       "Natural language to code: Build full applications without writing traditional code",
@@ -549,7 +549,7 @@ export const developmentTools = [
     title: "Rovo Dev",
     description:
       "Rovo Dev is an AI-powered coding agent by Atlassian, designed to help developers write, debug, and manage code directly from the command line. It’s part of the broader Rovo platform, which integrates AI across Atlassian tools like Jira and Confluence to streamline development workflows.",
-    icon: "assets/development/atlassian-icon.png",
+    icon: "/assets/development/atlassian-icon.png",
     category: "Development",
     benefits: [
       "Terminal-native productivity with a CLI that supports natural language prompts, file operations, and shell commands",
@@ -563,7 +563,7 @@ export const developmentTools = [
     title: "Refact.ai",
     description:
       "Refact.ai is an open-source, autonomous AI coding assistant designed to automate software development tasks with deep integration into your tools and workflows. It acts like a developer in your IDE—planning, executing, and iterating on tasks using natural language prompts and full codebase awareness.",
-    icon: "assets/development/refact-icon.png",
+    icon: "/assets/development/refact-icon.png",
     category: "Development",
     benefits: [
       "End-to-end task automation: From code generation to debugging and deployment",
@@ -576,15 +576,15 @@ export const developmentTools = [
   {
     title: "Wegic",
     description:
-      "Wegic is your AI website team—your AI designer, developer, and manager. Just chat, and Wegic will help you create custom websites in seconds, publish with one click, and manage updates automatically—no coding required.",
-    icon: "assets/development/wegic-icon.png",
+      "Wegic is an AI-powered website builder that acts as your designer, developer, and manager—all in one. It enables users to create, customize, and publish websites simply by chatting with an AI assistant. With no coding required, Wegic is ideal for beginners and professionals alike who want to build stunning, responsive websites quickly.",
+    icon: "/assets/development/wegic-icon.png",
     category: "Development",
     benefits: [
-      "Terminal-native productivity with a CLI that supports natural language prompts, file operations, and shell commands",
-      "AI-powered code reasoning for analyzing codebases, generating implementation plans, and debugging issues",
-      "Integrated task and session management with memory support, reusable prompts, and permission-controlled tool usage",
+      "Conversational interface: Build and edit your site using natural language prompts",
+      "Real-time customization: Instantly adjust layout, colors, fonts, and visuals with AI assistance",
+      "Multilingual & mobile-ready: Create responsive websites in multiple languages with ease",
     ],
-    highlight: "Agentic",
+    highlight: "Conversational",
     link: "https://wegic.com/",
   },
 ];
