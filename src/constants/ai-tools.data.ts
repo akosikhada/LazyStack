@@ -381,7 +381,7 @@ export const aiTools = [
     title: "Anara",
     description:
       "Anara is an AI-powered research assistant designed to help users interpret, summarize, and organize complex documents with ease. It specializes in academic research, paraphrasing, and AI-assisted writing, making it a valuable tool for students, professionals, and researchers alike.",
-    icon: "assets/ai/anara-icon.png",
+    icon: "/assets/ai/anara-icon.png",
     category: "AI",
     benefits: [
       "Advanced document understanding for PDFs, images, and audio files",
@@ -395,7 +395,7 @@ export const aiTools = [
     title: "Flowith",
     description:
       "Flowith is a next-generation AI productivity platform that empowers users to build, manage, and collaborate with autonomous AI agents on a dynamic canvas. It combines multi-model orchestration, real-time collaboration, and knowledge-based task execution, making it ideal for complex workflows and creative projects.",
-    icon: "assets/ai/flowith-icon.png",
+    icon: "/assets/ai/flowith-icon.png",
     category: "AI",
     benefits: [
       "Canvas-based interaction for multithreaded, non-linear AI conversations",
@@ -409,7 +409,7 @@ export const aiTools = [
     title: "Director AI",
     description:
       "Director is an AI-powered video agent framework designed to help users search, edit, and generate video content with ease. Built on VideoDB’s infrastructure, it supports modular video agents, GenAI integrations, and a chat-based interface for intuitive interaction.",
-    icon: "assets/ai/icon.png",
+    icon: "/assets/ai/icon.png",
     category: "AI",
     benefits: [
       "AI-driven video summarization and generation from scripts with voiceovers",
@@ -423,7 +423,7 @@ export const aiTools = [
     title: "Double",
     description:
       "Double is an AI-powered coding assistant built as a Visual Studio Code extension that helps developers write, edit, and review code more efficiently. It supports real-time autocomplete, inline code edits, and chat-based assistance using top-tier models like GPT-4o, Claude 3.7, and DeepSeek R1.",
-    icon: "assets/ai/double-bot-icon.png",
+    icon: "/assets/ai/double-bot-icon.png",
     category: "AI",
     benefits: [
       "Smart autocomplete with context-aware suggestions and automatic imports",
@@ -437,7 +437,7 @@ export const aiTools = [
     title: "RunnerH",
     description:
       "H Company is a Paris-based AI research and product company focused on building autonomous, agentic AI systems that go beyond traditional chatbots. Their platform introduces execution intelligence, enabling AI agents to complete complex digital workflows across web, mobile, and enterprise environments.",
-    icon: "assets/ai/runnerh-icon.png",
+    icon: "/assets/ai/runnerh-icon.png",
     category: "AI",
     benefits: [
       "Autonomous task execution with agents like Runner H, Surfer H, and Tester H",
@@ -451,7 +451,7 @@ export const aiTools = [
     title: "Genspark AI",
     description:
       "Agentic.ai is an AI agent orchestration platform designed to help developers build, deploy, and manage autonomous AI agents with advanced reasoning capabilities. It supports multi-agent collaboration, tool integration, and goal-driven workflows, making it ideal for complex automation tasks across industries.",
-    icon: "assets/ai/genspark-icon.png",
+    icon: "/assets/ai/genspark-icon.png",
     category: "AI",
     benefits: [
       "Modular agent architecture for scalable and customizable workflows",
@@ -465,7 +465,7 @@ export const aiTools = [
     title: "MiniMax",
     description:
       "MiniMax Agent is a general-purpose AI assistant platform designed to execute complex, multi-step tasks using a team of collaborative AI agents. It supports code generation, document analysis, creative writing, research, and multimedia generation, all orchestrated through a multi-agent collaboration protocol (MCP).",
-    icon: "assets/ai/minimax-icon.png",
+    icon: "/assets/ai/minimax-icon.png",
     category: "AI",
     benefits: [
       "Autonomous task execution: Breaks down goals into subtasks and completes them end-to-end",
