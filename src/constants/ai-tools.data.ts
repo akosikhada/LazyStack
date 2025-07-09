@@ -475,4 +475,18 @@ export const aiTools = [
     highlight: "Agentic",
     link: "https://agent.minimax.io/",
   },
+  {
+    title: "Context",
+    description:
+      "No broken formulas. No manual cleanup. Context's AI helps you catch issues and surface insights in real time. Spreadsheet showing data validation and error.",
+    icon: "/assets/ai/context-icon.png",
+    category: "AI",
+    benefits: [
+      "AI-powered spreadsheet analysis for real-time insights and error detection",
+      "Context-aware AI that understands your data and provides context-specific recommendations",
+      "Seamless integration with Google Sheets, Excel, and other spreadsheet applications",
+    ],
+    highlight: "Insightful",
+    link: "https://www.context.ai/",
+  },
 ];
