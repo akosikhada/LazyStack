@@ -476,17 +476,17 @@ export const aiTools = [
     link: "https://agent.minimax.io/",
   },
   {
-    title: "Context",
+    title: "Context.ai",
     description:
-      "No broken formulas. No manual cleanup. Context's AI helps you catch issues and surface insights in real time. Spreadsheet showing data validation and error.",
-    icon: "/assets/ai/context-icon.png",
+      "Context.ai is an AI-native productivity platform designed to automate knowledge work by integrating long-context AI agents into familiar office tools. It transforms fragmented data—documents, chats, spreadsheets—into cohesive, actionable outputs using its proprietary Context Engine.",
+    icon: "",
     category: "AI",
     benefits: [
-      "AI-powered spreadsheet analysis for real-time insights and error detection",
-      "Context-aware AI that understands your data and provides context-specific recommendations",
-      "Seamless integration with Google Sheets, Excel, and other spreadsheet applications",
+      "Generative office suite with AI-powered editors for documents, presentations, and spreadsheets",
+      "Swarm agent architecture that traverses entire knowledge bases for deep insights",
+      "Enterprise-grade security with local deployment options and SOC-2/ISO 27001 compliance",
     ],
-    highlight: "Insightful",
+    highlight: "Contextual",
     link: "https://www.context.ai/",
   },
 ];
