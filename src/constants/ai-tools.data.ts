@@ -479,7 +479,7 @@ export const aiTools = [
     title: "Context.ai",
     description:
       "Context.ai is an AI-native productivity platform designed to automate knowledge work by integrating long-context AI agents into familiar office tools. It transforms fragmented data—documents, chats, spreadsheets—into cohesive, actionable outputs using its proprietary Context Engine.",
-    icon: "",
+    icon: "/assets/ai/context-icon.png",
     category: "AI",
     benefits: [
       "Generative office suite with AI-powered editors for documents, presentations, and spreadsheets",
