@@ -489,4 +489,14 @@ export const aiTools = [
     highlight: "Contextual",
     link: "https://www.context.ai/",
   },
+  {
+    title: "SkyWork AI",
+    description:
+      "Skywork turns simple input into multimodal content - docs, slides, sheets with deep research, podcasts & webpages.",
+    icon: "/assets/ai/skywork-icon.png",
+    category: "AI",
+    benefits: [""],
+    highlight: "",
+    link: "https://skywork.ai/",
+  },
 ];
