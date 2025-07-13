@@ -493,7 +493,7 @@ export const aiTools = [
     title: "SkyWork.ai",
     description:
       "Skywork.ai is an AI-powered workspace platform that transforms complex research and content creation tasks into fast, reliable outputs using specialized “Super Agents.” It supports documents, slides, spreadsheets, webpages, and podcasts, all backed by deep research and traceable sources.",
-    icon: "",
+    icon: "/assets/ai/skywork-icon.png",
     category: "AI",
     benefits: [
       "DeepResearch engine scans up to 10x more sources for comprehensive, verifiable insights",
