@@ -490,13 +490,17 @@ export const aiTools = [
     link: "https://www.context.ai/",
   },
   {
-    title: "SkyWork AI",
+    title: "SkyWork.ai",
     description:
-      "Skywork turns simple input into multimodal content - docs, slides, sheets with deep research, podcasts & webpages.",
-    icon: "/assets/ai/skywork-icon.png",
+      "Skywork.ai is an AI-powered workspace platform that transforms complex research and content creation tasks into fast, reliable outputs using specialized “Super Agents.” It supports documents, slides, spreadsheets, webpages, and podcasts, all backed by deep research and traceable sources.",
+    icon: "",
     category: "AI",
-    benefits: [""],
-    highlight: "",
+    benefits: [
+      "DeepResearch engine scans up to 10x more sources for comprehensive, verifiable insights",
+      "Specialized agents for structured writing, data analysis, presentations, and multimedia generation",
+      "Source tracing & prompt clarification to reduce hallucinations and align outputs with user intent",
+    ],
+    highlight: "Verifiable",
     link: "https://skywork.ai/",
   },
 ];
