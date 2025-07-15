@@ -506,11 +506,15 @@ export const aiTools = [
   {
     title: "ToolHouse.ai",
     description:
-      "Toolhouse is a platform that creates AI agents for you and helps you plug them into your favorite tool like Lovable, Bolt, v0, Cursor, and more.",
+      "Toolhouse is a cloud-based AI agent development platform that empowers developers to build, deploy, and manage autonomous agents with minimal boilerplate. It offers a universal SDK, pre-built tools, and optimized infrastructure to streamline agentic workflows across major LLMs.",
     icon: "",
     category: "AI",
-    benefits: [""],
-    highlight: "",
+    benefits: [
+      "Universal SDK: Build agents with just 3 lines of code, compatible across OpenAI, Claude, Gemini, and more",
+      "Pre-integrated tools: Includes RAG, web search, memory, code execution, and MCP (Multi-agent Collaboration Protocol)",
+      "Agent-as-API deployment: Instantly turn agents into production-ready APIs with built-in observability and scheduling",
+    ],
+    highlight: "Agentic",
     link: "https://toolhouse.ai/",
   },
 ];
