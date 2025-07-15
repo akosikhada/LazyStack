@@ -503,4 +503,14 @@ export const aiTools = [
     highlight: "Verifiable",
     link: "https://skywork.ai/",
   },
+  {
+    title: "ToolHouse.ai",
+    description:
+      "Toolhouse is a platform that creates AI agents for you and helps you plug them into your favorite tool like Lovable, Bolt, v0, Cursor, and more.",
+    icon: "",
+    category: "AI",
+    benefits: [""],
+    highlight: "",
+    link: "https://toolhouse.ai/",
+  },
 ];
