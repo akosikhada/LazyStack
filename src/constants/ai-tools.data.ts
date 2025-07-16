@@ -476,7 +476,7 @@ export const aiTools = [
     link: "https://agent.minimax.io/",
   },
   {
-    title: "Context.ai",
+    title: "Context",
     description:
       "Context.ai is an AI-native productivity platform designed to automate knowledge work by integrating long-context AI agents into familiar office tools. It transforms fragmented data—documents, chats, spreadsheets—into cohesive, actionable outputs using its proprietary Context Engine.",
     icon: "/assets/ai/context-icon.png",
@@ -490,7 +490,7 @@ export const aiTools = [
     link: "https://www.context.ai/",
   },
   {
-    title: "SkyWork.ai",
+    title: "SkyWork",
     description:
       "Skywork.ai is an AI-powered workspace platform that transforms complex research and content creation tasks into fast, reliable outputs using specialized “Super Agents.” It supports documents, slides, spreadsheets, webpages, and podcasts, all backed by deep research and traceable sources.",
     icon: "/assets/ai/skywork-icon.png",
@@ -504,10 +504,10 @@ export const aiTools = [
     link: "https://skywork.ai/",
   },
   {
-    title: "ToolHouse.ai",
+    title: "ToolHouse",
     description:
       "Toolhouse is a cloud-based AI agent development platform that empowers developers to build, deploy, and manage autonomous agents with minimal boilerplate. It offers a universal SDK, pre-built tools, and optimized infrastructure to streamline agentic workflows across major LLMs.",
-    icon: "",
+    icon: "/assets/ai/toolhouse-icon.png",
     category: "AI",
     benefits: [
       "Universal SDK: Build agents with just 3 lines of code, compatible across OpenAI, Claude, Gemini, and more",
