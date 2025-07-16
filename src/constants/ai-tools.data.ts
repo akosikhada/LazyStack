@@ -507,7 +507,7 @@ export const aiTools = [
     title: "ToolHouse",
     description:
       "Toolhouse is a cloud-based AI agent development platform that empowers developers to build, deploy, and manage autonomous agents with minimal boilerplate. It offers a universal SDK, pre-built tools, and optimized infrastructure to streamline agentic workflows across major LLMs.",
-    icon: "/assets/ai/toolhouse-icon.png",
+    icon: "/assets/ai/toolhouse.png",
     category: "AI",
     benefits: [
       "Universal SDK: Build agents with just 3 lines of code, compatible across OpenAI, Claude, Gemini, and more",
