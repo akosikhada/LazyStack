@@ -587,4 +587,14 @@ export const developmentTools = [
     highlight: "Conversational",
     link: "https://wegic.com/",
   },
+  {
+    title: "Bubble",
+    description:
+      "Turn your idea into a working app in minutes with Bubble AI. Bubble combines the speed of AI with the control and security you need to grow.",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "",
+    link: "https://bubble.io/ai",
+  },
 ];
