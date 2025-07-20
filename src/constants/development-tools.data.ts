@@ -593,8 +593,12 @@ export const developmentTools = [
       "Turn your idea into a working app in minutes with Bubble AI. Bubble combines the speed of AI with the control and security you need to grow.",
     icon: "/assets/development/bubble-icon.png",
     category: "Development",
-    benefits: [""],
-    highlight: "",
+    benefits: [
+      "AI-powered app development with natural language prompts",
+      "Rapid prototyping and deployment with AI assistance",
+      "Seamless integration with Bubble's platform for custom app development",
+    ],
+    highlight: "Agentic",
     link: "https://bubble.io/ai",
   },
 ];
