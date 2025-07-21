@@ -601,4 +601,18 @@ export const developmentTools = [
     highlight: "Scalable",
     link: "https://bubble.io/ai",
   },
+  {
+    title: "Kiro",
+    description:
+      "Kiro is an AI-powered no-code app builder that enables users to create custom applications with minimal coding. It combines AI-driven design tools with drag-and-drop functionality, allowing users to build scalable apps without writing code.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "AI-powered app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
+      "Visual editor for customizing layouts and logic without touching code",
+      "Seamless AI integrations with models like ChatGPT, DALL·E, and Stable Diffusion via Bubble’s API Connector",
+    ],
+    highlight: "Scalable",
+    link: "https://kiro.dev",
+  },
 ];
