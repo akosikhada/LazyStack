@@ -588,17 +588,17 @@ export const developmentTools = [
     link: "https://wegic.com/",
   },
   {
-    title: "Bubble",
+    title: "Bubble AI",
     description:
-      "Turn your idea into a working app in minutes with Bubble AI. Bubble combines the speed of AI with the control and security you need to grow.",
-    icon: "/assets/development/bubble-icon.png",
+      "Bubble AI is a no-code visual development platform that empowers users to build AI-powered web applications without writing code. It combines drag-and-drop design tools with AI app generation, enabling rapid prototyping and deployment of scalable apps.",
+    icon: "",
     category: "Development",
     benefits: [
-      "AI-powered app development with natural language prompts",
-      "Rapid prototyping and deployment with AI assistance",
-      "Seamless integration with Bubble's platform for custom app development",
+      "AI app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
+      "Visual editor for customizing layouts and logic without touching code",
+      "Seamless AI integrations with models like ChatGPT, DALL·E, and Stable Diffusion via Bubble’s API Connector",
     ],
-    highlight: "Agentic",
+    highlight: "Scalable",
     link: "https://bubble.io/ai",
   },
 ];
