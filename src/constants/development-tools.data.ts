@@ -591,7 +591,7 @@ export const developmentTools = [
     title: "Bubble AI",
     description:
       "Bubble AI is a no-code visual development platform that empowers users to build AI-powered web applications without writing code. It combines drag-and-drop design tools with AI app generation, enabling rapid prototyping and deployment of scalable apps.",
-    icon: "",
+    icon: "/assets/development/bubble-icon.png",
     category: "Development",
     benefits: [
       "AI app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
