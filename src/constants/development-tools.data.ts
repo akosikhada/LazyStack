@@ -615,4 +615,18 @@ export const developmentTools = [
     highlight: "Scalable",
     link: "https://kiro.dev",
   },
+  {
+    title: "Supermaven",
+    description:
+      "The fastest copilot. Supermaven uses a 1 million token context window to provide the highest quality code completions.",
+    icon: "",
+    category: "Development",
+    benefits: [
+      "AI-powered app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
+      "Visual editor for customizing layouts and logic without touching code",
+      "Seamless AI integrations with models like ChatGPT, DALL·E, and Stable Diffusion via Bubble’s API Connector",
+    ],
+    highlight: "Scalable",
+    link: "https://supermaven.com/",
+  },
 ];
