@@ -619,7 +619,7 @@ export const developmentTools = [
     title: "Supermaven",
     description:
       "The fastest copilot. Supermaven uses a 1 million token context window to provide the highest quality code completions.",
-    icon: "",
+    icon: "/assets/development/supermaven-icon.png",
     category: "Development",
     benefits: [
       "AI-powered app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
