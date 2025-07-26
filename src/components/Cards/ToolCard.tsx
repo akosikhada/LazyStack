@@ -78,7 +78,7 @@ export default function ToolCard({
             </h3>
 
             {/* Description with equal height and fade-out effect */}
-            <div className="mb-5">
+            <div>
               <div
                 className={`relative h-24 overflow-hidden ${
                   theme === "dark" ? "text-gray-400" : "text-gray-600"

@@ -10,7 +10,7 @@ interface BenefitsListProps {
  */
 export function BenefitsList({ benefits, theme }: BenefitsListProps) {
   return (
-    <div className="mb-4">
+    <div className="mt-2 space-y-2">
       {benefits.map((benefit, i) => (
         <div
           key={i}
