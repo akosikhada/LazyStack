@@ -607,11 +607,7 @@ export const developmentTools = [
       "Kiro is an AI-powered no-code app builder that enables users to create custom applications with minimal coding. It combines AI-driven design tools with drag-and-drop functionality, allowing users to build scalable apps without writing code.",
     icon: "/assets/development/kiro-icon.png",
     category: "Development",
-    benefits: [
-      "AI-powered app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
-      "Visual editor for customizing layouts and logic without touching code",
-      "Seamless AI integrations with models like ChatGPT, DALL·E, and Stable Diffusion via Bubble’s API Connector",
-    ],
+    benefits: [""],
     highlight: "Scalable",
     link: "https://kiro.dev",
   },
@@ -621,12 +617,18 @@ export const developmentTools = [
       "The fastest copilot. Supermaven uses a 1 million token context window to provide the highest quality code completions.",
     icon: "/assets/development/supermaven-icon.png",
     category: "Development",
-    benefits: [
-      "AI-powered app builder that transforms text prompts into full app structures, including pages, workflows, and databases",
-      "Visual editor for customizing layouts and logic without touching code",
-      "Seamless AI integrations with models like ChatGPT, DALL·E, and Stable Diffusion via Bubble’s API Connector",
-    ],
+    benefits: ["", "", ""],
     highlight: "Scalable",
     link: "https://supermaven.com/",
+  },
+  {
+    title: "Together",
+    description:
+      "200+ generative AI models. Build with open-source and specialized multimodal models for chat, images, code, and more.",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "",
+    link: "https://www.together.ai/",
   },
 ];
