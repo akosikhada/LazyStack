@@ -517,4 +517,14 @@ export const aiTools = [
     highlight: "Agentic",
     link: "https://toolhouse.ai/",
   },
+  {
+    title: "Together",
+    description:
+      "200+ generative AI models. Build with open-source and specialized multimodal models for chat, images, code, and more.",
+    icon: "/assets/development/together-icon.png",
+    category: "Development",
+    benefits: [""],
+    highlight: "",
+    link: "https://www.together.ai/",
+  },
 ];

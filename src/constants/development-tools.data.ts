@@ -621,14 +621,4 @@ export const developmentTools = [
     highlight: "Scalable",
     link: "https://supermaven.com/",
   },
-  {
-    title: "Together",
-    description:
-      "200+ generative AI models. Build with open-source and specialized multimodal models for chat, images, code, and more.",
-    icon: "",
-    category: "Development",
-    benefits: [""],
-    highlight: "",
-    link: "https://www.together.ai/",
-  },
 ];
