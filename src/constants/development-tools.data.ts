@@ -607,7 +607,7 @@ export const developmentTools = [
       "Kiro is an AI-powered no-code app builder that enables users to create custom applications with minimal coding. It combines AI-driven design tools with drag-and-drop functionality, allowing users to build scalable apps without writing code.",
     icon: "/assets/development/kiro-icon.png",
     category: "Development",
-    benefits: [""],
+    benefits: ["", "", ""],
     highlight: "Scalable",
     link: "https://kiro.dev",
   },
