@@ -604,25 +604,29 @@ export const developmentTools = [
   {
     title: "Kiro",
     description:
-      "Kiro is an AI-powered no-code app builder that enables users to create custom applications with minimal coding. It combines AI-driven design tools with drag-and-drop functionality, allowing users to build scalable apps without writing code.",
+      "Kiro is an agentic AI IDE designed to help developers go from prototype to production using spec-driven development, agent hooks, and natural language coding assistance. Built on the open-source foundation of VS Code, it offers a structured, collaborative, and autonomous coding experience.",
     icon: "/assets/development/kiro-icon.png",
     category: "Development",
     benefits: [
-      "Transform ideas into fully functional applications without writing a single line of code using AI assistance",
-      "Intuitive drag-and-drop interface with smart design suggestions for creating professional-grade applications",
-      "Built-in scalability features that grow with your user base and business requirements",
+      "Spec-driven development: Transforms prompts into structured requirements, technical designs, and implementation tasks",
+      "Agent hooks: Automates repetitive tasks like writing tests, updating docs, and enforcing coding standards",
+      "Multimodal & context-aware: Supports chat, images, and steering files to guide agents with deep project understanding",
     ],
-    highlight: "Scalable",
+    highlight: "Structured",
     link: "https://kiro.dev",
   },
   {
     title: "Supermaven",
     description:
-      "The fastest copilot. Supermaven uses a 1 million token context window to provide the highest quality code completions.",
+      "Supermaven is a lightning-fast AI code completion tool built for developers who work with large codebases and want real-time, context-aware suggestions. It integrates seamlessly with VS Code, JetBrains IDEs, and Neovim, and supports top-tier models like GPT-4o and Claude 3.5 Sonnet.",
     icon: "/assets/development/supermaven-icon.png",
     category: "Development",
-    benefits: ["", "", ""],
-    highlight: "Scalable",
+    benefits: [
+      "1 Million Token Context Window: Understands massive codebases and delivers precise suggestions",
+      "Multi-model Support: Switch between leading AI models with hotkeys and attach files for smarter responses",
+      "Real-time Debugging & Diff View: Automatically uploads code with diagnostic messages and shows diffs for quick fixes",
+    ],
+    highlight: "Speed",
     link: "https://supermaven.com/",
   },
 ];
