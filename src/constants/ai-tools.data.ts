@@ -523,7 +523,11 @@ export const aiTools = [
       "200+ generative AI models. Build with open-source and specialized multimodal models for chat, images, code, and more.",
     icon: "/assets/development/together-icon.png",
     category: "Development",
-    benefits: [""],
+    benefits: [
+      "200+ models: Choose from open-source and specialized multimodal models for chat, images, code, and more",
+      "Open-source: Build with open-source models and tools for maximum transparency and security",
+      "Multimodal: Support for chat, images, code, and more with specialized models for each use case",
+    ],
     highlight: "",
     link: "https://www.together.ai/",
   },
