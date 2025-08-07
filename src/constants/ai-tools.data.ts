@@ -528,7 +528,7 @@ export const aiTools = [
       "Open-source: Build with open-source models and tools for maximum transparency and security",
       "Multimodal: Support for chat, images, code, and more with specialized models for each use case",
     ],
-    highlight: "",
+    highlight: "Open  ",
     link: "https://www.together.ai/",
   },
 ];
