@@ -535,7 +535,7 @@ export const aiTools = [
     title: "Rocket",
     description:
       "Rocket.new turns ideas into live web & mobile apps in minutes. Enjoy vibe coding—generate clean code, customize with AI, and launch fast, all with no code.",
-    icon: "",
+    icon: "/assets/ai/rocket-icon.png",
     category: "AI",
     benefits: [
       "No-code app development with AI-powered code generation",
