@@ -528,7 +528,21 @@ export const aiTools = [
       "Open-source: Build with open-source models and tools for maximum transparency and security",
       "Multimodal: Support for chat, images, code, and more with specialized models for each use case",
     ],
-    highlight: "Open  ",
+    highlight: "Open",
     link: "https://www.together.ai/",
+  },
+  {
+    title: "Rocket",
+    description:
+      "Rocket.new turns ideas into live web & mobile apps in minutes. Enjoy vibe coding—generate clean code, customize with AI, and launch fast, all with no code.",
+    icon: "",
+    category: "AI",
+    benefits: [
+      "No-code app development with AI-powered code generation",
+      "Vibe coding: Generate clean code, customize with AI, and launch fast",
+      "No code: Build apps without writing a single line of code",
+    ],
+    highlight: "No-code",
+    link: "https://www.rocket.new/",
   },
 ];
