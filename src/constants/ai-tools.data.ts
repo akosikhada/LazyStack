@@ -521,7 +521,7 @@ export const aiTools = [
     title: "Together",
     description:
       "200+ generative AI models. Build with open-source and specialized multimodal models for chat, images, code, and more.",
-    icon: "/assets/development/together-icon.png",
+    icon: "/assets/ai/together-icon.png",
     category: "Development",
     benefits: [
       "200+ models: Choose from open-source and specialized multimodal models for chat, images, code, and more",
