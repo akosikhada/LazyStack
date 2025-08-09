@@ -520,29 +520,29 @@ export const aiTools = [
   {
     title: "Together",
     description:
-      "200+ generative AI models. Build with open-source and specialized multimodal models for chat, images, code, and more.",
+      "Together AI is a cloud-native AI infrastructure platform built for developers and researchers to train, fine-tune, and deploy frontier models at scale. It offers high-performance GPU clusters, OpenAI-compatible APIs, and access to 200+ open-source and specialized models for chat, code, vision, and more.",
     icon: "/assets/ai/together-icon.png",
     category: "Development",
     benefits: [
-      "200+ models: Choose from open-source and specialized multimodal models for chat, images, code, and more",
-      "Open-source: Build with open-source models and tools for maximum transparency and security",
-      "Multimodal: Support for chat, images, code, and more with specialized models for each use case",
+      "Fastest inference engine with custom FP8 kernels and speculative decoding",
+      "Model flexibility: Choose from Turbo, Reference, and Lite variants for cost-performance balance",
+      "Full fine-tuning support: Train trillion-parameter models with GB200 NVL72 racks and retain full model ownership",
     ],
-    highlight: "Open",
+    highlight: "Scalable",
     link: "https://www.together.ai/",
   },
   {
     title: "Rocket",
     description:
-      "Rocket.new turns ideas into live web & mobile apps in minutes. Enjoy vibe coding—generate clean code, customize with AI, and launch fast, all with no code.",
+      "Rocket.new is a no-code app development platform that empowers creators to build web and mobile applications rapidly—without writing a single line of code. Designed for speed and simplicity, it’s ideal for startups, product teams, and solo founders looking to launch MVPs or full-scale apps with minimal overhead.",
     icon: "/assets/ai/rocket-icon.png",
     category: "AI",
     benefits: [
-      "No-code app development with AI-powered code generation",
-      "Vibe coding: Generate clean code, customize with AI, and launch fast",
-      "No code: Build apps without writing a single line of code",
+      "Lightning-fast development with drag-and-drop components and real-time previews",
+      "Cross-platform output: Build once, deploy to web and mobile seamlessly",
+      "Modular logic builder: Customize app behavior with visual workflows and integrations",
     ],
-    highlight: "No-code",
+    highlight: "Effortless",
     link: "https://www.rocket.new/",
   },
 ];
