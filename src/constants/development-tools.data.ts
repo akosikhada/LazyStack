@@ -629,4 +629,14 @@ export const developmentTools = [
     highlight: "Speed",
     link: "https://supermaven.com/",
   },
+  {
+    title: "Database Build",
+    description:
+      "Press enter or space to select a node.You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel.",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "Effortless",
+    link: "https://database.build/",
+  },
 ];
