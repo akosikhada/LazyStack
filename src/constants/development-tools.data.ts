@@ -632,11 +632,15 @@ export const developmentTools = [
   {
     title: "Database Build",
     description:
-      "Press enter or space to select a node.You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel.",
+      "Database.build is an in-browser Postgres sandbox powered by AI-assisted workflows. It lets users instantly spin up Postgres databases that run entirely in the browser—no backend required—using PGlite, a WASM-based Postgres engine. Each database is paired with a Large Language Model (LLM) to enable natural language querying, schema generation, and chart creation.",
     icon: "",
     category: "Development",
-    benefits: [""],
-    highlight: "Effortless",
+    benefits: [
+      "AI-assisted schema generation: Describe your data in plain language and let the LLM scaffold your tables",
+      "Drag-and-drop CSV import: Automatically generate tables and visualizations from CSV files",
+      "Bring-your-own-LLM: Connect any OpenAI-compatible model for full control, privacy, and flexibility",
+    ],
+    highlight: "Browser-native",
     link: "https://database.build/",
   },
 ];
