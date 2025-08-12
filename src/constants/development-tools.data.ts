@@ -476,7 +476,7 @@ export const developmentTools = [
     link: "https://kilocode.ai/",
   },
   {
-    title: "Continue.dev",
+    title: "Continue",
     description:
       "Continue.dev is an open-source AI code assistant designed to enhance development workflows within Visual Studio Code and JetBrains. It integrates AI-powered autocomplete, chat-based coding assistance, and intelligent code editing, making it a powerful tool for developers.",
     icon: "/assets/development/continue-icon.png",
