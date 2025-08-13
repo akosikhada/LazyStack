@@ -643,4 +643,14 @@ export const developmentTools = [
     highlight: "Browser-native",
     link: "https://database.build/",
   },
+  {
+    title: "Charm",
+    description:
+      "Your new coding bestie, now available in your favourite terminal. Your tools, your code, and your workflows, wired into your LLM of choice. This is artificial intelligence made glamourous.",
+    icon: "",
+    category: "Development",
+    benefits: [""],
+    highlight: "Scalable",
+    link: "https://charm.land/",
+  },
 ];
