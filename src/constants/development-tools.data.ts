@@ -646,11 +646,15 @@ export const developmentTools = [
   {
     title: "Charm",
     description:
-      "Your new coding bestie, now available in your favourite terminal. Your tools, your code, and your workflows, wired into your LLM of choice. This is artificial intelligence made glamourous.",
+      "Charm is an open-source toolkit and ecosystem that makes the command line glamorous. It empowers developers to build beautiful terminal user interfaces (TUIs), shell scripts, and AI-powered workflows using intuitive libraries like Bubble Tea, Lip Gloss, and Gum. Charm blends design, functionality, and developer experience to turn the terminal into a creative playground.",
     icon: "",
     category: "Development",
-    benefits: [""],
-    highlight: "Scalable",
+    benefits: [
+      "Stylish TUIs: Create elegant, responsive terminal apps with Bubble Tea and Lip Gloss",
+      "AI integration: Wire your workflows into any LLM with Mods for intelligent CLI experiences",
+      "Open-source libraries: Build markdown renderers, form UIs, loggers, and even animated interfaces—all in Go",
+    ],
+    highlight: "Glamorous",
     link: "https://charm.land/",
   },
 ];
